@@ -4,22 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b981a301-7e74-4f43-8c36-00ef30fc34bf" name="Changes" comment="add initial project structure with essential files and configurations">
-      <change afterPath="$PROJECT_DIR$/website/src/components/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/components/PricingSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/components/ui/input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/components/ui/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/data/pricingData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/lib/utils.js" afterDir="false" />
+    <list default="true" id="b981a301-7e74-4f43-8c36-00ef30fc34bf" name="Changes" comment="added the foundation of  AchievementSection and Ui components .over all only need to add styles to finish the website perfectly.">
+      <change afterPath="$PROJECT_DIR$/website/src/components/AchievementSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/components/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/components/ui/dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/components/ui/edit-profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/components/ui/label.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/components/ui/textarea.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/app/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/src/components/FeatureSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/FeatureSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/ui/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/ui/button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/HeroSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/PricingSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/PricingSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/ui/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/ui/input.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,22 +38,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Vikkash2003"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Vikkash2003&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Vikkash2003/visualit_web.git",
-    "accountId": "328ff137-d052-41fd-8e55-5edaba986341"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Vikkash2003/visualit_web.git&quot;,
+    &quot;accountId&quot;: &quot;328ff137-d052-41fd-8e55-5edaba986341&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="34nRILLon2FQOmzn03a3lYVj1oq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -61,6 +63,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -96,7 +99,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761847276295</updated>
-      <workItem from="1761847282054" duration="9169000" />
+      <workItem from="1761847282054" duration="9512000" />
+      <workItem from="1761919757851" duration="4766000" />
     </task>
     <task id="LOCAL-00001" summary="add initial project structure with essential files and configurations">
       <option name="closed" value="true" />
@@ -106,7 +110,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761855562682</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="completed basic layout and section (pricing , footer and feature) only need to style and add relevent data.">
+      <option name="closed" value="true" />
+      <created>1761859143882</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761859143892</updated>
+    </task>
+    <task id="LOCAL-00003" summary="completed basic layout and section (pricing , footer and feature) only need to style and add relevent data.">
+      <option name="closed" value="true" />
+      <created>1761859348200</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761859348200</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +145,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add initial project structure with essential files and configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="add initial project structure with essential files and configurations" />
+    <MESSAGE value="completed basic layout and section (pricing , footer and feature) only need to style and add relevent data." />
+    <MESSAGE value="added the foundation of  AchievementSection and Ui components .over all only need to add styles to finish the website perfectly." />
+    <option name="LAST_COMMIT_MESSAGE" value="added the foundation of  AchievementSection and Ui components .over all only need to add styles to finish the website perfectly." />
   </component>
 </project>

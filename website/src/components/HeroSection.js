@@ -25,6 +25,12 @@ const HeroSection = () => {
                                 <Download className="mr-2 h-5 w-5" />
                                 Download Now
                             </Button>
+                            <Button
+                                variant="outline"
+                                className="text-base sm:text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-shadow"
+                            >
+                                Demo video
+                            </Button>
                         </div>
                     </div>
 

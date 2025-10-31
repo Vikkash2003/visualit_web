@@ -2,36 +2,47 @@
 
 import { useState } from 'react'
 import Button from '@/components/ui/button'
+import { EditProfile } from '@/components/ui/edit-profile'
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [profile, setProfile] = useState({
+        fullName: "",
+        email: "",
+    })
 
-    const navItems = ['Home','Feature','Pricing','About']
+    const navItems = ['Home','Feature','Pricing','Achievement','About']
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-black/30">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-20">
+            <div className="max-w-screen-2xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
+                <div className="flex items-center justify-between h-16 md:h-20">
                     {/* Logo */}
-                    <div className="text-white text-2xl font-bold tracking-tight">
+                    <div className="text-white text-xl sm:text-2xl font-bold tracking-tight">
                         Logo
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-1">
+                    <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
                         {navItems.map((item) => (
                             <a
                                 key={item}
                                 href={`#${item.toLowerCase()}`}
-                                className="relative text-white hover:text-gray-300 transition-colors px-4 py-2 text-base font-medium group"
+                                className="relative text-white hover:text-gray-300 transition-colors px-3 lg:px-4 py-2 text-sm lg:text-base font-medium group"
                             >
                                 {item}
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 ease-out group-hover:w-full"></span>
                             </a>
                         ))}
-                        <Button variant="outline" className="ml-2">
-                            Subscription
-                        </Button>
+                        <EditProfile
+                            profile={profile}
+                            setProfile={setProfile}
+                            trigger={
+                                <Button variant="outline" className="ml-2 text-sm lg:text-base">
+                                    Subscription
+                                </Button>
+                            }
+                        />
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -73,9 +84,15 @@ const Navigation = () => {
                                 </a>
                             ))}
                             <div className="px-4 pt-2">
-                                <Button variant="outline" className="w-full">
-                                    Subscription
-                                </Button>
+                                <EditProfile
+                                    profile={profile}
+                                    setProfile={setProfile}
+                                    trigger={
+                                        <Button variant="outline" className="w-full">
+                                            Subscription
+                                        </Button>
+                                    }
+                                />
                             </div>
                         </div>
                     </div>
