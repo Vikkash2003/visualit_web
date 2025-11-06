@@ -55,15 +55,14 @@ export default function PricingSection() {
     };
 
     return (
-        <div id="pricing" className="relative flex flex-col items-center justify-center max-w-5xl py-20 mx-auto">
+        <div id="pricing" className="relative flex flex-col items-center justify-center max-w-5xl py-20 mx-auto px-4">
             <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
                 <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-6">
-                        Pricing
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-6 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
+                        Simple Pricing
                     </h2>
-                    <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
-                        Streamline your creative process with AI. Generate, manage, and
-                        publish content — all in one place.
+                    <p className="text-base md:text-lg text-center text-gray-400 mt-6">
+                        Choose the perfect plan for your needs. Streamline your creative process with AI.
                     </p>
                 </div>
 
@@ -98,19 +97,19 @@ function Plan({ plan, billPlan }) {
     return (
         <div
             className={cn(
-                "flex flex-col relative rounded-2xl lg:rounded-3xl transition-all bg-background/ items-start w-full border border-foreground/10 overflow-hidden",
-                plan.title === "Mastermind" && "border-blue-500"
+                "flex flex-col relative rounded-2xl lg:rounded-3xl transition-all bg-black/50 backdrop-blur items-start w-full border border-white/10 overflow-hidden hover:border-white/20 hover:shadow-lg hover:shadow-purple-500/10",
+                plan.title === "Pro" && "border-purple-500/50 shadow-lg shadow-purple-500/20"
             )}
         >
-            {plan.title === "Mastermind" && (
-                <div className="absolute top-1/2 inset-x-0 mx-auto h-12 -rotate-45 w-full bg-blue-600 rounded-2xl lg:rounded-3xl blur-[8rem] -z-10"></div>
+            {plan.title === "Pro" && (
+                <div className="absolute top-1/2 inset-x-0 mx-auto h-12 -rotate-45 w-full bg-purple-600 rounded-2xl lg:rounded-3xl blur-[8rem] -z-10"></div>
             )}
 
             <div className="p-4 md:p-8 flex rounded-t-2xl lg:rounded-t-3xl flex-col items-start w-full relative">
-                <h2 className="font-medium text-xl text-foreground pt-5">
+                <h2 className="font-medium text-xl text-white pt-5">
                     {plan.title}
                 </h2>
-                <h3 className="mt-3 text-2xl font-bold md:text-5xl">
+                <h3 className="mt-3 text-2xl font-bold md:text-5xl text-white">
                     <NumberFlow
                         value={
                             billPlan === "monthly" ? plan.monthlyPrice : plan.annuallyPrice
@@ -126,13 +125,13 @@ function Plan({ plan, billPlan }) {
                         }}
                     />
                 </h3>
-                <p className="text-sm md:text-base text-muted-foreground mt-2">
+                <p className="text-sm md:text-base text-gray-400 mt-2">
                     {plan.desc}
                 </p>
             </div>
 
             <div className="flex flex-col items-start w-full px-4 py-2 md:px-8">
-                <Button className="w-full text-base py-4">
+                <Button className="w-full text-base py-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all hover:scale-105">
                     {plan.buttonText}
                 </Button>
                 <div className="h-8 overflow-hidden w-full mx-auto">
@@ -143,7 +142,7 @@ function Plan({ plan, billPlan }) {
                             animate={{ y: 0, opacity: 1 }}
                             exit={{ y: -20, opacity: 0 }}
                             transition={{ duration: 0.2, ease: "easeOut" }}
-                            className="text-sm text-center text-muted-foreground mt-3 mx-auto block"
+                            className="text-sm text-center text-gray-400 mt-3 mx-auto block"
                         >
                             {billPlan === "monthly"
                                 ? "Billed monthly"
@@ -154,16 +153,16 @@ function Plan({ plan, billPlan }) {
             </div>
 
             <div className="flex flex-col items-start w-full p-5 mb-4 ml-1 gap-y-2">
-                <span className="text-base text-left mb-2">Includes:</span>
+                <span className="text-base text-left mb-2 font-semibold">Includes:</span>
                 {plan.features.map((feature, index) => (
                     <div
                         key={index}
-                        className="flex items-center justify-start gap-2"
+                        className="flex items-center justify-start gap-2 text-gray-300"
                     >
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center text-purple-400">
                             <CheckIcon className="size-5" />
                         </div>
-                        <span>{feature}</span>
+                        <span className="text-sm">{feature}</span>
                     </div>
                 ))}
             </div>

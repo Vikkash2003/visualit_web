@@ -26,8 +26,12 @@ const AchievementSection = () => {
     ];
 
     return (
-        <section id="achievement" className="py-20 px-6 bg-gradient-to-br from-black via-gray-900 to-black w-full">
-            <div className="max-w-7xl mx-auto">
+        <section id="achievement" className="py-20 px-6 bg-gradient-to-br from-black via-gray-900 to-black w-full relative overflow-hidden">
+            {/* Background decorative elements */}
+            <div className="absolute top-20 left-10 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl"></div>
+
+            <div className="max-w-7xl mx-auto relative z-10">
                 {/* Title */}
                 <h2
                     className={`text-4xl font-bold text-white text-center mb-16 transition-all duration-1000 ${

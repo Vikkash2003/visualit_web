@@ -14,12 +14,18 @@ const Navigation = () => {
     const navItems = ['Home','Feature','Pricing','Achievement','About']
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-black/30">
+        <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/50 border-b border-white/10">
             <div className="max-w-screen-2xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
                 <div className="flex items-center justify-between h-16 md:h-20">
                     {/* Logo */}
-                    <div className="text-white text-xl sm:text-2xl font-bold tracking-tight">
-                        Logo
+                    <div className="text-white text-xl sm:text-2xl font-bold tracking-tight flex items-center gap-2">
+                        <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
+                            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                        </div>
+                        <span>Visualit</span>
                     </div>
 
                     {/* Desktop Navigation */}
