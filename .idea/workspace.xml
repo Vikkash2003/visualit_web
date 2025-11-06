@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b981a301-7e74-4f43-8c36-00ef30fc34bf" name="Changes" comment="did major styling in the websites">
+    <list default="true" id="b981a301-7e74-4f43-8c36-00ef30fc34bf" name="Changes" comment="refactor: update styling and structure in Feature and Hero sections">
+      <change afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/ACHIEVEMENT_IMAGES_SETUP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/public/images/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/public/images/award1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/public/images/award2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/public/images/award3.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/FeatureSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/FeatureSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/HeroSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/AchievementSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/AchievementSection.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +106,7 @@
       <workItem from="1762415790603" duration="150000" />
       <workItem from="1762415984909" duration="173000" />
       <workItem from="1762416178792" duration="2070000" />
-      <workItem from="1762436324327" duration="8368000" />
+      <workItem from="1762436324327" duration="10315000" />
     </task>
     <task id="LOCAL-00001" summary="add initial project structure with essential files and configurations">
       <option name="closed" value="true" />
@@ -135,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762441383538</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor: update styling and structure in Feature and Hero sections">
+      <option name="closed" value="true" />
+      <created>1762446942708</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762446942708</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +170,7 @@
     <MESSAGE value="completed basic layout and section (pricing , footer and feature) only need to style and add relevent data." />
     <MESSAGE value="added the foundation of  AchievementSection and Ui components .over all only need to add styles to finish the website perfectly." />
     <MESSAGE value="did major styling in the websites" />
-    <option name="LAST_COMMIT_MESSAGE" value="did major styling in the websites" />
+    <MESSAGE value="refactor: update styling and structure in Feature and Hero sections" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: update styling and structure in Feature and Hero sections" />
   </component>
 </project>

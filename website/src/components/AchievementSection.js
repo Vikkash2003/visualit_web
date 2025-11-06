@@ -2,7 +2,6 @@
 'use client'
 import { useState, useEffect } from 'react';
 
-
 const AchievementSection = () => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -13,15 +12,21 @@ const AchievementSection = () => {
     const achievements = [
         {
             id: 1,
-            image: '/images/award1.png',
-            title: 'Winner – Global App Innovation 2024',
+            image: '/images/Cisco Technopreneur.jpg',
+            title: 'Cisco Technopreneur Award',
             description: 'Recognized for outstanding innovation in artificial intelligence and user experience design, setting new standards in the tech industry.'
         },
         {
             id: 2,
-            image: '/images/award2.png',
-            title: 'Best Tech Startup of the Year',
+            image: '/images/CodeSprint.jpg',
+            title: 'CodeSprint Excellence Award',
             description: 'Awarded for exceptional growth, innovative solutions, and significant impact on the technology ecosystem and digital transformation.'
+        },
+        {
+            id: 3,
+            image: '/images/CuttingEdge.jpg',
+            title: 'Cutting Edge Innovation Award',
+            description: 'Honored for pioneering breakthroughs in machine learning applications and creating accessible AI solutions that empower users worldwide.'
         }
     ];
 
@@ -42,11 +47,11 @@ const AchievementSection = () => {
                 </h2>
 
                 {/* Awards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {achievements.map((award, index) => (
                         <div
                             key={award.id}
-                            className={`bg-emerald-500/10 backdrop-blur-md border border-emerald-500/30 rounded-2xl p-6 shadow-lg shadow-emerald-500/10 hover:scale-105 hover:shadow-emerald-500/30 hover:border-emerald-400/50 transition-all duration-300 cursor-pointer group ${
+                            className={`relative bg-emerald-500/10 backdrop-blur-md border border-emerald-500/30 rounded-2xl p-6 shadow-lg shadow-emerald-500/10 hover:scale-105 hover:shadow-emerald-500/30 hover:border-emerald-400/50 transition-all duration-300 cursor-pointer group ${
                                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                             }`}
                             style={{
@@ -84,7 +89,7 @@ const AchievementSection = () => {
                     ))}
                 </div>
 
-                {/* Optional: Stats or Additional Info */}
+                {/* Stats Section */}
                 <div className={`mt-16 text-center transition-all duration-1000 delay-500 ${
                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}>
