@@ -97,7 +97,7 @@ const HeroSection = () => {
                         </div>
                     </div>
 
-                    {/* Right Side - iPhone Mockup with Animation */}
+                    {/* Right Side - iPhone Mockup with Reading Tracker UI */}
                     <div className="flex items-center justify-center relative lg:justify-end">
                         {/* Gradient Orbs */}
                         <div className="absolute inset-0 flex items-center justify-center">
@@ -113,78 +113,132 @@ const HeroSection = () => {
                         >
                             <div className="relative hover:scale-105 transition-transform duration-500">
                                 <IPhoneX>
-                                    <div className="w-full h-full bg-gradient-to-br from-gray-950 via-purple-950/30 to-gray-950 flex flex-col overflow-hidden">
+                                    <div className="w-full h-full bg-black flex flex-col overflow-hidden">
                                         {/* Status Bar */}
                                         <div className="flex justify-between items-center px-6 py-3 text-white text-xs">
                                             <span>9:41</span>
-                                            <div className="flex gap-1">
-                                                <div className="w-4 h-3 border border-white rounded-sm"></div>
-                                                <div className="w-1 h-3 bg-white rounded-sm"></div>
+                                            <div className="flex gap-1 items-center">
+                                                <svg className="w-4 h-3" fill="currentColor" viewBox="0 0 16 12">
+                                                    <rect x="0" y="3" width="3" height="6" rx="0.5"/>
+                                                    <rect x="4" y="2" width="3" height="8" rx="0.5"/>
+                                                    <rect x="8" y="1" width="3" height="10" rx="0.5"/>
+                                                    <rect x="12" y="0" width="3" height="12" rx="0.5"/>
+                                                </svg>
+                                                <svg className="w-4 h-3 ml-1" fill="currentColor" viewBox="0 0 24 12">
+                                                    <rect x="0" y="0" width="18" height="12" rx="2" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+                                                    <rect x="19" y="4" width="2" height="4" rx="0.5"/>
+                                                    <rect x="2" y="2" width="14" height="8" rx="1"/>
+                                                </svg>
                                             </div>
                                         </div>
 
-                                        {/* App Header */}
-                                        <div className="px-6 py-4 border-b border-white/10">
-                                            <div className="flex items-center gap-3">
-                                                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
-                                                    <Eye className="w-6 h-6 text-white" />
+                                        {/* Search Bar */}
+                                        <div className="px-4 pt-2 pb-3">
+                                            <div className="bg-gray-900 rounded-xl px-4 py-2.5 flex items-center gap-2">
+                                                <svg className="w-4 h-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                                </svg>
+                                                <span className="text-gray-500 text-xs">Search books, authors, genres...</span>
+                                            </div>
+                                        </div>
+
+                                        {/* Content Area - Scrollable */}
+                                        <div className="flex-1 px-4 overflow-y-auto" suppressHydrationWarning>
+                                            {/* Reading Streak Card */}
+                                            <div className="bg-gray-900 rounded-2xl p-4 border border-gray-800 mb-4">
+                                                <h3 className="text-white text-sm font-semibold mb-3">Reading Streak</h3>
+
+                                                {/* Streak Grid */}
+                                                <div className="mb-3 bg-black/50 rounded-lg p-2">
+                                                    <div className="grid grid-cols-10 gap-1">
+                                                        {Array.from({ length: 50 }, (_, i) => (
+                                                            <div
+                                                                key={`streak-${i}`}
+                                                                className={`w-2 h-2 rounded-sm ${
+                                                                    i % 3 === 0 ? 'bg-emerald-500' : 
+                                                                    i % 7 === 0 ? 'bg-emerald-400' : 
+                                                                    'bg-gray-800'
+                                                                }`}
+                                                            />
+                                                        ))}
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    <h3 className="text-white text-sm font-bold">Visualit</h3>
-                                                    <p className="text-gray-400 text-xs">Smart Reading</p>
+
+                                                {/* Stats */}
+                                                <div className="grid grid-cols-3 gap-3 text-center">
+                                                    <div>
+                                                        <p className="text-white text-lg font-bold">5</p>
+                                                        <p className="text-gray-500 text-xs">Current</p>
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg font-bold">12</p>
+                                                        <p className="text-gray-500 text-xs">Longest</p>
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg font-bold">30</p>
+                                                        <p className="text-gray-500 text-xs">Total Days</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Your Library Section */}
+                                            <div className="mb-3" suppressHydrationWarning>
+                                                <div className="flex justify-between items-center mb-3">
+                                                    <h3 className="text-white text-sm font-bold">Your Library</h3>
+                                                    <span className="text-emerald-500 text-xs font-medium">View All</span>
+                                                </div>
+
+                                                {/* Book Carousel */}
+                                                <div className="flex gap-3 overflow-x-auto pb-2 -mr-4">
+                                                    {/* Book 1 */}
+                                                    <div className="flex-shrink-0 w-24">
+                                                        <div className="w-24 h-32 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 rounded-lg mb-2 flex items-center justify-center border border-blue-700/50">
+                                                            <BookOpen className="w-8 h-8 text-blue-300" />
+                                                        </div>
+                                                        <p className="text-white text-xs font-medium leading-tight line-clamp-2 mb-0.5">Harry Potter and the Prisoner of Azkaban</p>
+                                                        <p className="text-gray-500 text-xs">J.K. Rowling</p>
+                                                    </div>
+
+                                                    {/* Book 2 */}
+                                                    <div className="flex-shrink-0 w-24">
+                                                        <div className="w-24 h-32 bg-gradient-to-br from-red-900 via-red-800 to-orange-900 rounded-lg mb-2 flex items-center justify-center border border-red-700/50">
+                                                            <Sparkles className="w-8 h-8 text-red-300" />
+                                                        </div>
+                                                        <p className="text-white text-xs font-medium leading-tight line-clamp-2 mb-0.5">Harry Potter and the Sorcerer Stone</p>
+                                                        <p className="text-gray-500 text-xs">J.K. Rowling</p>
+                                                    </div>
+
+                                                    {/* Book 3 */}
+                                                    <div className="flex-shrink-0 w-24">
+                                                        <div className="w-24 h-32 bg-gradient-to-br from-amber-900 via-amber-800 to-yellow-900 rounded-lg mb-2 flex items-center justify-center border border-amber-700/50">
+                                                            <Eye className="w-8 h-8 text-amber-300" />
+                                                        </div>
+                                                        <p className="text-white text-xs font-medium leading-tight line-clamp-2 mb-0.5">James Potter and the Crimson Thread</p>
+                                                        <p className="text-gray-500 text-xs">G. Norman Lippert</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        {/* Content Area */}
-                                        <div className="flex-1 p-4 space-y-3 overflow-hidden">
-                                            {/* Reading Card 1 */}
-                                            <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-xl rounded-2xl p-4 border border-purple-500/30 animate-float">
-                                                <div className="flex gap-3 mb-3">
-                                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
-                                                        <BookOpen className="w-6 h-6 text-white" />
-                                                    </div>
-                                                    <div className="flex-1">
-                                                        <h4 className="text-white text-sm font-semibold mb-1">The Solar System</h4>
-                                                        <p className="text-gray-400 text-xs">Visualizing now...</p>
-                                                    </div>
-                                                </div>
-                                                <div className="w-full h-20 bg-gray-800/50 rounded-lg overflow-hidden">
-                                                    <div className="w-full h-full bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 opacity-70"></div>
-                                                </div>
-                                            </div>
-
-                                            {/* Reading Card 2 */}
-                                            <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 backdrop-blur-xl rounded-2xl p-4 border border-blue-500/30 animate-float" style={{ animationDelay: '1s' }}>
-                                                <div className="flex gap-3 mb-3">
-                                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
-                                                        <Sparkles className="w-6 h-6 text-white" />
-                                                    </div>
-                                                    <div className="flex-1">
-                                                        <h4 className="text-white text-sm font-semibold mb-1">AI Learning</h4>
-                                                        <p className="text-gray-400 text-xs">Active</p>
-                                                    </div>
-                                                </div>
-                                                <div className="space-y-2">
-                                                    <div className="h-2 bg-purple-500/30 rounded-full overflow-hidden">
-                                                        <div className="h-full w-3/4 bg-gradient-to-r from-purple-500 to-pink-500 animate-pulse"></div>
-                                                    </div>
-                                                    <div className="h-2 bg-blue-500/30 rounded-full overflow-hidden">
-                                                        <div className="h-full w-1/2 bg-gradient-to-r from-blue-500 to-cyan-500 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            {/* Stats */}
-                                            <div className="grid grid-cols-2 gap-2">
-                                                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 border border-white/10">
-                                                    <p className="text-gray-400 text-xs mb-1">Words/min</p>
-                                                    <p className="text-white text-lg font-bold">250</p>
-                                                </div>
-                                                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 border border-white/10">
-                                                    <p className="text-gray-400 text-xs mb-1">Visualized</p>
-                                                    <p className="text-purple-400 text-lg font-bold">98%</p>
-                                                </div>
+                                        {/* Bottom Navigation */}
+                                        <div className="border-t border-gray-900 bg-black px-4 py-3">
+                                            <div className="flex justify-between items-center">
+                                                <svg className="w-6 h-6 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                                </svg>
+                                                <svg className="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                                </svg>
+                                                <svg className="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                                </svg>
+                                                <svg className="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                                </svg>
+                                                <svg className="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>

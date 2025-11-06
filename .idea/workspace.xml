@@ -4,274 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b981a301-7e74-4f43-8c36-00ef30fc34bf" name="Changes" comment="added the foundation of  AchievementSection and Ui components .over all only need to add styles to finish the website perfectly.">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/IMPROVEMENTS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/components/AboutSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/components/DemoVideo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b981a301-7e74-4f43-8c36-00ef30fc34bf" name="Changes" comment="did major styling in the websites">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/loose-envify" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/loose-envify.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/loose-envify.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/CREDITS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/Gruntfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Chromebook/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/HtcOneM8/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/HtcOneM8/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/HuaweiP8/landscape_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/HuaweiP8/portrait_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Lumia920/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Lumia920/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Lumia930/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Lumia930/landscape_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Lumia930/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Lumia930/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Macbook/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Macbook/portrait_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Macbook/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Macbook2015/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Macbook2015/portrait_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Macbook2015/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/MacbookPro/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Pixel/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Pixel/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/SamsungTV/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/Surface/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/SurfacePro3/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/SurfaceStudio/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/apple_watch/edition/gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/apple_watch/edition/rose.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/apple_watch/sport/black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/apple_watch/sport/blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/apple_watch/sport/green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/apple_watch/sport/red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/apple_watch/sport/white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/apple_watch/watch/metal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/apple_watch/watch/steel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyS3/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyS3/landscape_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyS3/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyS3/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyS5/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyS5/landscape_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyS5/landscape_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyS5/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyS5/portrait_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyS5/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyTab4/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/galaxyTab4/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iMac/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPad/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPad/landscape_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPad/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPad/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadAir2/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadAir2/landscape_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadAir2/landscape_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadAir2/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadAir2/portrait_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadAir2/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadPro/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadPro/landscape_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadPro/landscape_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadPro/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadPro/portrait_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPadPro/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone5/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone5/landscape_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone5/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone5/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6/landscape_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6/landscape_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6/portrait_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6Hand/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6Hand/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6Plus/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6Plus/landscape_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6Plus/landscape_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6Plus/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6Plus/portrait_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone6Plus/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7/iPhone7_red.ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7/landscape_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7/landscape_pink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7/landscape_red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7/landscape_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7/portrait_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7/portrait_pink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7/portrait_red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7Hand/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhone7Hand_2/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhoneSE/landscape_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhoneSE/landscape_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhoneSE/landscape_pink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhoneSE/landscape_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhoneSE/portrait_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhoneSE/portrait_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhoneSE/portrait_pink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/device-mockups/iPhoneSE/portrait_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/dist/device-mockups.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/dist/device-mockups.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/src/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/src/scss/device-mockups.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/src/scss/devices.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/html5-device-mockups/src/scss/general.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-tokens/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-tokens/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-tokens/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-tokens/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-tokens/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/cli.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/loose-envify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/replace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-assign/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-assign/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-assign/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-assign/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/checkPropTypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/factory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/factoryWithThrowingShims.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/factoryWithTypeCheckers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/lib/ReactPropTypesSecret.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/lib/has.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/prop-types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/prop-types.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/index.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/index.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/index.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/device-emulator.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/device-emulator.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/device-emulator.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/device-emulator.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/device-selector.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/device-selector.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/device-selector.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/device-selector.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/marvel-devices.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/marvel-devices.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/marvel-devices.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/dist/styles/marvel-devices.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-frameset/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-frameset/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-mockups/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-mockups/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-mockups/dist/index.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-mockups/dist/index.es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-mockups/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-mockups/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-device-mockups/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-device-mockups/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/build-info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.browser.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.node.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.node.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-test-utils.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-test-utils.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/profiling.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/server.browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/server.node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/test-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-server.browser.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-server.browser.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-test-utils.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-test-utils.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/build-info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/cjs/react-is.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/cjs/react-is.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/umd/react-is.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/umd/react-is.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/build-info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react-jsx-dev-runtime.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react-jsx-dev-runtime.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react-jsx-dev-runtime.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react-jsx-runtime.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react-jsx-runtime.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react-jsx-runtime.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/jsx-dev-runtime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/jsx-runtime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/umd/react.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/umd/react.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/umd/react.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/build-info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-tracing.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-tracing.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-tracing.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-unstable_post_task.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-unstable_post_task.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/tracing-profiling.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/tracing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler-tracing.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler-tracing.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler-tracing.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler-unstable_mock.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler-unstable_mock.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/unstable_mock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/unstable_post_task.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/website/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/AchievementSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/AchievementSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/src/components/FeatureSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/FeatureSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/src/components/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/HeroSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/PricingSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/PricingSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/ui/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/ui/button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,7 +101,7 @@
       <workItem from="1762415790603" duration="150000" />
       <workItem from="1762415984909" duration="173000" />
       <workItem from="1762416178792" duration="2070000" />
-      <workItem from="1762436324327" duration="4248000" />
+      <workItem from="1762436324327" duration="8368000" />
     </task>
     <task id="LOCAL-00001" summary="add initial project structure with essential files and configurations">
       <option name="closed" value="true" />
@@ -390,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761859348200</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="did major styling in the websites">
+      <option name="closed" value="true" />
+      <created>1762441383538</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762441383538</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,6 +156,7 @@
     <MESSAGE value="add initial project structure with essential files and configurations" />
     <MESSAGE value="completed basic layout and section (pricing , footer and feature) only need to style and add relevent data." />
     <MESSAGE value="added the foundation of  AchievementSection and Ui components .over all only need to add styles to finish the website perfectly." />
-    <option name="LAST_COMMIT_MESSAGE" value="added the foundation of  AchievementSection and Ui components .over all only need to add styles to finish the website perfectly." />
+    <MESSAGE value="did major styling in the websites" />
+    <option name="LAST_COMMIT_MESSAGE" value="did major styling in the websites" />
   </component>
 </project>
