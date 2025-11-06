@@ -34,17 +34,17 @@ export function EditProfile({ profile, setProfile, trigger }) {
     return (
         <Dialog open={isOpen} onOpenChange={handleOpenChange}>
             <DialogTrigger asChild>{trigger}</DialogTrigger>
-            <DialogContent className="sm:max-w-[425px]">
+            <DialogContent className="sm:max-w-[425px] bg-gray-900 border-white/20 text-white">
                 <DialogHeader>
-                    <DialogTitle>Edit Profile</DialogTitle>
-                    <DialogDescription>
+                    <DialogTitle className="text-2xl font-bold text-white">Edit Profile</DialogTitle>
+                    <DialogDescription className="text-gray-400">
                         Update your details and click save when done.
                     </DialogDescription>
                 </DialogHeader>
 
-                <div className="grid gap-4 py-4">
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <Label htmlFor="fullName" className="text-right">
+                <div className="grid gap-6 py-4">
+                    <div className="grid gap-2">
+                        <Label htmlFor="fullName" className="text-gray-300 font-medium">
                             Full Name
                         </Label>
                         <Input
@@ -52,12 +52,12 @@ export function EditProfile({ profile, setProfile, trigger }) {
                             value={formData.fullName}
                             placeholder="Enter your full name"
                             onChange={handleChange}
-                            className="col-span-3"
+                            className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-purple-500/50 focus:ring-purple-500/20"
                         />
                     </div>
 
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <Label htmlFor="email" className="text-right">
+                    <div className="grid gap-2">
+                        <Label htmlFor="email" className="text-gray-300 font-medium">
                             Email
                         </Label>
                         <Input
@@ -65,13 +65,18 @@ export function EditProfile({ profile, setProfile, trigger }) {
                             value={formData.email}
                             placeholder="Enter your email"
                             onChange={handleChange}
-                            className="col-span-3"
+                            className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-purple-500/50 focus:ring-purple-500/20"
                         />
                     </div>
                 </div>
 
                 <DialogFooter>
-                    <Button onClick={handleSave}>Save changes</Button>
+                    <Button
+                        onClick={handleSave}
+                        className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                    >
+                        Save changes
+                    </Button>
                 </DialogFooter>
             </DialogContent>
         </Dialog>
