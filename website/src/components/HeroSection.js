@@ -2,7 +2,7 @@
 
 import { Download, Play, Sparkles, BookOpen, Eye } from 'lucide-react'
 import Button from '@/components/ui/button'
-import { IPhoneX } from '@/components/ui/device-mockup'
+import { IPhoneX } from 'react-device-mockups'
 import { DemoVideo } from '@/components/DemoVideo'
 import { useEffect, useState } from 'react'
 
