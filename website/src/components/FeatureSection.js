@@ -1,125 +1,210 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import {
-    IconAdjustmentsBolt,
-    IconCloud,
-    IconCurrencyDollar,
-    IconEaseInOut,
+    IconBrain,
+    IconBolt,
+    IconEye,
+    IconBook,
+    IconSparkles,
+    IconRocket,
+    IconShield,
     IconHeart,
-    IconHelp,
-    IconRouteAltLeft,
-    IconTerminal2,
 } from "@tabler/icons-react";
+import { motion } from "framer-motion";
 
 export function FeatureSection() {
     const features = [
         {
-            title: "Built for developers",
+            title: "AI-Powered Visualization",
             description:
-                "Built for engineers, developers, dreamers, thinkers and doers.",
-            icon: <IconTerminal2 />,
+                "Advanced AI algorithms transform text into stunning visual representations in real-time as you read.",
+            icon: <IconBrain />,
+            gradient: "from-purple-500 to-pink-500",
+            delay: 0
         },
         {
-            title: "Ease of use",
+            title: "Lightning Fast",
             description:
-                "It's as easy as using an Apple, and as expensive as buying one.",
-            icon: <IconEaseInOut />,
+                "Experience instant visualizations with our optimized processing engine. No lag, just pure reading flow.",
+            icon: <IconBolt />,
+            gradient: "from-yellow-500 to-orange-500",
+            delay: 0.1
         },
         {
-            title: "Pricing like no other",
+            title: "Smart Recognition",
             description:
-                "Our prices are best in the market. No cap, no lock, no credit card required.",
-            icon: <IconCurrencyDollar />,
+                "Automatically detects and visualizes complex concepts, making difficult topics easy to understand.",
+            icon: <IconEye />,
+            gradient: "from-blue-500 to-cyan-500",
+            delay: 0.2
         },
         {
-            title: "100% Uptime guarantee",
-            description: "We just cannot be taken down by anyone.",
-            icon: <IconCloud />,
-        },
-        {
-            title: "Multi-tenant Architecture",
+            title: "Multiple Formats",
             description:
-                "You can simply share passwords instead of buying new seats",
-            icon: <IconRouteAltLeft />,
+                "Support for books, articles, PDFs, and web content. Read anywhere, visualize everywhere.",
+            icon: <IconBook />,
+            gradient: "from-green-500 to-emerald-500",
+            delay: 0.3
         },
         {
-            title: "24/7 Customer Support",
+            title: "Personalized Learning",
             description:
-                "We are available 100% of the time. At least our AI Agents are.",
-            icon: <IconHelp />,
+                "AI adapts to your reading style and preferences, creating visualizations that work best for you.",
+            icon: <IconSparkles />,
+            gradient: "from-pink-500 to-rose-500",
+            delay: 0.4
         },
         {
-            title: "Money back guarantee",
+            title: "Blazing Performance",
             description:
-                "If you do not like EveryAI, we will convince you to like us.",
-            icon: <IconAdjustmentsBolt />,
+                "Built with cutting-edge technology for smooth, lag-free experience even with complex content.",
+            icon: <IconRocket />,
+            gradient: "from-indigo-500 to-purple-500",
+            delay: 0.5
         },
         {
-            title: "And everything else",
-            description: "I just ran out of copy ideas. Accept my sincere apologies",
+            title: "Privacy First",
+            description:
+                "Your reading data stays private. All processing happens securely with enterprise-grade encryption.",
+            icon: <IconShield />,
+            gradient: "from-red-500 to-orange-500",
+            delay: 0.6
+        },
+        {
+            title: "Made with Care",
+            description:
+                "Designed by educators and loved by learners. Every feature crafted to enhance your reading journey.",
             icon: <IconHeart />,
+            gradient: "from-purple-500 to-pink-500",
+            delay: 0.7
         },
     ];
 
     return (
-        <section id="feature"className="w-full py-20 px-4 bg-black">
-            <div className="max-w-7xl mx-auto">
-                {/* Header */}
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-                        Features Of <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Visualit</span>
-                    </h2>
-                    <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                        Discover the powerful features that make Visualit the perfect choice for your needs
-                    </p>
-                </div>
+        <section id="feature" className="w-full py-24 px-4 bg-black relative overflow-hidden">
+            {/* Background Effects */}
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl"></div>
 
-                {/* Features Grid - 16:9 aspect ratio container */}
-                <div className="w-full aspect-video">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 h-full">
-                        {features.map((feature, index) => (
-                            <Feature key={feature.title} feature={feature} index={index} />
-                        ))}
+            <div className="max-w-7xl mx-auto relative z-10">
+                {/* Header */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center mb-20"
+                >
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full backdrop-blur-sm mb-6">
+                        <IconSparkles className="w-4 h-4 text-purple-400" />
+                        <span className="text-sm text-purple-300 font-medium">Powerful Features</span>
                     </div>
+                    <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+                        Everything You Need to{" "}
+                        <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Transform Reading
+                        </span>
+                    </h2>
+                    <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
+                        Powerful AI-driven features designed to make your reading experience more visual,
+                        engaging, and memorable than ever before.
+                    </p>
+                </motion.div>
+
+                {/* Features Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {features.map((feature, index) => (
+                        <FeatureCard key={feature.title} feature={feature} index={index} />
+                    ))}
                 </div>
             </div>
         </section>
     );
 }
 
-function Feature({ feature, index }) {
-    const { title, description, icon } = feature;
+function FeatureCard({ feature, index }) {
+    const [isHovered, setIsHovered] = useState(false);
+    const { title, description, icon, gradient, delay } = feature;
 
     return (
-        <div
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: delay }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
             className={cn(
-                "flex flex-col lg:border-r py-10 relative group/feature dark:border-neutral-800",
-                (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
-                index < 4 && "lg:border-b dark:border-neutral-800"
+                "group relative bg-gradient-to-br from-gray-900/50 to-gray-900/30 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:border-white/30 transition-all duration-500 cursor-pointer overflow-hidden",
+                "hover:shadow-2xl hover:-translate-y-2"
             )}
         >
-            {index < 4 ? (
-                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
-            ) : (
-                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
-            )}
+            {/* Gradient Overlay on Hover */}
+            <div className={cn(
+                "absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-500",
+                gradient
+            )}></div>
 
-            <div className="mb-4 relative z-10 px-10 text-neutral-600 dark:text-neutral-400">
-                {icon}
-            </div>
+            {/* Animated Border Glow */}
+            <div className={cn(
+                "absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl",
+                `bg-gradient-to-br ${gradient}`
+            )}></div>
 
-            <div className="text-lg font-bold mb-2 relative z-10 px-10">
-                <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
-                <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
+            {/* Content */}
+            <div className="relative z-10">
+                {/* Icon */}
+                <div className={cn(
+                    "mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br transition-all duration-500",
+                    gradient,
+                    "group-hover:scale-110 group-hover:rotate-6"
+                )}>
+                    <div className="text-white text-3xl transform group-hover:scale-110 transition-transform duration-500">
+                        {icon}
+                    </div>
+                </div>
+
+                {/* Title */}
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text transition-all duration-500"
+                    style={isHovered ? { backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))` } : {}}
+                >
                     {title}
-                </span>
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-500">
+                    {description}
+                </p>
+
+                {/* Hover Arrow */}
+                <div
+                    className={cn(
+                        "mt-6 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-0 group-hover:translate-x-2",
+                        "text-transparent bg-gradient-to-r bg-clip-text",
+                        gradient
+                    )}
+                >
+                    <span className="font-semibold text-sm">Learn more</span>
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                </div>
             </div>
 
-            <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
-                {description}
-            </p>
-        </div>
+            {/* Floating Particles */}
+            <motion.div
+                animate={isHovered ? {
+                    scale: [1, 1.2, 1],
+                    opacity: [0.3, 0.6, 0.3],
+                } : {}}
+                transition={{ duration: 2, repeat: Infinity }}
+                className={cn(
+                    "absolute -top-10 -right-10 w-40 h-40 rounded-full blur-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500",
+                    `bg-gradient-to-br ${gradient}`
+                )}
+            ></motion.div>
+        </motion.div>
     );
 }
 

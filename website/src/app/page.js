@@ -4,6 +4,7 @@ import FeatureSection from "@/components/FeatureSection"
 import PricingSection from "@/components/PricingSection"
 import {Footer} from "@/components/Footer";
 import AchievementSection from "@/components/AchievementSection";
+import AboutSection from "@/components/AboutSection";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <FeatureSection />
             <PricingSection />
             <AchievementSection />
+            <AboutSection />
             <Footer />
         </main>
     )

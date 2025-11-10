@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b981a301-7e74-4f43-8c36-00ef30fc34bf" name="Changes" comment="added the foundation of  AchievementSection and Ui components .over all only need to add styles to finish the website perfectly.">
-      <change afterPath="$PROJECT_DIR$/website/src/components/AchievementSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/components/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/components/ui/dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/components/ui/edit-profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/components/ui/label.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/components/ui/textarea.js" afterDir="false" />
+    <list default="true" id="b981a301-7e74-4f43-8c36-00ef30fc34bf" name="Changes" comment="refactor: enhance AchievementSection with new awards and improved layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/FeatureSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/FeatureSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/HeroSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/PricingSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/PricingSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/ui/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/ui/input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/ui/edit-profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/ui/edit-profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -47,7 +37,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Vikkash2003/visualit_web.git&quot;,
-    &quot;accountId&quot;: &quot;328ff137-d052-41fd-8e55-5edaba986341&quot;
+    &quot;accountId&quot;: &quot;2ffe3434-7db6-4ee9-b184-f3e6faeb3789&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -55,7 +45,6 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="34nRILLon2FQOmzn03a3lYVj1oq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,9 +52,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "styling",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/visualit_web",
     "node.js.detected.package.eslint": "true",
@@ -74,6 +68,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "show.migrate.to.gradle.popup": "false",
+    "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -86,8 +81,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
       </set>
     </attachedChunks>
   </component>
@@ -101,6 +96,10 @@
       <updated>1761847276295</updated>
       <workItem from="1761847282054" duration="9512000" />
       <workItem from="1761919757851" duration="4766000" />
+      <workItem from="1762415790603" duration="150000" />
+      <workItem from="1762415984909" duration="173000" />
+      <workItem from="1762416178792" duration="2070000" />
+      <workItem from="1762436324327" duration="10946000" />
     </task>
     <task id="LOCAL-00001" summary="add initial project structure with essential files and configurations">
       <option name="closed" value="true" />
@@ -126,7 +125,31 @@
       <option name="project" value="LOCAL" />
       <updated>1761859348200</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="did major styling in the websites">
+      <option name="closed" value="true" />
+      <created>1762441383538</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762441383538</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor: update styling and structure in Feature and Hero sections">
+      <option name="closed" value="true" />
+      <created>1762446942708</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762446942708</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactor: enhance AchievementSection with new awards and improved layout">
+      <option name="closed" value="true" />
+      <created>1762448912285</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762448912285</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +170,9 @@
     <MESSAGE value="add initial project structure with essential files and configurations" />
     <MESSAGE value="completed basic layout and section (pricing , footer and feature) only need to style and add relevent data." />
     <MESSAGE value="added the foundation of  AchievementSection and Ui components .over all only need to add styles to finish the website perfectly." />
-    <option name="LAST_COMMIT_MESSAGE" value="added the foundation of  AchievementSection and Ui components .over all only need to add styles to finish the website perfectly." />
+    <MESSAGE value="did major styling in the websites" />
+    <MESSAGE value="refactor: update styling and structure in Feature and Hero sections" />
+    <MESSAGE value="refactor: enhance AchievementSection with new awards and improved layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: enhance AchievementSection with new awards and improved layout" />
   </component>
 </project>
