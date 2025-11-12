@@ -1,19 +1,19 @@
 import Navigation from '@/components/Navigation'
 import HeroSection from '@/components/HeroSection'
 import FeatureSection from "@/components/FeatureSection"
+import AchievementSection from "@/components/AchievementSection"
 import PricingSection from "@/components/PricingSection"
-import {Footer} from "@/components/Footer";
-import AchievementSection from "@/components/AchievementSection";
-import AboutSection from "@/components/AboutSection";
+import AboutSection from "@/components/AboutSection"
+import {Footer} from "@/components/Footer"
 
 export default function Home() {
     return (
-        <main className="bg-black text-white min-h-screen">
+        <main className="min-h-screen">
             <Navigation />
             <HeroSection />
             <FeatureSection />
-            <PricingSection />
             <AchievementSection />
+            <PricingSection />
             <AboutSection />
             <Footer />
         </main>

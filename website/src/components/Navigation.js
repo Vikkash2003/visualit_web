@@ -1,54 +1,59 @@
 'use client'
 
 import { useState } from 'react'
-import Button from '@/components/ui/button'
-import { EditProfile } from '@/components/ui/edit-profile'
+import Image from 'next/image'
+import { contentData } from '@/lib/contentData'
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const [profile, setProfile] = useState({
-        fullName: "",
-        email: "",
-    })
 
-    const navItems = ['Home','Feature','Pricing','Achievement','About']
+    const navItems = contentData.navLinks
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/50 border-b border-white/10">
-            <div className="max-w-screen-2xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
-                <div className="flex items-center justify-between h-16 md:h-20">
-                    {/* Logo */}
-                    <div className="text-white text-xl sm:text-2xl font-bold tracking-tight flex items-center gap-2">
-                        <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
-                            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                            </svg>
-                        </div>
-                        <span>Visualit</span>
-                    </div>
-
-                    {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
-                        {navItems.map((item) => (
+        <nav className="fixed top-12 left-0 right-0 z-50 px-6">
+            <div className="max-w-5xl mx-auto flex flex-col items-center relative">
+                {/* Pill-shaped Navigation Bar */}
+                <div className="w-full grid items-center backdrop-blur-xl bg-black/80 border border-white/10 rounded-full py-3 px-4 shadow-2xl shadow-black/50 relative" style={{ gridTemplateColumns: '1fr auto 1fr' }}>
+                    {/* Left Navigation Links - Home, Feature, Achievement */}
+                    <div className="hidden md:flex items-center justify-evenly">
+                        {navItems.slice(0, 3).map((item) => (
                             <a
-                                key={item}
-                                href={`#${item.toLowerCase()}`}
-                                className="relative text-white hover:text-gray-300 transition-colors px-3 lg:px-4 py-2 text-sm lg:text-base font-medium group"
+                                key={item.title}
+                                href={item.href}
+                                className="text-white hover:text-[#1DB954] transition-colors text-base font-medium whitespace-nowrap"
                             >
-                                {item}
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 ease-out group-hover:w-full"></span>
+                                {item.title}
                             </a>
                         ))}
-                        <EditProfile
-                            profile={profile}
-                            setProfile={setProfile}
-                            trigger={
-                                <Button variant="outline" className="ml-2 text-sm lg:text-base">
-                                    Subscription
-                                </Button>
-                            }
+                    </div>
+
+                    {/* Center Logo Space - maintains the grid spacing */}
+                    <div className="flex items-center justify-center flex-shrink-0 w-16">
+                        {/* Empty space to maintain grid layout */}
+                    </div>
+
+                    {/* Logo - Floating above/outside the navigation bar */}
+                    <div className="absolute left-1/2 -translate-x-1/2 -top-10 z-10">
+                        <Image 
+                            src="/visualit-logo.png" 
+                            alt="VisuaLit Logo" 
+                            width={110} 
+                            height={110}
+                            className="object-contain hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_15px_rgba(29,185,84,0.5)]"
                         />
+                    </div>
+
+                    {/* Right Navigation Links - Pricing, About, Subscription */}
+                    <div className="hidden md:flex items-center justify-evenly">
+                        {navItems.slice(3).map((item) => (
+                            <a
+                                key={item.title}
+                                href={item.href}
+                                className="text-white hover:text-[#1DB954] transition-colors text-base font-medium whitespace-nowrap"
+                            >
+                                {item.title}
+                            </a>
+                        ))}
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -77,29 +82,18 @@ const Navigation = () => {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="md:hidden py-4 border-t border-gray-800">
+                    <div className="md:hidden mt-2 backdrop-blur-xl bg-black/80 border border-white/10 rounded-3xl p-4 shadow-2xl shadow-black/50 w-full">
                         <div className="flex flex-col space-y-2">
                             {navItems.map((item) => (
                                 <a
-                                    key={item}
-                                    href={`#${item.toLowerCase()}`}
-                                    className="text-white hover:text-gray-300 hover:bg-gray-900 transition-colors px-4 py-3 text-base font-medium rounded"
+                                    key={item.title}
+                                    href={item.href}
+                                    className="text-white hover:text-[#1DB954] hover:bg-white/5 transition-colors px-4 py-3 text-base font-medium rounded-full"
                                     onClick={() => setIsOpen(false)}
                                 >
-                                    {item}
+                                    {item.title}
                                 </a>
                             ))}
-                            <div className="px-4 pt-2">
-                                <EditProfile
-                                    profile={profile}
-                                    setProfile={setProfile}
-                                    trigger={
-                                        <Button variant="outline" className="w-full">
-                                            Subscription
-                                        </Button>
-                                    }
-                                />
-                            </div>
                         </div>
                     </div>
                 )}

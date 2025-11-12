@@ -6,46 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CheckIcon } from "lucide-react";
 import { useState } from "react";
 import Button from "@/components/ui/button";
-
-export const PLANS = [
-    {
-        id: "standard",
-        title: "Starter",
-        desc: "Ideal for developers and indie hackers building with Ruixen UI for personal or small commercial projects.",
-        monthlyPrice: 29,
-        annuallyPrice: 306,
-        buttonText: "Get Starter Access",
-        features: [
-            "Access to 50+ UI components",
-            "Tailwind-compatible styling",
-            "Basic theming support",
-            "Starter templates (blog, dashboard)",
-            "1 project license",
-            "Community support",
-            "Early access to updates",
-        ],
-        link: "#",
-    },
-    {
-        id: "mastermind",
-        title: "Pro",
-        desc: "Designed for teams and startups who need advanced UI components, theme customization, and premium support.",
-        monthlyPrice: 79,
-        annuallyPrice: 834,
-        badge: "Best Value",
-        buttonText: "Upgrade to Pro",
-        features: [
-            "Access to 100+ production-grade components",
-            "Advanced theming & dark mode",
-            "Code snippets & layout presets",
-            "Figma design system access",
-            "Commercial use for up to 10 projects",
-            "Priority GitHub issue support",
-            "Team collaboration tools",
-        ],
-        link: "#",
-    },
-];
+import { contentData } from "@/lib/contentData";
 
 export default function PricingSection() {
     const [billPlan, setBillPlan] = useState("monthly");
@@ -59,15 +20,15 @@ export default function PricingSection() {
             <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
                 <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-6 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
-                        Simple Pricing
+                        {contentData.pricing.title}
                     </h2>
                     <p className="text-base md:text-lg text-center text-gray-400 mt-6">
-                        Choose the perfect plan for your needs. Streamline your creative process with AI.
+                        {contentData.pricing.subtitle}
                     </p>
                 </div>
 
                 <div className="flex items-center justify-center space-x-4 mt-6">
-                    <span className="text-base font-medium">Monthly</span>
+                    <span className="text-base font-medium">{contentData.pricing.billingToggle.monthly}</span>
                     <button
                         onClick={handleSwitch}
                         className="relative rounded-full focus:outline-none"
@@ -80,12 +41,12 @@ export default function PricingSection() {
                             )}
                         />
                     </button>
-                    <span className="text-base font-medium">Annually</span>
+                    <span className="text-base font-medium">{contentData.pricing.billingToggle.annually}</span>
                 </div>
             </div>
 
-            <div className="grid w-full grid-cols-1 lg:grid-cols-2 pt-8 lg:pt-12 gap-4 lg:gap-6 max-w-4xl mx-auto">
-                {PLANS.map((plan) => (
+            <div className="flex flex-col md:flex-row w-full pt-8 lg:pt-12 gap-4 lg:gap-6 max-w-3xl mx-auto justify-center items-stretch">
+                {contentData.pricing.plans.map((plan) => (
                     <Plan key={plan.id} plan={plan} billPlan={billPlan} />
                 ))}
             </div>
@@ -97,7 +58,7 @@ function Plan({ plan, billPlan }) {
     return (
         <div
             className={cn(
-                "flex flex-col relative rounded-2xl lg:rounded-3xl transition-all bg-black/50 backdrop-blur items-start w-full border border-white/10 overflow-hidden hover:border-white/20 hover:shadow-lg hover:shadow-purple-500/10",
+                "flex flex-col relative rounded-2xl transition-all bg-black/50 backdrop-blur items-start w-full md:w-1/2 md:max-w-sm border border-white/10 overflow-hidden hover:border-white/20 hover:shadow-lg hover:shadow-purple-500/10 h-auto",
                 plan.title === "Pro" && "border-purple-500/50 shadow-lg shadow-purple-500/20"
             )}
         >
@@ -105,11 +66,11 @@ function Plan({ plan, billPlan }) {
                 <div className="absolute top-1/2 inset-x-0 mx-auto h-12 -rotate-45 w-full bg-purple-600 rounded-2xl lg:rounded-3xl blur-[8rem] -z-10"></div>
             )}
 
-            <div className="p-4 md:p-8 flex rounded-t-2xl lg:rounded-t-3xl flex-col items-start w-full relative">
-                <h2 className="font-medium text-xl text-white pt-5">
+            <div className="p-6 flex rounded-t-2xl flex-col items-start w-full relative">
+                <h2 className="font-bold text-2xl text-white">
                     {plan.title}
                 </h2>
-                <h3 className="mt-3 text-2xl font-bold md:text-5xl text-white">
+                <h3 className="mt-1 text-3xl font-bold md:text-4xl text-[#1DB954]">
                     <NumberFlow
                         value={
                             billPlan === "monthly" ? plan.monthlyPrice : plan.annuallyPrice
@@ -125,13 +86,13 @@ function Plan({ plan, billPlan }) {
                         }}
                     />
                 </h3>
-                <p className="text-sm md:text-base text-gray-400 mt-2">
-                    {plan.desc}
+                <p className="text-sm text-gray-400 mt-2">
+                    {plan.description}
                 </p>
             </div>
 
-            <div className="flex flex-col items-start w-full px-4 py-2 md:px-8">
-                <Button className="w-full text-base py-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all hover:scale-105">
+            <div className="flex flex-col items-start w-full px-6 py-2">
+                <Button className="w-full text-base py-5 bg-gradient-to-r from-[#1DB954] to-green-600 hover:from-[#1DB954]/90 hover:to-green-600/90 transition-all hover:scale-105 shadow-lg shadow-[#1DB954]/20 hover:shadow-[#1DB954]/40">
                     {plan.buttonText}
                 </Button>
                 <div className="h-8 overflow-hidden w-full mx-auto">
@@ -142,24 +103,24 @@ function Plan({ plan, billPlan }) {
                             animate={{ y: 0, opacity: 1 }}
                             exit={{ y: -20, opacity: 0 }}
                             transition={{ duration: 0.2, ease: "easeOut" }}
-                            className="text-sm text-center text-gray-400 mt-3 mx-auto block"
+                            className="text-xs text-center text-gray-400 mt-2 mx-auto block"
                         >
                             {billPlan === "monthly"
-                                ? "Billed monthly"
-                                : "Billed in one annual payment"}
+                                ? plan.billingNote.monthly
+                                : plan.billingNote.annually}
                         </motion.span>
                     </AnimatePresence>
                 </div>
             </div>
 
-            <div className="flex flex-col items-start w-full p-5 mb-4 ml-1 gap-y-2">
-                <span className="text-base text-left mb-2 font-semibold">Includes:</span>
+            <div className="flex flex-col items-start w-full px-6 pb-6 gap-y-2">
+                <span className="text-base text-left mb-2 font-semibold text-[#1DB954]">Includes:</span>
                 {plan.features.map((feature, index) => (
                     <div
                         key={index}
                         className="flex items-center justify-start gap-2 text-gray-300"
                     >
-                        <div className="flex items-center justify-center text-purple-400">
+                        <div className="flex items-center justify-center text-[#1DB954]">
                             <CheckIcon className="size-5" />
                         </div>
                         <span className="text-sm">{feature}</span>

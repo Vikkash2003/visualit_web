@@ -12,81 +12,23 @@ import {
     IconHeart,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
+import { contentData } from "@/lib/contentData";
 
 export function FeatureSection() {
-    const features = [
-        {
-            title: "AI-Powered Visualization",
-            description:
-                "Advanced AI algorithms transform text into stunning visual representations in real-time as you read.",
-            icon: <IconBrain />,
-            gradient: "from-purple-500 to-pink-500",
-            delay: 0
-        },
-        {
-            title: "Lightning Fast",
-            description:
-                "Experience instant visualizations with our optimized processing engine. No lag, just pure reading flow.",
-            icon: <IconBolt />,
-            gradient: "from-yellow-500 to-orange-500",
-            delay: 0.1
-        },
-        {
-            title: "Smart Recognition",
-            description:
-                "Automatically detects and visualizes complex concepts, making difficult topics easy to understand.",
-            icon: <IconEye />,
-            gradient: "from-blue-500 to-cyan-500",
-            delay: 0.2
-        },
-        {
-            title: "Multiple Formats",
-            description:
-                "Support for books, articles, PDFs, and web content. Read anywhere, visualize everywhere.",
-            icon: <IconBook />,
-            gradient: "from-green-500 to-emerald-500",
-            delay: 0.3
-        },
-        {
-            title: "Personalized Learning",
-            description:
-                "AI adapts to your reading style and preferences, creating visualizations that work best for you.",
-            icon: <IconSparkles />,
-            gradient: "from-pink-500 to-rose-500",
-            delay: 0.4
-        },
-        {
-            title: "Blazing Performance",
-            description:
-                "Built with cutting-edge technology for smooth, lag-free experience even with complex content.",
-            icon: <IconRocket />,
-            gradient: "from-indigo-500 to-purple-500",
-            delay: 0.5
-        },
-        {
-            title: "Privacy First",
-            description:
-                "Your reading data stays private. All processing happens securely with enterprise-grade encryption.",
-            icon: <IconShield />,
-            gradient: "from-red-500 to-orange-500",
-            delay: 0.6
-        },
-        {
-            title: "Made with Care",
-            description:
-                "Designed by educators and loved by learners. Every feature crafted to enhance your reading journey.",
-            icon: <IconHeart />,
-            gradient: "from-purple-500 to-pink-500",
-            delay: 0.7
-        },
-    ];
+    // Icon mapping
+    const iconMap = {
+        'Brain': IconBrain,
+        'Bolt': IconBolt,
+        'Eye': IconEye,
+        'Book': IconBook,
+        'Sparkles': IconSparkles,
+        'Rocket': IconRocket,
+        'Shield': IconShield,
+        'Heart': IconHeart
+    };
 
     return (
-        <section id="feature" className="w-full py-24 px-4 bg-black relative overflow-hidden">
-            {/* Background Effects */}
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl"></div>
-
+        <section id="feature" className="w-full py-24 px-4 relative overflow-hidden">
             <div className="max-w-7xl mx-auto relative z-10">
                 {/* Header */}
                 <motion.div
@@ -98,24 +40,23 @@ export function FeatureSection() {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full backdrop-blur-sm mb-6">
                         <IconSparkles className="w-4 h-4 text-purple-400" />
-                        <span className="text-sm text-purple-300 font-medium">Powerful Features</span>
+                        <span className="text-sm text-purple-300 font-medium">{contentData.features.badge.text}</span>
                     </div>
                     <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-                        Everything You Need to{" "}
+                        {contentData.features.title.split('Transform Reading')[0]}{" "}
                         <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
                             Transform Reading
                         </span>
                     </h2>
                     <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
-                        Powerful AI-driven features designed to make your reading experience more visual,
-                        engaging, and memorable than ever before.
+                        {contentData.features.subtitle}
                     </p>
                 </motion.div>
 
                 {/* Features Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {features.map((feature, index) => (
-                        <FeatureCard key={feature.title} feature={feature} index={index} />
+                    {contentData.features.items.map((feature, index) => (
+                        <FeatureCard key={feature.title} feature={feature} index={index} iconMap={iconMap} />
                     ))}
                 </div>
             </div>
@@ -123,9 +64,11 @@ export function FeatureSection() {
     );
 }
 
-function FeatureCard({ feature, index }) {
+function FeatureCard({ feature, index, iconMap }) {
     const [isHovered, setIsHovered] = useState(false);
-    const { title, description, icon, gradient, delay } = feature;
+    const { title, description, icon, gradient } = feature;
+    const delay = index * 0.1;
+    const IconComponent = iconMap[icon];
 
     return (
         <motion.div
@@ -136,8 +79,8 @@ function FeatureCard({ feature, index }) {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className={cn(
-                "group relative bg-gradient-to-br from-gray-900/50 to-gray-900/30 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:border-white/30 transition-all duration-500 cursor-pointer overflow-hidden",
-                "hover:shadow-2xl hover:-translate-y-2"
+                "group relative bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl rounded-3xl p-8 border border-[#1DB954]/30 hover:border-[#1DB954] transition-all duration-500 cursor-pointer overflow-hidden",
+                "hover:shadow-[0_0_30px_rgba(29,185,84,0.3)] hover:-translate-y-2"
             )}
         >
             {/* Gradient Overlay on Hover */}
@@ -161,14 +104,17 @@ function FeatureCard({ feature, index }) {
                     "group-hover:scale-110 group-hover:rotate-6"
                 )}>
                     <div className="text-white text-3xl transform group-hover:scale-110 transition-transform duration-500">
-                        {icon}
+                        <IconComponent />
                     </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text transition-all duration-500"
-                    style={isHovered ? { backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))` } : {}}
-                >
+                <h3 className={cn(
+                    "text-2xl font-bold mb-4 transition-all duration-500",
+                    isHovered 
+                        ? `text-transparent bg-gradient-to-r bg-clip-text ${gradient}`
+                        : "text-white"
+                )}>
                     {title}
                 </h3>
 

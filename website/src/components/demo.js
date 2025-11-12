@@ -2,12 +2,10 @@
 import { useState } from "react"
 import  Button  from "@/components/ui/button"
 import { EditProfile } from "@/components/ui/edit-profile"
+import { contentData } from "@/lib/contentData"
 
 export function Demo({ openTrigger }) {
-    const [profile, setProfile] = useState({
-        fullName: "Manoj",
-        email: "manoj@example.com",
-    })
+    const [profile, setProfile] = useState(contentData.demo.defaultProfile)
 
     return (
         <EditProfile

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Play } from 'lucide-react';
+import { contentData } from '@/lib/contentData';
 
 export function DemoVideo({ trigger }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,10 +16,10 @@ export function DemoVideo({ trigger }) {
             <DialogContent className="max-w-4xl w-full bg-black/95 border-white/20">
                 <DialogHeader>
                     <DialogTitle className="text-2xl font-bold text-white">
-                        Visualit Demo
+                        {contentData.demo.title}
                     </DialogTitle>
                     <DialogDescription className="text-gray-400">
-                        See how Visualit transforms your reading experience
+                        {contentData.demo.description}
                     </DialogDescription>
                 </DialogHeader>
                 <div className="aspect-video w-full bg-gradient-to-br from-gray-900 to-black rounded-lg flex items-center justify-center relative overflow-hidden">
@@ -28,9 +29,9 @@ export function DemoVideo({ trigger }) {
                             <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
                                 <Play className="w-10 h-10 text-white ml-1" />
                             </div>
-                            <p className="text-gray-400">Demo video coming soon</p>
+                            <p className="text-gray-400">{contentData.demo.placeholderMessage}</p>
                             <p className="text-sm text-gray-500 mt-2">
-                                Experience real-time content visualization
+                                {contentData.demo.placeholderSubtext}
                             </p>
                         </div>
                     </div>
