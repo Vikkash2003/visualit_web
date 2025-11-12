@@ -10,10 +10,14 @@ const Navigation = () => {
     const navItems = contentData.navLinks
 
     return (
-        <nav className="fixed top-12 left-0 right-0 z-50 px-6">
-            <div className="max-w-5xl mx-auto flex flex-col items-center relative">
-                {/* Pill-shaped Navigation Bar */}
-                <div className="w-full grid items-center backdrop-blur-xl bg-black/80 border border-white/10 rounded-full py-3 px-4 shadow-2xl shadow-black/50 relative" style={{ gridTemplateColumns: '1fr auto 1fr' }}>
+        <nav className="fixed top-0 left-0 right-0 z-50">
+            {/* Gradient Background - Black to Transparent */}
+            <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-black via-black/50 to-transparent pointer-events-none"></div>
+            
+            <div className="relative px-6 pt-12">
+                <div className="max-w-5xl mx-auto flex flex-col items-center relative">
+                    {/* Pill-shaped Navigation Bar */}
+                    <div className="w-full grid items-center backdrop-blur-xl bg-black/80 border border-white/10 rounded-full py-3 px-4 shadow-2xl shadow-black/50 relative" style={{ gridTemplateColumns: '1fr auto 1fr' }}>
                     {/* Left Navigation Links - Home, Feature, Achievement */}
                     <div className="hidden md:flex items-center justify-evenly">
                         {navItems.slice(0, 3).map((item) => (
@@ -33,13 +37,17 @@ const Navigation = () => {
                     </div>
 
                     {/* Logo - Floating above/outside the navigation bar */}
-                    <div className="absolute left-1/2 -translate-x-1/2 -top-10 z-10">
+                    <div className="absolute left-1/2 -translate-x-1/2 -top-5 z-10">
                         <Image 
-                            src="/visualit-logo.png" 
+                            src="/VisuaLit-Logo.png" 
                             alt="VisuaLit Logo" 
-                            width={110} 
-                            height={110}
-                            className="object-contain hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_15px_rgba(29,185,84,0.5)]"
+                            width={80} 
+                            height={80}
+                            className="object-contain hover:scale-110 transition-transform duration-300"
+                            style={{
+                                filter: 'drop-shadow(0 0 15px rgba(29, 185, 84, 0.5))',
+                                animation: 'pulse-glow 2s ease-in-out infinite'
+                            }}
                         />
                     </div>
 
@@ -97,6 +105,7 @@ const Navigation = () => {
                         </div>
                     </div>
                 )}
+            </div>
             </div>
         </nav>
     )

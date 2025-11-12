@@ -11,8 +11,8 @@ const AchievementSection = () => {
     }, []);
 
     return (
-        <section id="achievement" className="py-20 px-6 w-full relative overflow-hidden">
-            <div className="max-w-7xl mx-auto relative z-10">
+        <section id="achievement" className="min-h-screen py-20 px-6 w-full relative overflow-hidden snap-start scroll-mt-24 flex items-center">
+            <div className="max-w-7xl mx-auto relative z-10 w-full">
                 {/* Title */}
                 <h2
                     className={`text-4xl font-bold text-white text-center mb-16 transition-all duration-1000 ${

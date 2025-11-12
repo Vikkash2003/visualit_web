@@ -13,6 +13,7 @@ import {
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { contentData } from "@/lib/contentData";
+import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 export function FeatureSection() {
     // Icon mapping
@@ -28,8 +29,8 @@ export function FeatureSection() {
     };
 
     return (
-        <section id="feature" className="w-full py-24 px-4 relative overflow-hidden">
-            <div className="max-w-7xl mx-auto relative z-10">
+        <section id="feature" className="min-h-screen w-full py-24 px-4 relative overflow-hidden snap-start scroll-mt-24 flex items-center">
+            <div className="max-w-7xl mx-auto relative z-10 w-full">
                 {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -78,78 +79,79 @@ function FeatureCard({ feature, index, iconMap }) {
             transition={{ duration: 0.5, delay: delay }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className={cn(
-                "group relative bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl rounded-3xl p-8 border border-[#1DB954]/30 hover:border-[#1DB954] transition-all duration-500 cursor-pointer overflow-hidden",
-                "hover:shadow-[0_0_30px_rgba(29,185,84,0.3)] hover:-translate-y-2"
-            )}
+            className="group relative"
         >
-            {/* Gradient Overlay on Hover */}
-            <div className={cn(
-                "absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-500",
-                gradient
-            )}></div>
-
-            {/* Animated Border Glow */}
-            <div className={cn(
-                "absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl",
-                `bg-gradient-to-br ${gradient}`
-            )}></div>
-
-            {/* Content */}
-            <div className="relative z-10">
-                {/* Icon */}
-                <div className={cn(
-                    "mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br transition-all duration-500",
-                    gradient,
-                    "group-hover:scale-110 group-hover:rotate-6"
-                )}>
-                    <div className="text-white text-3xl transform group-hover:scale-110 transition-transform duration-500">
-                        <IconComponent />
-                    </div>
-                </div>
-
-                {/* Title */}
-                <h3 className={cn(
-                    "text-2xl font-bold mb-4 transition-all duration-500",
-                    isHovered 
-                        ? `text-transparent bg-gradient-to-r bg-clip-text ${gradient}`
-                        : "text-white"
-                )}>
-                    {title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-500">
-                    {description}
-                </p>
-
-                {/* Hover Arrow */}
-                <div
-                    className={cn(
-                        "mt-6 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-0 group-hover:translate-x-2",
-                        "text-transparent bg-gradient-to-r bg-clip-text",
+            <div className="relative rounded-3xl border border-[#1DB954]/30 p-1 hover:-translate-y-2 transition-all duration-500 cursor-pointer">
+                <GlowingEffect
+                    spread={40}
+                    glow={true}
+                    disabled={false}
+                    proximity={80}
+                    inactiveZone={0.01}
+                    borderWidth={2}
+                    variant="green"
+                />
+                <div className="relative bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl rounded-3xl p-8 overflow-hidden">
+                    {/* Gradient Overlay on Hover */}
+                    <div className={cn(
+                        "absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-500",
                         gradient
-                    )}
-                >
-                    <span className="font-semibold text-sm">Learn more</span>
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
+                    )}></div>
+
+                    {/* Content */}
+                    <div className="relative z-10">
+                        {/* Icon */}
+                        <div className={cn(
+                            "mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br transition-all duration-500",
+                            gradient,
+                            "group-hover:scale-110 group-hover:rotate-6"
+                        )}>
+                            <div className="text-white text-3xl transform group-hover:scale-110 transition-transform duration-500">
+                                <IconComponent />
+                            </div>
+                        </div>
+
+                        {/* Title */}
+                        <h3 className={cn(
+                            "text-2xl font-bold mb-4 transition-all duration-500",
+                            isHovered 
+                                ? `text-transparent bg-gradient-to-r bg-clip-text ${gradient}`
+                                : "text-white"
+                        )}>
+                            {title}
+                        </h3>
+
+                        {/* Description */}
+                        <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-500">
+                            {description}
+                        </p>
+
+                        {/* Hover Arrow */}
+                        <div
+                            className={cn(
+                                "mt-6 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-0 group-hover:translate-x-2",
+                                "text-transparent bg-gradient-to-r bg-clip-text",
+                                gradient
+                            )}
+                        >
+                            <span className="font-semibold text-sm">Learn more</span>
+                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    {/* Floating Particles */}
+                    <motion.div
+                        animate={isHovered ? {
+                            scale: [1, 1.2, 1],
+                            opacity: [0.3, 0.6, 0.3],
+                        } : {}}
+                        transition={{ duration: 2, repeat: Infinity }}
+                        className="absolute -top-10 -right-10 w-40 h-40 rounded-full blur-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 bg-[#1DB954]/30"
+                    ></motion.div>
                 </div>
             </div>
-
-            {/* Floating Particles */}
-            <motion.div
-                animate={isHovered ? {
-                    scale: [1, 1.2, 1],
-                    opacity: [0.3, 0.6, 0.3],
-                } : {}}
-                transition={{ duration: 2, repeat: Infinity }}
-                className={cn(
-                    "absolute -top-10 -right-10 w-40 h-40 rounded-full blur-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500",
-                    `bg-gradient-to-br ${gradient}`
-                )}
-            ></motion.div>
         </motion.div>
     );
 }

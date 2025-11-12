@@ -152,7 +152,7 @@ const HeroSection = () => {
     }, [])
 
     return (
-        <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-32 pb-10">
+        <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-32 pb-10 snap-start scroll-mt-24">
             <div className="w-full max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
                 <div className="flex flex-col lg:flex-row gap-8 items-center justify-between">
                     {/* Left Phone Mockup - Hidden on mobile, visible on lg+ */}

@@ -19,11 +19,11 @@ export const contentData = {
   // Navigation Links
   navLinks: [
     { title: 'Home', href: '#home' },
-    { title: 'Feature', href: '#feature' },
-    { title: 'Pricing', href: '#pricing' },
-    { title: 'Achievement', href: '#achievement' },
     { title: 'About', href: '#about' },
-    { title: 'Subscription', href: '#subscription' }
+    { title: 'Features', href: '#feature' },
+    { title: 'Pricing', href: '#pricing' },
+    { title: 'Story', href: '#our-story' },
+    { title: 'Achievements', href: '#achievement' }
   ],
 
   // Hero Section

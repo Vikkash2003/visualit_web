@@ -3,6 +3,14 @@ import './globals.css'
 export const metadata = {
     title: 'VisuaLit - Visualize Content While Reading',
     description: 'Visualize the content when reading without imagine. Transform your reading experience with AI-powered visualization.',
+    icons: {
+        icon: [
+            { url: '/VisuaLit-Logo.png', sizes: '32x32', type: 'image/png' },
+            { url: '/VisuaLit-Logo.png', sizes: '64x64', type: 'image/png' },
+        ],
+        shortcut: '/VisuaLit-Logo.png',
+        apple: '/VisuaLit-Logo.png',
+    },
 }
 
 export default function RootLayout({ children }) {
