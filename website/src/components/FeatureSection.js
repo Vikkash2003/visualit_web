@@ -10,6 +10,11 @@ import {
     IconRocket,
     IconShield,
     IconHeart,
+    IconPhoto,
+    IconVolume,
+    IconBook2,
+    IconDeviceMobile,
+    IconFlame,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { contentData } from "@/lib/contentData";
@@ -22,10 +27,15 @@ export function FeatureSection() {
         'Bolt': IconBolt,
         'Eye': IconEye,
         'Book': IconBook,
+        'BookOpen': IconBook2,
         'Sparkles': IconSparkles,
         'Rocket': IconRocket,
         'Shield': IconShield,
-        'Heart': IconHeart
+        'Heart': IconHeart,
+        'Image': IconPhoto,
+        'SpeakerWave': IconVolume,
+        'DevicePhoneMobile': IconDeviceMobile,
+        'Fire': IconFlame
     };
 
     return (
@@ -44,9 +54,9 @@ export function FeatureSection() {
                         <span className="text-sm text-purple-300 font-medium">{contentData.features.badge.text}</span>
                     </div>
                     <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-                        {contentData.features.title.split('Transform Reading')[0]}{" "}
+                        A New Way to{" "}
                         <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
-                            Transform Reading
+                            Experience Stories
                         </span>
                     </h2>
                     <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
@@ -55,7 +65,7 @@ export function FeatureSection() {
                 </motion.div>
 
                 {/* Features Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-fr">
                     {contentData.features.items.map((feature, index) => (
                         <FeatureCard key={feature.title} feature={feature} index={index} iconMap={iconMap} />
                     ))}
@@ -79,9 +89,9 @@ function FeatureCard({ feature, index, iconMap }) {
             transition={{ duration: 0.5, delay: delay }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="group relative"
+            className="group relative h-full"
         >
-            <div className="relative rounded-3xl border border-[#1DB954]/30 p-1 hover:-translate-y-2 transition-all duration-500 cursor-pointer">
+            <div className="relative h-full rounded-3xl border border-[#1DB954]/30 p-1 hover:-translate-y-2 transition-all duration-500 cursor-pointer">
                 <GlowingEffect
                     spread={40}
                     glow={true}
@@ -91,7 +101,7 @@ function FeatureCard({ feature, index, iconMap }) {
                     borderWidth={2}
                     variant="green"
                 />
-                <div className="relative bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl rounded-3xl p-8 overflow-hidden">
+                <div className="relative h-full bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl rounded-3xl p-8 overflow-hidden flex flex-col">
                     {/* Gradient Overlay on Hover */}
                     <div className={cn(
                         "absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-500",
@@ -99,7 +109,7 @@ function FeatureCard({ feature, index, iconMap }) {
                     )}></div>
 
                     {/* Content */}
-                    <div className="relative z-10">
+                    <div className="relative z-10 flex flex-col h-full">
                         {/* Icon */}
                         <div className={cn(
                             "mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br transition-all duration-500",
@@ -122,7 +132,7 @@ function FeatureCard({ feature, index, iconMap }) {
                         </h3>
 
                         {/* Description */}
-                        <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-500">
+                        <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-500 flex-grow">
                             {description}
                         </p>
 

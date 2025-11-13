@@ -69,7 +69,7 @@ export const contentData = {
       {
         icon: "Target",
         title: "Our Mission",
-        description: "To revolutionize how people consume and understand content through cutting-edge AI visualization technology."
+        description: "To fundamentally improve reading accessibility and engagement for a new generation of readers"
       },
       {
         icon: "Users",
@@ -79,19 +79,20 @@ export const contentData = {
       {
         icon: "Zap",
         title: "Our Vision",
-        description: "Making complex information accessible and engaging for everyone through intelligent visual experiences."
+        description: "A future where reading is an engaging, accessible, and multi-sensory experience for everyone, including those who find traditional books a barrier"
       },
       {
         icon: "Award",
         title: "Our Values",
-        description: "Innovation, accessibility, and user experience are at the core of everything we build and deliver."
+        description: "Innovation, accessibility, and user engagement are at the core of everything we build, from our AI pipeline to our final user interface"
       }
     ],
     story: {
       title: "Our Story",
       paragraphs: [
-        "Founded in 2024, VisuaLit emerged from a simple observation: people learn and retain information better when they can see it. Our team of AI researchers, designers, and developers came together with a shared vision to bridge the gap between text and understanding.",
-        "Today, we're proud to serve thousands of users worldwide, helping students, professionals, and curious minds unlock the full potential of their reading experience. With cutting-edge AI technology and an unwavering commitment to user experience, we're just getting started."
+        "Our journey started in a university classroom, where we came together as friends to complete a module for our degree. The project was, at first, an academic requirement.",
+        "But as we delved into the research, we were struck by a clear problem: for many, reading is a barrier, not a gateway. Traditional books often lack the engagement needed for young minds and the accessibility required by neurodiverse individuals. Our \"project\" suddenly found its \"purpose.\"",
+          "What began as an assignment became a mission. We saw the power of combining AI-driven visuals and immersive audio to create a truly multi-sensory reading experience. When the semester ended, our team made a unanimous decision: this was too important to leave behind. We are now committed to taking VisuaLit from a concept to a platform that reimagines reading for everyone."
       ]
     }
   },
@@ -100,57 +101,57 @@ export const contentData = {
   features: {
     badge: {
       icon: "Sparkles",
-      text: "Powerful Features"
+      text: "VisuaLit Features"
     },
-    title: "Everything You Need to Transform Reading",
-    subtitle: "Powerful AI-driven features designed to make your reading experience more visual, engaging, and memorable than ever before.",
+    title: "A New Way to Experience Stories",
+    subtitle: "Our AI-driven features transform static ebooks into immersive, multi-sensory experiences designed for a new generation of readers.",
     items: [
       {
-        icon: "Brain",
-        title: "AI-Powered Visualization",
-        description: "Advanced AI algorithms transform text into stunning visual representations in real-time as you read.",
+        icon: "Image",
+        title: "AI Character & Scene Visualization",
+        description: "See your story come to life. Our AI generates stunning images of characters and key scenes as you read.",
         gradient: "from-purple-500 to-pink-500"
       },
       {
-        icon: "Bolt",
-        title: "Lightning Fast",
-        description: "Experience instant visualizations with our optimized processing engine. No lag, just pure reading flow.",
-        gradient: "from-yellow-500 to-orange-500"
-      },
-      {
-        icon: "Eye",
-        title: "Smart Recognition",
-        description: "Automatically detects and visualizes complex concepts, making difficult topics easy to understand.",
+        icon: "SpeakerWave",
+        title: "Immersive Multi-Voice Audiobooks",
+        description: "Our AI assigns unique, character-specific voices, turning your ebook into a full-cast audio drama.",
         gradient: "from-blue-500 to-cyan-500"
       },
       {
-        icon: "Book",
-        title: "Multiple Formats",
-        description: "Support for books, articles, PDFs, and web content. Read anywhere, visualize everywhere.",
+        icon: "BookOpen",
+        title: "Enhanced UI & Integrated Dictionary",
+        description: "Stay in the flow with a clean, modern interface that features an integrated dictionary for contextual learning.",
         gradient: "from-green-500 to-emerald-500"
       },
       {
-        icon: "Sparkles",
-        title: "Personalized Learning",
-        description: "AI adapts to your reading style and preferences, creating visualizations that work best for you.",
-        gradient: "from-pink-500 to-rose-500"
-      },
-      {
-        icon: "Rocket",
-        title: "Blazing Performance",
-        description: "Built with cutting-edge technology for smooth, lag-free experience even with complex content.",
-        gradient: "from-indigo-500 to-purple-500"
-      },
-      {
-        icon: "Shield",
-        title: "Privacy First",
-        description: "Your reading data stays private. All processing happens securely with enterprise-grade encryption.",
-        gradient: "from-red-500 to-orange-500"
+        icon: "DevicePhoneMobile",
+        title: "Cross-Platform (iOS & Android)",
+        description: "Built with Flutter, VisuaLit provides a seamless, native reading experience on both iOS and Android devices.",
+        gradient: "from-yellow-500 to-orange-500"
       },
       {
         icon: "Heart",
-        title: "Made with Care",
-        description: "Designed by educators and loved by learners. Every feature crafted to enhance your reading journey.",
+        title: "Designed for Accessibility",
+        description: "Our core mission is to help struggling readers and neurodivergent individuals with integrated visual and auditory aids.",
+        gradient: "from-pink-500 to-rose-500"
+      },
+      {
+        icon: "Fire",
+        title: "Reading Streaks & Gamification",
+        description: "Stay motivated and build a consistent reading habit with gamified elements like our reading streak tracker.",
+        gradient: "from-red-500 to-orange-500"
+      },
+      {
+        icon: "Brain",
+        title: "Advanced NLP Pipeline",
+        description: "Our 'agentic NLP pipeline' (using spaCy & BookNLP) accurately identifies characters and scenes to power the AI.",
+        gradient: "from-indigo-500 to-purple-500"
+      },
+      {
+        icon: "Sparkles",
+        title: "Creative 'Brainrot' Audio Format",
+        description: "A unique, creative audiobook format designed specifically to engage and capture the attention of younger generations.",
         gradient: "from-purple-500 to-pink-500"
       }
     ]
@@ -171,19 +172,19 @@ export const contentData = {
         id: 1,
         image: '/images/Cisco Technopreneur.jpg',
         title: 'Cisco Technopreneur Award',
-        description: 'Recognized for outstanding innovation in artificial intelligence and user experience design, setting new standards in the tech industry.'
+        description: 'We were honored to receive both First Place and the Investor\'s Choice Award at the Cisco Technopreneur Challenge, part of SLIIT CODEFEST. This dual recognition highlights both the technical innovation and the strong business potential of our project.'
       },
       {
         id: 2,
         image: '/images/CodeSprint.jpg',
         title: 'CodeSprint Excellence Award',
-        description: 'Awarded for exceptional growth, innovative solutions, and significant impact on the technology ecosystem and digital transformation.'
+        description: 'VisuaLit was awarded 1st Runners Up. This achievement at the IEEE Student Branch of IIT\'s competition was a powerful validation of our technology and its performance against a highly competitive field.'
       },
       {
         id: 3,
         image: '/images/CuttingEdge.jpg',
         title: 'Cutting Edge Innovation Award',
-        description: 'Honored for pioneering breakthroughs in machine learning applications and creating accessible AI solutions that empower users worldwide.'
+        description: 'In the Project Showcase category at IIT\'s Cutting Edge event, VisuaLit secured Third Place. This award recognized the quality, completeness, and innovative spirit of our early-stage project.'
       }
     ],
     stats: [
@@ -193,62 +194,63 @@ export const contentData = {
     ]
   },
 
-  // Pricing Section
-  pricing: {
-    title: "Simple Pricing",
-    subtitle: "Choose the perfect plan for your needs. Streamline your creative process with AI.",
-    billingToggle: {
-      monthly: "Monthly",
-      annually: "Annually"
+// Pricing Section
+    pricing: {
+        title: "Simple, Transparent Pricing",
+        subtitle: "Choose the plan that best fits your reading journey.",
+        billingToggle: {
+            monthly: "Monthly",
+            annually: "Annually (Save 16%)"
+        },
+        plans: [
+            {
+                id: "free",
+                title: "Free",
+                description: "Access the core reading experience and discover a new way to read.",
+                monthlyPrice: 0,
+                annuallyPrice: 0,
+                buttonText: "Start for Free",
+                billingNote: {
+                    monthly: "Always free",
+                    annually: "Always free"
+                },
+                features: [
+                    "Standard Ebook Reader",
+                    "Integrated Dictionary",
+                    "Community & Reading Streak Access",
+                    "Browse Book Marketplace",
+                    "Limited AI Visualizations",
+                    "Standard Text-to-Speech Audio"
+                ],
+                link: "#"
+            },
+            {
+                id: "premium",
+                title: "Premium",
+                description: "Unlock the full multi-sensory experience with unlimited AI generation.",
+                monthlyPrice: 6.99,
+                annuallyPrice: 69.90,
+                badge: "Best Value",
+                buttonText: "Go Premium",
+                billingNote: {
+                    monthly: "Billed monthly",
+                    annually: "Billed in one annual payment"
+                },
+                features: [
+                    "Everything in Free, plus:",
+                    "Unlimited AI Character & Scene Visualizations",
+                    "Immersive, Multi-Speaker Audiobooks",
+                    "Access to 'Brainrot' (short-form) audio content",
+                    "Customizable Visualization Styles",
+                    "Priority Feature Requests",
+                    "Offline Download for AI Content",
+                    "Priority Support",
+                    "Access to all premium features"
+                ],
+                link: "#"
+            }
+        ]
     },
-    plans: [
-      {
-        id: "standard",
-        title: "Starter",
-        description: "Ideal for developers and indie hackers building with Ruixen UI for personal or small commercial projects.",
-        monthlyPrice: 29,
-        annuallyPrice: 306,
-        buttonText: "Get Starter Access",
-        billingNote: {
-          monthly: "Billed monthly",
-          annually: "Billed in one annual payment"
-        },
-        features: [
-          "Access to 50+ UI components",
-          "Tailwind-compatible styling",
-          "Basic theming support",
-          "Starter templates (blog, dashboard)",
-          "1 project license",
-          "Community support",
-          "Early access to updates"
-        ],
-        link: "#"
-      },
-      {
-        id: "mastermind",
-        title: "Pro",
-        description: "Designed for teams and startups who need advanced UI components, theme customization, and premium support.",
-        monthlyPrice: 79,
-        annuallyPrice: 834,
-        badge: "Best Value",
-        buttonText: "Upgrade to Pro",
-        billingNote: {
-          monthly: "Billed monthly",
-          annually: "Billed in one annual payment"
-        },
-        features: [
-          "Access to 100+ production-grade components",
-          "Advanced theming & dark mode",
-          "Code snippets & layout presets",
-          "Figma design system access",
-          "Commercial use for up to 10 projects",
-          "Priority GitHub issue support",
-          "Team collaboration tools"
-        ],
-        link: "#"
-      }
-    ]
-  },
 
   // Demo Dialog
   demo: {
@@ -327,19 +329,19 @@ export const contentData = {
     contact: {
       title: "Contact Us",
       address: [
-        "123 Innovation Street",
-        "Tech City, TC 12345"
+        "435 Galle Rd",
+        "Colombo 03, Sri Lanka"
       ],
-      phone: "(123) 456-7890",
-      email: "hello@visualit.com"
+      phone: "(+94) 77 527 7495",
+      email: "raqeeb.r@visualit.live"
     },
     social: {
       title: "Follow Us",
       platforms: [
-        { name: "Facebook", icon: "Facebook", tooltip: "Follow us on Facebook" },
-        { name: "Twitter", icon: "Twitter", tooltip: "Follow us on Twitter" },
-        { name: "Instagram", icon: "Instagram", tooltip: "Follow us on Instagram" },
-        { name: "LinkedIn", icon: "Linkedin", tooltip: "Connect with us on LinkedIn" }
+        { name: "Facebook", icon: "Facebook", tooltip: "Follow us on Facebook", url: "#" },
+        { name: "Twitter", icon: "Twitter", tooltip: "Follow us on Twitter", url: "#" },
+        { name: "Instagram", icon: "Instagram", tooltip: "Follow us on Instagram", url: "https://www.instagram.com/visua.lit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+        { name: "LinkedIn", icon: "Linkedin", tooltip: "Connect with us on LinkedIn", url: "https://www.linkedin.com/company/visualit-app/posts/?feedView=all" }
       ]
     },
     copyright: "© 2025 VisuaLit. All rights reserved."
