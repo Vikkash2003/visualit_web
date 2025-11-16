@@ -3,3 +3,8 @@
 [00:00:02.923] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:00:03.788] Browser LOG     contentData loaded: {"heroTitle":{"line1":"Read.","line2":"Visualize.","line3":"Understand."}}
 [00:00:08.263] Server  LOG      ✓ Compiled in 30ms
+[01:23:36.461] Server  LOG     contentData loaded: {}
+[01:23:36.787] Server  WARN     ⚠ Cross origin request detected from 192.168.1.28 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[01:23:36.890] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:23:36.998] Browser LOG     contentData loaded: {"heroTitle":{"line1":"Read.","line2":"Visualize.","line3":"Understand."}}
