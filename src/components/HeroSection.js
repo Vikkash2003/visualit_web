@@ -12,7 +12,7 @@ const HeroSection = () => {
                     <div className="space-y-4 text-center max-w-2xl mx-auto">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full backdrop-blur-sm">
                             <Sparkles className="w-4 h-4 text-purple-400" />
-                            <span className="text-sm text-purple-300 font-medium">AI-Powered Reading Assistant</span>
+                            <span className="text-sm text-purple-300 font-medium">AI-Powered Reading App</span>
                         </div>
 
                         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-bold leading-[1.1] tracking-tight">
@@ -22,7 +22,7 @@ const HeroSection = () => {
                         </h1>
 
                         <p className="text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl mx-auto font-light pt-2">
-                            Transform your reading experience with <span className="text-[#1DB954] font-semibold">AI-powered visualizations</span>. No more struggling to imagine complex concepts.
+                            Transform your reading experience with <span className="text-[#1DB954] font-semibold">AI-powered Visualizations and Multi Narration Audiobooks</span>. Bridging the gap between text and imagination.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -50,7 +50,7 @@ const HeroSection = () => {
                                     <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 border-2 border-black"></div>
                                     <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 border-2 border-black"></div>
                                 </div>
-                                <span>50,000+ users</span>
+                                <span>150+ users</span>
                             </div>
                             <div className="flex items-center gap-1">
                                 <span className="text-yellow-400">★★★★★</span>

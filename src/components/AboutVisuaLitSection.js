@@ -29,7 +29,7 @@ const AboutVisuaLitSection = () => {
                     }`}
                 >
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                        About <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">VisuaLit</span>
+                        Reading <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Reimagined</span>
                     </h2>
                     <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                         {contentData.about.subtitle}

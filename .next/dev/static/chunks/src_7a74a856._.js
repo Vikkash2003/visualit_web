@@ -1046,7 +1046,7 @@ const HeroSection = ()=>{
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-sm text-purple-300 font-medium",
-                                    children: "AI-Powered Reading Assistant"
+                                    children: "AI-Powered Reading App"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HeroSection.js",
                                     lineNumber: 15,
@@ -1097,13 +1097,13 @@ const HeroSection = ()=>{
                                 "Transform your reading experience with ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-[#1DB954] font-semibold",
-                                    children: "AI-powered visualizations"
+                                    children: "AI-powered Visualizations and Multi Narration Audiobooks"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HeroSection.js",
                                     lineNumber: 25,
                                     columnNumber: 68
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                ". No more struggling to imagine complex concepts."
+                                ". Bridging the gap between text and imagination."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/HeroSection.js",
@@ -1197,7 +1197,7 @@ const HeroSection = ()=>{
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: "50,000+ users"
+                                            children: "150+ users"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HeroSection.js",
                                             lineNumber: 53,
@@ -1316,14 +1316,14 @@ const AboutVisuaLitSection = ()=>{
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6",
                             children: [
-                                "About ",
+                                "Reading ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent",
-                                    children: "VisuaLit"
+                                    children: "Reimagined"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutVisuaLitSection.js",
                                     lineNumber: 32,
-                                    columnNumber: 31
+                                    columnNumber: 33
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
