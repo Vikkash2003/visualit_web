@@ -1,5 +1,7 @@
-[00:00:00.784] Server  LOG      ✓ Ready in 580ms
-[00:00:00.833] Server  WARN     ⚠ Lockfile was successfully patched, please run "npm install" to ensure @next/swc dependencies are downloaded
-[00:00:20.334] Server  WARN     ⚠ Cross origin request detected from 192.168.1.28 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:00.544] Server  LOG      ✓ Ready in 349ms
+[00:00:01.327] Server  WARN     ⚠ Cross origin request detected from 192.168.1.28 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:20.367] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.807] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.518] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.572] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:38.911] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

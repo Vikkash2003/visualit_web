@@ -59,14 +59,14 @@ const contentData = {
     hero: {
         badge: {
             icon: "Sparkles",
-            text: "AI-Powered Reading Assistant"
+            text: "AI-Powered Reading App"
         },
         title: {
             line1: "Read.",
             line2: "Visualize.",
             line3: "Understand."
         },
-        subtitle: "Transform your reading experience with AI-powered visualizations. No more struggling to imagine complex concepts.",
+        subtitle: "Transform your reading experience with AI-powered visualizations. Bridging the gap between text and imagination.",
         featurePills: [
             {
                 icon: "Eye",
@@ -88,7 +88,7 @@ const contentData = {
             }
         },
         socialProof: {
-            users: "50,000+ users",
+            users: "100+ users",
             rating: {
                 stars: 5,
                 score: "4.9/5"
@@ -97,7 +97,7 @@ const contentData = {
     },
     // About Section
     about: {
-        title: "About VisuaLit",
+        title: "Reading Reimagined",
         subtitle: "We're transforming the way people read and understand content by bringing text to life through intelligent AI-powered visualizations. No more struggling to imagine complex concepts.",
         values: [
             {
