@@ -1,6 +1,372 @@
-[00:00:02.099] Server  LOG      ✓ Ready in 1608ms
-[00:00:02.848] Server  WARN     ⚠ Lockfile was successfully patched, please run "npm install" to ensure @next/swc dependencies are downloaded
-[00:00:08.239] Server  LOG     contentData loaded: {}
-[00:00:08.689] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.891] Browser LOG     contentData loaded: {"heroTitle":{"line1":"Read.","line2":"Visualize.","line3":"Understand."}}
-[00:00:15.082] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:01.909] Server  LOG      ✓ Ready in 1296ms
+[00:00:06.761] Server  LOG      ○ Compiling / ...
+[00:00:07.131] Server  LOG     contentData loaded: {}
+[00:00:07.973] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.026] Browser LOG     contentData loaded: {"heroTitle":{"line1":"Read.","line2":"Visualize.","line3":"Understand."}}
+[00:00:08.247] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ScrollAndFocusHandler segmentPath={[...]}>
+      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="/Desktop/v...">
+                        <SegmentTrieNode>
+                        <Home>
+                          <main className="min-h-scre...">
+                            <Navigation>
+                            <HeroSection>
+                            <AboutVisuaLitSection>
+                            <FeatureSection>
+                            <PricingSection>
+                              <div id="pricing" className="min-h-scre...">
+                                <div>
+                                <div className="flex flex-...">
+                                  <Plan plan={{id:"free", ...}} billPlan="monthly">
+                                    <div className="flex flex-...">
+                                      <div>
+                                      <div>
+                                      <div className="flex flex-...">
+                                        <span>
+                                        <div>
+                                        <div>
+                                        <div>
+                                        <div>
+                                        <div
+                                          className="flex items-center justify-start gap-2 text-gray-300"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-center text-[#1DB954]"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                                        <div
+                                          className="flex items-center justify-start gap-2 text-gray-300"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-center text-[#1DB954]"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                                  <Plan plan={{id:"premium", ...}} billPlan="monthly">
+                                    <div
+                                      className="flex flex-col relative rounded-2xl transition-all bg-black/50 backdro..."
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className="p-6 flex rounded-t-2xl flex-col items-start w-full relative"
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="flex flex-col items-start w-full px-6 py-2"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <_c>
+                                        <div
+                                          className="h-8 overflow-hidden w-full mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                      <div
+                                        className="flex flex-col items-start w-full px-6 pb-6 gap-y-2"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <span>
+                                        <div
+                                          className="flex items-center justify-start gap-2 text-gray-300"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-center text-[#1DB954]"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                                        <div
+                                          className="flex items-center justify-start gap-2 text-gray-300"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-center text-[#1DB954]"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                                        <div
+                                          className="flex items-center justify-start gap-2 text-gray-300"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-center text-[#1DB954]"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                                        <div
+                                          className="flex items-center justify-start gap-2 text-gray-300"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-center text-[#1DB954]"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                                        <div
+                                          className="flex items-center justify-start gap-2 text-gray-300"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-center text-[#1DB954]"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                                        <div
+                                          className="flex items-center justify-start gap-2 text-gray-300"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-center text-[#1DB954]"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                                        <div
+                                          className="flex items-center justify-start gap-2 text-gray-300"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-center text-[#1DB954]"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                                        <div
+                                          className="flex items-center justify-start gap-2 text-gray-300"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-center text-[#1DB954]"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                                        <div
+                                          className="flex items-center justify-start gap-2 text-gray-300"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-center text-[#1DB954]"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                            <OurStorySection>
+                              <section id="our-story" className="min-h-scre...">
+                                <div
+                                  className="max-w-7xl mx-auto relative z-10 w-full"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="relative bg-gradient-to-br from-[#1DB954]/5 via-transparent to-purple-9..."
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="absolute -top-20 -right-20 w-64 h-64 bg-gradient-to-br from-[#1DB954]..."
+-                                     bis_skin_checked="1"
+                                    >
+                                    <div
+                                      className="absolute -bottom-20 -left-20 w-64 h-64 bg-gradient-to-tr from-purple-..."
+-                                     bis_skin_checked="1"
+                                    >
+                                    <div
+                                      className="max-w-4xl mx-auto text-center relative z-10"
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="text-center"
+-                                   bis_skin_checked="1"
+                                  >
+                                  ...
+                            <AchievementSection>
+                              <section id="achievement" className="min-h-scre...">
+                                <div
+                                  className="max-w-7xl mx-auto relative z-10 w-full"
+-                                 bis_skin_checked="1"
+                                >
+                                  <h2>
+                                  <div
+                                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="relative bg-gradient-to-br from-[#1DB954]/10 to-black/50 backdrop-blu..."
+                                      style={{transitionDelay:"0ms"}}
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className="w-full h-48 mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-..."
+-                                       bis_skin_checked="1"
+                                      >
+                                      <h3>
+                                      <p>
+                                      <div
+                                        className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 tran..."
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="absolute inset-0 bg-gradient-to-r from-transparent via-[#1DB954]/..."
+-                                         bis_skin_checked="1"
+                                        >
+                                    <div
+                                      className="relative bg-gradient-to-br from-[#1DB954]/10 to-black/50 backdrop-blu..."
+                                      style={{transitionDelay:"0ms"}}
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className="w-full h-48 mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-..."
+-                                       bis_skin_checked="1"
+                                      >
+                                      <h3>
+                                      <p>
+                                      <div
+                                        className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 tran..."
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="absolute inset-0 bg-gradient-to-r from-transparent via-[#1DB954]/..."
+-                                         bis_skin_checked="1"
+                                        >
+                                    <div
+                                      className="relative bg-gradient-to-br from-[#1DB954]/10 to-black/50 backdrop-blu..."
+                                      style={{transitionDelay:"0ms"}}
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className="w-full h-48 mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-..."
+-                                       bis_skin_checked="1"
+                                      >
+                                      <h3>
+                                      <p>
+                                      <div
+                                        className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 tran..."
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="absolute inset-0 bg-gradient-to-r from-transparent via-[#1DB954]/..."
+-                                         bis_skin_checked="1"
+                                        >
+                                  <div
+                                    className="mt-16 text-center transition-all duration-1000 delay-500 opacity-0 tran..."
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="flex flex-wrap justify-center gap-8 md:gap-16"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className="text-center group"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="text-4xl font-bold bg-gradient-to-r from-[#1DB954] to-green-400 b..."
+-                                         bis_skin_checked="1"
+                                        >
++                                         15+
+                                        <div
+                                          className="text-gray-400 text-sm uppercase tracking-wider group-hover:text-g..."
+-                                         bis_skin_checked="1"
+                                        >
++                                         Awards Won
+                                      <div
+                                        className="text-center group"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="text-4xl font-bold bg-gradient-to-r from-[#1DB954] to-green-400 b..."
+-                                         bis_skin_checked="1"
+                                        >
++                                         50K+
+                                        <div
+                                          className="text-gray-400 text-sm uppercase tracking-wider group-hover:text-g..."
+-                                         bis_skin_checked="1"
+                                        >
++                                         Happy Users
+                                      <div
+                                        className="text-center group"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="text-4xl font-bold bg-gradient-to-r from-[#1DB954] to-green-400 b..."
+-                                         bis_skin_checked="1"
+                                        >
++                                         98%
+                                        <div
+                                          className="text-gray-400 text-sm uppercase tracking-wider group-hover:text-g..."
+-                                         bis_skin_checked="1"
+                                        >
++                                         Satisfaction Rate
+                            <Footer>
+                              <footer className="relative b...">
+                                <div
+                                  className="h-1 bg-gradient-to-r from-transparent via-[#1DB954] to-transparent opacit..."
+-                                 bis_skin_checked="1"
+                                >
+                                <div
+                                  className="max-w-[1920px] mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 2xl:px-24 py-10 sm..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="grid gap-8 sm:gap-10 lg:gap-12 xl:gap-16 md:grid-cols-2 lg:grid-cols-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="relative"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <h2>
+                                      <p>
+                                      <form>
+                                      <div
+                                        className="absolute -right-4 top-0 h-24 w-24 rounded-full bg-purple-600/20 blu..."
+-                                       bis_skin_checked="1"
+                                      >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                      <h3>
+                                      <address className="space-y-2 ...">
+                                        <p>
+                                        <p>
+                                        <div
+                                          className="relative inline-block"
+-                                         bis_skin_checked="1"
+                                        >
+                                        ...
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                      <h3>
+                                      <div
+                                        className="mb-4 lg:mb-6 flex space-x-3 lg:space-x-4"
+-                                       bis_skin_checked="1"
+                                      >
+                                  <div
+                                    className="mt-8 lg:mt-12 flex flex-col items-center justify-center border-t border..."
+-                                   bis_skin_checked="1"
+                                  >
+                      ...
+                    ...
+        ...
+

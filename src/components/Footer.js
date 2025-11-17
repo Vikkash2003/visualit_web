@@ -252,7 +252,10 @@ function Footer() {
                 {/* Footer bottom */}
                 <div className="mt-8 lg:mt-12 flex flex-col items-center justify-center border-t border-white/10 pt-6 lg:pt-8 text-center">
                     <p className="text-xs lg:text-sm text-gray-400">
-                        {contentData.footer.copyright}
+                        {contentData.footer.copyright}{" "}
+                        <Link href="/privacy-policy" className="text-purple-400 hover:text-purple-300 transition-colors underline decoration-dotted underline-offset-2">
+                            Privacy Policy
+                        </Link>
                     </p>
                 </div>
             </div>
