@@ -91,7 +91,7 @@ function FeatureCard({ feature, index, iconMap }) {
             onMouseLeave={() => setIsHovered(false)}
             className="group relative h-full"
         >
-            <div className="relative h-full rounded-3xl border border-[#1DB954]/30 p-1 hover:-translate-y-2 transition-all duration-500 cursor-pointer">
+            <div className="relative h-full rounded-3xl border-2 border-[#1DB954]/30 p-1 hover:-translate-y-2 transition-all duration-500 cursor-pointer">
                 <GlowingEffect
                     spread={40}
                     glow={true}

@@ -323,7 +323,8 @@ export const contentData = {
         { text: "Features", href: "#feature" },
         { text: "Pricing", href: "#pricing" },
         { text: "Achievement", href: "#achievement" },
-        { text: "About", href: "#about" }
+        { text: "About", href: "#about" },
+        { text: "Privacy Policy", href: "/privacy-policy" }
       ]
     },
     contact: {

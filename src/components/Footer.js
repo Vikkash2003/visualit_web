@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import Button from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -154,11 +155,22 @@ function Footer() {
                     <div>
                         <h3 className="mb-3 lg:mb-4 text-base lg:text-lg xl:text-xl font-semibold text-white">{contentData.footer.quickLinks.title}</h3>
                         <nav className="space-y-2 text-sm lg:text-base">
-                            {contentData.footer.quickLinks.links.map((link, index) => (
-                                <a key={index} href={link.href} className="block transition-colors hover:text-purple-400 text-gray-400">
-                                    {link.text}
-                                </a>
-                            ))}
+                            {contentData.footer.quickLinks.links.map((link, index) => {
+                                // Use Link for internal routes starting with /
+                                if (link.href.startsWith('/')) {
+                                    return (
+                                        <Link key={index} href={link.href} className="block transition-colors hover:text-purple-400 text-gray-400">
+                                            {link.text}
+                                        </Link>
+                                    );
+                                }
+                                // Use anchor for hash links
+                                return (
+                                    <a key={index} href={link.href} className="block transition-colors hover:text-purple-400 text-gray-400">
+                                        {link.text}
+                                    </a>
+                                );
+                            })}
                         </nav>
                     </div>
 
