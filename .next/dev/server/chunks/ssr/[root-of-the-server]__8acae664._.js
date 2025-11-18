@@ -202,21 +202,21 @@ const contentData = {
         awards: [
             {
                 id: 1,
-                image: '/images/Cisco Technopreneur.jpg',
-                title: 'Cisco Technopreneur Award',
-                description: 'We were honored to receive both First Place and the Investor\'s Choice Award at the Cisco Technopreneur Challenge, part of SLIIT CODEFEST. This dual recognition highlights both the technical innovation and the strong business potential of our project.'
+                image: '/images/CuttingEdge.jpeg',
+                title: 'Cutting Edge Innovation Award',
+                description: 'In the Project Showcase category at IIT\'s Cutting Edge event, VisuaLit secured Third Place. This award recognized the quality, completeness, and innovative spirit of our early-stage project.'
             },
             {
                 id: 2,
-                image: '/images/CodeSprint.jpg',
+                image: '/images/CodeSprint.jpeg',
                 title: 'CodeSprint Excellence Award',
                 description: 'VisuaLit was awarded 1st Runners Up. This achievement at the IEEE Student Branch of IIT\'s competition was a powerful validation of our technology and its performance against a highly competitive field.'
             },
             {
                 id: 3,
-                image: '/images/CuttingEdge.jpg',
-                title: 'Cutting Edge Innovation Award',
-                description: 'In the Project Showcase category at IIT\'s Cutting Edge event, VisuaLit secured Third Place. This award recognized the quality, completeness, and innovative spirit of our early-stage project.'
+                image: '/images/CodeFest.jpeg',
+                title: 'SLIIT CodeFest Recognition',
+                description: 'We were honored to receive recognition at SLIIT CODEFEST, highlighting both the technical innovation and community impact of our project.'
             }
         ],
         stats: [
@@ -836,7 +836,6 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/dialog.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/play.js [app-ssr] (ecmascript) <export default as Play>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/contentData.js [app-ssr] (ecmascript)");
 'use client';
 ;
@@ -887,50 +886,16 @@ function DemoVideo({ trigger }) {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "aspect-video w-full bg-gradient-to-br from-gray-900 to-black rounded-lg flex items-center justify-center relative overflow-hidden",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute inset-0 flex items-center justify-center",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-center",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__["Play"], {
-                                            className: "w-10 h-10 text-white ml-1"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/DemoVideo.js",
-                                            lineNumber: 30,
-                                            columnNumber: 33
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/DemoVideo.js",
-                                        lineNumber: 29,
-                                        columnNumber: 29
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-400",
-                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["contentData"].demo.placeholderMessage
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/DemoVideo.js",
-                                        lineNumber: 32,
-                                        columnNumber: 29
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sm text-gray-500 mt-2",
-                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["contentData"].demo.placeholderSubtext
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/DemoVideo.js",
-                                        lineNumber: 33,
-                                        columnNumber: 29
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/DemoVideo.js",
-                                lineNumber: 28,
-                                columnNumber: 25
-                            }, this)
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
+                            className: "w-full h-full rounded-lg",
+                            src: "https://www.youtube.com/embed/uar-FaNS1lk",
+                            title: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["contentData"].demo.title,
+                            frameBorder: "0",
+                            allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+                            allowFullScreen: true
                         }, void 0, false, {
                             fileName: "[project]/src/components/DemoVideo.js",
-                            lineNumber: 27,
+                            lineNumber: 26,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {

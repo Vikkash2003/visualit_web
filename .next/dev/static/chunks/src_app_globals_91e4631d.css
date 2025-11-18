@@ -836,10 +836,6 @@
     margin-bottom: calc(var(--spacing) * 20);
   }
 
-  .ml-1 {
-    margin-left: calc(var(--spacing) * 1);
-  }
-
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
@@ -2500,10 +2496,6 @@
 
   .text-gray-400 {
     color: var(--color-gray-400);
-  }
-
-  .text-gray-500 {
-    color: var(--color-gray-500);
   }
 
   .text-green-400 {
