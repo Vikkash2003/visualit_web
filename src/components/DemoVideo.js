@@ -23,25 +23,14 @@ export function DemoVideo({ trigger }) {
                     </DialogDescription>
                 </DialogHeader>
                 <div className="aspect-video w-full bg-gradient-to-br from-gray-900 to-black rounded-lg flex items-center justify-center relative overflow-hidden">
-                    {/* Placeholder for video - replace with actual video */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="text-center">
-                            <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
-                                <Play className="w-10 h-10 text-white ml-1" />
-                            </div>
-                            <p className="text-gray-400">{contentData.demo.placeholderMessage}</p>
-                            <p className="text-sm text-gray-500 mt-2">
-                                {contentData.demo.placeholderSubtext}
-                            </p>
-                        </div>
-                    </div>
-                    {/* When you have a video, replace the above with: */}
-                    {/* <iframe
-                        className="w-full h-full"
-                        src="your-video-url"
+                    <iframe
+                        className="w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/uar-FaNS1lk"
+                        title={contentData.demo.title}
+                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
-                    /> */}
+                    />
                 </div>
             </DialogContent>
         </Dialog>

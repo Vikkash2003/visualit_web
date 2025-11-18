@@ -170,21 +170,21 @@ export const contentData = {
     awards: [
       {
         id: 1,
-        image: '/images/Cisco Technopreneur.jpg',
-        title: 'Cisco Technopreneur Award',
-        description: 'We were honored to receive both First Place and the Investor\'s Choice Award at the Cisco Technopreneur Challenge, part of SLIIT CODEFEST. This dual recognition highlights both the technical innovation and the strong business potential of our project.'
+        image: '/images/CuttingEdge.jpeg',
+        title: 'Cutting Edge Innovation Award',
+        description: 'In the Project Showcase category at IIT\'s Cutting Edge event, VisuaLit secured Third Place. This award recognized the quality, completeness, and innovative spirit of our early-stage project.'
       },
       {
         id: 2,
-        image: '/images/CodeSprint.jpg',
+        image: '/images/CodeSprint.jpeg',
         title: 'CodeSprint Excellence Award',
         description: 'VisuaLit was awarded 1st Runners Up. This achievement at the IEEE Student Branch of IIT\'s competition was a powerful validation of our technology and its performance against a highly competitive field.'
       },
       {
         id: 3,
-        image: '/images/CuttingEdge.jpg',
-        title: 'Cutting Edge Innovation Award',
-        description: 'In the Project Showcase category at IIT\'s Cutting Edge event, VisuaLit secured Third Place. This award recognized the quality, completeness, and innovative spirit of our early-stage project.'
+        image: '/images/CodeFest.jpeg',
+        title: 'SLIIT CodeFest Recognition',
+        description: 'We were honored to receive recognition at SLIIT CODEFEST, highlighting both the technical innovation and community impact of our project.'
       }
     ],
     stats: [
