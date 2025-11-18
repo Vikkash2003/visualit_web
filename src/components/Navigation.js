@@ -17,7 +17,7 @@ const Navigation = () => {
             <div className="relative px-6 pt-12">
                 <div className="max-w-5xl mx-auto flex flex-col items-center relative">
                     {/* Pill-shaped Navigation Bar */}
-                    <div className="w-full grid items-center backdrop-blur-xl bg-black/80 border border-white/10 rounded-full py-3 px-4 shadow-2xl shadow-black/50 relative" style={{ gridTemplateColumns: '1fr auto 1fr' }}>
+                    <div className="w-full grid items-center backdrop-blur-xl bg-black/80 border border-white/10 rounded-full py-3 px-4 shadow-2xl shadow-black/50 relative" style={{ gridTemplateColumns: '1fr 100px 1fr' }}>
                     {/* Left Navigation Links - Home, Feature, Achievement */}
                     <div className="hidden md:flex items-center justify-evenly">
                         {navItems.slice(0, 3).map((item) => (
@@ -32,7 +32,7 @@ const Navigation = () => {
                     </div>
 
                     {/* Center Logo Space - maintains the grid spacing */}
-                    <div className="flex items-center justify-center flex-shrink-0 w-16">
+                    <div className="flex items-center justify-center flex-shrink-0 w-18 md:w-28">
                         {/* Empty space to maintain grid layout */}
                     </div>
 

@@ -3,14 +3,13 @@
 import { Download, Play, Sparkles, BookOpen } from 'lucide-react'
 import Button from '@/components/ui/button'
 import { DemoVideo } from '@/components/DemoVideo'
-import { contentData } from '@/lib/contentData'
 
 const HeroSection = () => {
     return (
         <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-32 pb-10 snap-start scroll-mt-24">
             <div className="w-full max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
                 <div className="flex flex-col lg:flex-row gap-8 items-center justify-center">
-                    <div className="space-y-4 text-center max-w-2xl mx-auto">
+                    <div className="space-y-4 text-center max-w-3xl mx-auto">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full backdrop-blur-sm">
                             <Sparkles className="w-4 h-4 text-purple-400" />
                             <span className="text-sm text-purple-300 font-medium">AI-Powered Reading App</span>
@@ -22,21 +21,15 @@ const HeroSection = () => {
                             <span className="block mt-2 text-white">Understand.</span>
                         </h1>
 
-                        <p className="text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl mx-auto font-light pt-2">
+                        <p className="text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto font-light pt-2">
                             Transform your reading experience with <span className="text-[#1DB954] font-semibold">AI-powered Visualizations</span>. Bridging the gap between text and imagination.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                            <a
-                                href="https://play.google.com/store/apps/details?id=com.visualit.app.visualit&hl=en"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Button className="group text-base sm:text-lg px-8 py-7 shadow-2xl shadow-[#1DB954]/30 hover:shadow-[#1DB954]/50 transition-all hover:scale-105 bg-gradient-to-r from-[#1DB954] to-green-600 hover:from-[#1DB954]/90 hover:to-green-600/90 font-semibold">
-                                    <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-                                    {contentData?.hero?.ctaButtons?.primary?.text ?? 'Download'}
-                                </Button>
-                            </a>
+                            <Button className="group text-base sm:text-lg px-8 py-7 shadow-2xl shadow-[#1DB954]/30 hover:shadow-[#1DB954]/50 transition-all hover:scale-105 bg-gradient-to-r from-[#1DB954] to-green-600 hover:from-[#1DB954]/90 hover:to-green-600/90 font-semibold">
+                                <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                                Download Now
+                            </Button>
                             <DemoVideo
                                 trigger={
                                     <Button

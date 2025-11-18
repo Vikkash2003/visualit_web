@@ -1,7 +1,88 @@
-[00:00:01.133] Server  LOG      ✓ Ready in 841ms
-[00:00:19.821] Server  LOG     contentData loaded: {}
-[00:00:20.419] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:20.454] Browser LOG     contentData loaded: {"heroTitle":{"line1":"Read.","line2":"Visualize.","line3":"Understand."}}
-[00:00:23.562] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:01:19.368] Server  LOG      ✓ Compiled in 105ms
-[00:08:15.990] Server  LOG      ✓ Compiled in 91ms
+[00:00:00.772] Server  LOG      ✓ Ready in 549ms
+[00:00:28.066] Server  ERROR    ⨯ ./src/components/HeroSection.js:62:27
+Parsing ecmascript source code failed
+  60 |                             </div>
+  61 |                         </div>
+> 62 |                     </div>
+     |                           ^
+> 63 |                 </div>
+     | ^^^^^^^^^^^^^^^^^
+  64 |             </div>
+  65 |         </section>
+  66 |     )
+
+Expected '</', got 'jsx text (
+                )'
+
+Import trace:
+  Server Component:
+    ./src/components/HeroSection.js
+    ./src/app/page.js
+
+
+[00:00:28.821] Browser ERROR   uncaughtError: Error: ./src/components/HeroSection.js:62:27
+Parsing ecmascript source code failed
+  60 |                             </div>
+  61 |                         </div>
+> 62 |                     </div>
+     |                           ^
+> 63 |                 </div>
+     | ^^^^^^^^^^^^^^^^^
+  64 |             </div>
+  65 |         </section>
+  66 |     )
+
+Expected '</', got 'jsx text (
+                )'
+
+Import trace:
+  Server Component:
+    ./src/components/HeroSection.js
+    ./src/app/page.js
+
+
+[00:00:28.988] Browser ERROR   ./src/components/HeroSection.js:62:27
+Parsing ecmascript source code failed
+  60 |                             </div>
+  61 |                         </div>
+> 62 |                     </div>
+     |                           ^
+> 63 |                 </div>
+     | ^^^^^^^^^^^^^^^^^
+  64 |             </div>
+  65 |         </section>
+  66 |     )
+
+Expected '</', got 'jsx text (
+                )'
+
+Import trace:
+  Server Component:
+    ./src/components/HeroSection.js
+    ./src/app/page.js
+[00:00:29.576] Browser ERROR   ./src/components/HeroSection.js:62:27
+Parsing ecmascript source code failed
+  60 |                             </div>
+  61 |                         </div>
+> 62 |                     </div>
+     |                           ^
+> 63 |                 </div>
+     | ^^^^^^^^^^^^^^^^^
+  64 |             </div>
+  65 |         </section>
+  66 |     )
+
+Expected '</', got 'jsx text (
+                )'
+
+Import trace:
+  Server Component:
+    ./src/components/HeroSection.js
+    ./src/app/page.js
+[00:00:44.656] Server  LOG      ✓ Compiled in 192ms
+[00:00:45.475] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:55.548] Server  LOG      ✓ Compiled in 46ms
+[00:06:27.421] Server  LOG      ✓ Compiled in 168ms
+[00:13:42.613] Server  LOG      ✓ Compiled in 48ms
+[00:13:53.399] Server  LOG      ✓ Compiled in 24ms
+[00:14:06.837] Server  LOG      ✓ Compiled in 60ms

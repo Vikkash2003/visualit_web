@@ -348,4 +348,3 @@ export const contentData = {
     copyright: "© 2025 VisuaLit. All rights reserved."
   }
 };
-
