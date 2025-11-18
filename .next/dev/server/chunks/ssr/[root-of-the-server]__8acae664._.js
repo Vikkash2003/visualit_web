@@ -421,19 +421,6 @@ const contentData = {
         copyright: "© 2025 VisuaLit. All rights reserved."
     }
 };
-// Temporary log to verify that the content module is (re)loaded in dev.
-// Remove this after you've confirmed changes are reflected.
-try {
-    // This will print to the server terminal during SSR and to the browser console during client-side imports.
-    // Use optional chaining to avoid errors if structure changes.
-    // eslint-disable-next-line no-console
-    console.log('contentData loaded:', {
-        heroTitle: contentData?.hero?.title
-    });
-} catch (e) {
-    // eslint-disable-next-line no-console
-    console.log('contentData log failed', e);
-}
 }),
 "[project]/src/components/Navigation.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -978,7 +965,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-ssr] (ecmascript) <export default as Sparkles>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$DemoVideo$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/DemoVideo.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/contentData.js [app-ssr] (ecmascript)");
 'use client';
+;
 ;
 ;
 ;
@@ -1001,7 +990,7 @@ const HeroSection = ()=>{
                                     className: "w-4 h-4 text-purple-400"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 14,
+                                    lineNumber: 15,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1009,13 +998,13 @@ const HeroSection = ()=>{
                                     children: "AI-Powered Reading App"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 15,
+                                    lineNumber: 16,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/HeroSection.js",
-                            lineNumber: 13,
+                            lineNumber: 14,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -1026,7 +1015,7 @@ const HeroSection = ()=>{
                                     children: "Read."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 19,
+                                    lineNumber: 20,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1034,7 +1023,7 @@ const HeroSection = ()=>{
                                     children: "Visualize."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 20,
+                                    lineNumber: 21,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1042,13 +1031,13 @@ const HeroSection = ()=>{
                                     children: "Understand."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 21,
+                                    lineNumber: 22,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/HeroSection.js",
-                            lineNumber: 18,
+                            lineNumber: 19,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1057,37 +1046,46 @@ const HeroSection = ()=>{
                                 "Transform your reading experience with ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-[#1DB954] font-semibold",
-                                    children: "AI-powered Visualizations and Multi Narration Audiobooks"
+                                    children: "AI-powered Visualizations"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 25,
+                                    lineNumber: 26,
                                     columnNumber: 68
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 ". Bridging the gap between text and imagination."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/HeroSection.js",
-                            lineNumber: 24,
+                            lineNumber: 25,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-col sm:flex-row gap-4 justify-center pt-4",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                    className: "group text-base sm:text-lg px-8 py-7 shadow-2xl shadow-[#1DB954]/30 hover:shadow-[#1DB954]/50 transition-all hover:scale-105 bg-gradient-to-r from-[#1DB954] to-green-600 hover:from-[#1DB954]/90 hover:to-green-600/90 font-semibold",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__["Download"], {
-                                            className: "mr-2 h-5 w-5 group-hover:animate-bounce"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 30,
-                                            columnNumber: 33
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        "Download Now"
-                                    ]
-                                }, void 0, true, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "https://play.google.com/store/apps/details?id=com.visualit.app.visualit&hl=en",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        className: "group text-base sm:text-lg px-8 py-7 shadow-2xl shadow-[#1DB954]/30 hover:shadow-[#1DB954]/50 transition-all hover:scale-105 bg-gradient-to-r from-[#1DB954] to-green-600 hover:from-[#1DB954]/90 hover:to-green-600/90 font-semibold",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__["Download"], {
+                                                className: "mr-2 h-5 w-5 group-hover:animate-bounce"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/HeroSection.js",
+                                                lineNumber: 36,
+                                                columnNumber: 37
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["contentData"]?.hero?.ctaButtons?.primary?.text ?? 'Download'
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/HeroSection.js",
+                                        lineNumber: 35,
+                                        columnNumber: 33
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                }, void 0, false, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 29,
+                                    lineNumber: 30,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$DemoVideo$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DemoVideo"], {
@@ -1099,25 +1097,25 @@ const HeroSection = ()=>{
                                                 className: "mr-2 h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 39,
+                                                lineNumber: 46,
                                                 columnNumber: 41
                                             }, void 0),
                                             "Watch Demo"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/HeroSection.js",
-                                        lineNumber: 35,
+                                        lineNumber: 42,
                                         columnNumber: 37
                                     }, void 0)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 33,
+                                    lineNumber: 40,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/HeroSection.js",
-                            lineNumber: 28,
+                            lineNumber: 29,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1133,40 +1131,40 @@ const HeroSection = ()=>{
                                                     className: "w-8 h-8 rounded-full bg-gradient-to-br from-[#1DB954] to-green-600 border-2 border-black"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 49,
+                                                    lineNumber: 56,
                                                     columnNumber: 37
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 border-2 border-black"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 50,
+                                                    lineNumber: 57,
                                                     columnNumber: 37
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 border-2 border-black"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 51,
+                                                    lineNumber: 58,
                                                     columnNumber: 37
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 48,
+                                            lineNumber: 55,
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "150+ users"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 53,
+                                            lineNumber: 60,
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 47,
+                                    lineNumber: 54,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1177,47 +1175,47 @@ const HeroSection = ()=>{
                                             children: "★★★★★"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 56,
+                                            lineNumber: 63,
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "4.9/5"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 57,
+                                            lineNumber: 64,
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 55,
+                                    lineNumber: 62,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/HeroSection.js",
-                            lineNumber: 46,
+                            lineNumber: 53,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/HeroSection.js",
-                    lineNumber: 12,
+                    lineNumber: 13,
                     columnNumber: 21
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/HeroSection.js",
-                lineNumber: 11,
+                lineNumber: 12,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/components/HeroSection.js",
-            lineNumber: 10,
+            lineNumber: 11,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/HeroSection.js",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -3130,8 +3128,20 @@ function Footer() {
                         className: "mt-8 lg:mt-12 flex flex-col items-center justify-center border-t border-white/10 pt-6 lg:pt-8 text-center",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-xs lg:text-sm text-gray-400",
-                            children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["contentData"].footer.copyright
-                        }, void 0, false, {
+                            children: [
+                                __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["contentData"].footer.copyright,
+                                " ",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/privacy-policy",
+                                    className: "text-purple-400 hover:text-purple-300 transition-colors underline decoration-dotted underline-offset-2",
+                                    children: "Privacy Policy"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.js",
+                                    lineNumber: 256,
+                                    columnNumber: 25
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/Footer.js",
                             lineNumber: 254,
                             columnNumber: 21

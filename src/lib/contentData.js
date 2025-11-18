@@ -349,14 +349,3 @@ export const contentData = {
   }
 };
 
-// Temporary log to verify that the content module is (re)loaded in dev.
-// Remove this after you've confirmed changes are reflected.
-try {
-  // This will print to the server terminal during SSR and to the browser console during client-side imports.
-  // Use optional chaining to avoid errors if structure changes.
-  // eslint-disable-next-line no-console
-  console.log('contentData loaded:', { heroTitle: contentData?.hero?.title });
-} catch (e) {
-  // eslint-disable-next-line no-console
-  console.log('contentData log failed', e);
-}
