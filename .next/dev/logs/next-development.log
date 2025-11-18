@@ -1,3 +1,49 @@
-[00:00:00.764] Server  LOG      ✓ Ready in 541ms
-[00:00:05.198] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:31.203] Server  LOG      ✓ Compiled in 77ms
+[00:00:00.783] Server  LOG      ✓ Ready in 550ms
+[00:00:11.826] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:49.341] Server  LOG      ✓ Compiled in 240ms
+[00:04:00.693] Server  LOG      ✓ Compiled in 103ms
+[00:04:00.777] Browser ERROR   uncaughtError: ReferenceError: useEffect is not defined
+[00:04:35.426] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:35.501] Server  LOG      ✓ Compiled in 36ms
+[00:04:36.181] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:13.758] Server  LOG      ✓ Compiled in 79ms
+[00:08:13.845] Browser ERROR   uncaughtError: ReferenceError: isOpen is not defined
+[00:08:15.814] Server  LOG      ✓ Compiled in 104ms
+[00:08:15.919] Browser ERROR   ./src/components/Navigation.js:132:9
+Parsing ecmascript source code failed
+  130 |             </div>
+  131 |             </div>
+> 132 |         </nav>
+      |         ^
+  133 |     )
+  134 | }
+  135 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.js
+    ./src/app/page.js
+[00:08:15.919] Browser ERROR   ./src/components/Navigation.js:132:10
+Parsing ecmascript source code failed
+  130 |             </div>
+  131 |             </div>
+> 132 |         </nav>
+      |          ^^^^^
+  133 |     )
+  134 | }
+  135 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.js
+    ./src/app/page.js
+[00:08:28.586] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:29.312] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:48.339] Server  LOG      ✓ Compiled in 117ms
+[00:12:25.097] Server  LOG      ✓ Compiled in 55ms
+[00:12:27.081] Server  LOG      ✓ Compiled in 82ms
+[00:13:49.680] Server  LOG      ✓ Compiled in 85ms

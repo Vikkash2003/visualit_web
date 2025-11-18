@@ -188,9 +188,9 @@ export const contentData = {
       }
     ],
     stats: [
-      { value: "15+", label: "Awards Won" },
-      { value: "50K+", label: "Happy Users" },
-      { value: "98%", label: "Satisfaction Rate" }
+      { value: "5+", label: "Awards Won" },
+      { value: "50+", label: "Satisfied Judges" },
+      { value: "95%", label: "Satisfaction Rate" }
     ]
   },
 
