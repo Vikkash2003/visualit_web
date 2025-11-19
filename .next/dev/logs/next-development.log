@@ -62,3 +62,7 @@ Check the render method of `Home`.
 [03:22:25.914] Server  LOG      ✓ Compiled in 230ms
 [03:24:02.457] Server  LOG      ✓ Compiled in 253ms
 [03:33:04.093] Server  LOG      ✓ Compiled in 39s
+[03:38:53.232] Server  LOG      ✓ Compiled in 93ms
+[03:38:59.537] Server  LOG      ✓ Compiled in 56ms
+[03:39:05.043] Server  LOG      ✓ Compiled in 21ms
+[03:52:32.316] Server  LOG      ✓ Compiled in 74ms
