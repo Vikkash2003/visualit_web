@@ -33,3 +33,31 @@ Import trace:
 [02:31:34.966] Server  LOG      ✓ Compiled in 114ms
 [02:32:56.163] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [02:34:38.837] Server  LOG      ✓ Compiled in 122ms
+[02:43:35.532] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/components/HeroSection.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:43:36.117] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[02:43:36.135] Server  LOG      ✓ Compiled in 0ms
+[02:43:36.285] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:43:37.124] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Home`.
+[02:43:50.455] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[02:43:50.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:43:50.703] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Home`.
+[02:44:50.102] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:44:50.147] Server  LOG      ✓ Compiled in 104ms
+[02:44:50.773] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:47:57.640] Server  LOG      ✓ Compiled in 87ms
+[02:48:01.110] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:54:25.918] Server  LOG      ✓ Compiled in 197ms
+[02:55:23.339] Server  LOG      ✓ Compiled in 73ms
+[02:58:49.638] Server  LOG      ✓ Compiled in 77ms
+[02:59:03.214] Server  LOG      ✓ Compiled in 61ms
+[02:59:11.728] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:59:16.518] Server  LOG      ✓ Compiled in 67ms
+[03:04:28.299] Server  LOG      ✓ Compiled in 84ms
+[03:17:32.577] Server  LOG      ✓ Compiled in 58ms
+[03:20:28.880] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:22:25.914] Server  LOG      ✓ Compiled in 230ms
+[03:24:02.457] Server  LOG      ✓ Compiled in 253ms
