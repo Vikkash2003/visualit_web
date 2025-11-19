@@ -13,7 +13,7 @@ const HeroSection = () => {
     return (
         <section id="home" className="relative w-full bg-[#050505] overflow-hidden">
             {/* Part 1: Hero Top (Extended Height) */}
-            <div className="relative min-h-[100vh] flex flex-col items-center pt-48 pb-100">
+            <div className="relative min-h-[100vh] flex flex-col items-center pt-48 pb-80">
                 {/* Background Gradients */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-500/10 rounded-full blur-[120px] animate-pulse"></div>
@@ -31,9 +31,7 @@ const HeroSection = () => {
                                 <span className="block mt-2 bg-gradient-to-r from-purple-400 via-[#1DB954] to-purple-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">Visualize.</span>
                                 <span className="block mt-2 text-white">Understand.</span>
                             </h1>
-                            <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto font-light pt-1">
-                                Transform your reading experience with <span className="text-[#1DB954] font-semibold">AI-powered Visualizations</span>. Bridging the gap between text and imagination.
-                            </p>
+                            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto font-light pt-1">Transform your reading experience with <span className="text-[#1DB954] font-semibold">AI-powered Visualizations</span>. Bridging the gap between text and imagination.</p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
                                 <a
                                     href="https://play.google.com/store/apps/details?id=com.visualit.app.visualit&hl=en"

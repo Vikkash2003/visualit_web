@@ -2881,6 +2881,10 @@
     padding-bottom: calc(var(--spacing) * 32);
   }
 
+  .pb-80 {
+    padding-bottom: calc(var(--spacing) * 80);
+  }
+
   .pb-100 {
     padding-bottom: calc(var(--spacing) * 100);
   }
