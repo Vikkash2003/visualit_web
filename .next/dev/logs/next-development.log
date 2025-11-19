@@ -67,3 +67,25 @@ Check the render method of `Home`.
 [03:39:05.043] Server  LOG      ✓ Compiled in 21ms
 [03:52:32.316] Server  LOG      ✓ Compiled in 74ms
 [04:03:36.881] Server  LOG      ✓ Compiled in 68ms
+[04:15:17.851] Server  LOG      ✓ Compiled in 38ms
+[04:16:02.792] Server  LOG      ✓ Compiled in 33ms
+[04:20:00.072] Server  LOG      ✓ Compiled in 23ms
+[04:20:41.012] Server  LOG      ✓ Compiled in 39ms
+[04:24:11.097] Server  LOG      ✓ Compiled in 28ms
+[04:31:43.327] Server  LOG      ✓ Compiled in 36ms
+[04:38:03.868] Server  LOG      ✓ Compiled in 49ms
+[04:55:06.052] Server  LOG      ✓ Compiled in 69ms
+[05:11:36.646] Server  LOG      ✓ Compiled in 75ms
+[05:16:34.788] Server  LOG      ✓ Compiled in 76ms
+[05:20:02.592] Server  LOG      ✓ Compiled in 236ms
+[05:21:24.814] Server  LOG      ✓ Compiled in 73ms
+[05:26:20.277] Server  LOG      ✓ Compiled in 42ms
+[05:28:34.744] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:28:34.851] Browser WARN    Image with src "/VisuaLit-Logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:29:42.646] Server  LOG      ✓ Compiled in 141ms
+[05:30:17.261] Server  LOG      ✓ Compiled in 216ms
+[05:32:12.163] Server  LOG      ✓ Compiled in 57ms
+[05:32:45.677] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:34:38.618] Server  LOG      ✓ Compiled in 147ms
+[05:39:30.486] Server  LOG      ✓ Compiled in 40ms

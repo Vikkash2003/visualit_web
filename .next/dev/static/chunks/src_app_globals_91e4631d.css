@@ -1901,6 +1901,11 @@
     background-color: lab(66.2059% -55.9718 39.3851 / .3);
   }
 
+  .bg-\[\#1DB954\]\/40 {
+    background-color: #1db95466;
+    background-color: lab(66.2059% -55.9718 39.3851 / .4);
+  }
+
   .bg-\[\#050505\] {
     background-color: #050505;
   }
@@ -2677,6 +2682,11 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+  .\[mask-image\:linear-gradient\(180deg\,black_70\%\,transparent_100\%\)\] {
+    -webkit-mask-image: linear-gradient(#000 70%, #0000 100%);
+    mask-image: linear-gradient(#000 70%, #0000 100%);
+  }
+
   .\[mask-image\:linear-gradient\(to_bottom\,black_70\%\,transparent_100\%\)\] {
     -webkit-mask-image: linear-gradient(#000 70%, #0000 100%);
     mask-image: linear-gradient(#000 70%, #0000 100%);
@@ -2871,6 +2881,10 @@
     padding-bottom: calc(var(--spacing) * 32);
   }
 
+  .pb-100 {
+    padding-bottom: calc(var(--spacing) * 100);
+  }
+
   .text-center {
     text-align: center;
   }
@@ -2906,6 +2920,11 @@
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
 
   .text-base {
@@ -3436,6 +3455,14 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
+  }
+
+  .\[-webkit-mask-image\:linear-gradient\(180deg\,black_70\%\,transparent_100\%\)\] {
+    -webkit-mask-image: linear-gradient(#000 70%, #0000 100%);
+  }
+
+  .\[-webkit-mask-image\:linear-gradient\(to_bottom\,black_70\%\,transparent_100\%\)\] {
+    -webkit-mask-image: linear-gradient(#000 70%, #0000 100%);
   }
 
   .delay-0 {
@@ -4344,6 +4371,12 @@
   }
 
   @media (min-width: 40rem) {
+    .sm\:w-auto {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 40rem) {
     .sm\:max-w-\[350px\] {
       max-width: 350px;
     }
@@ -4440,6 +4473,13 @@
     .sm\:text-6xl {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .sm\:text-7xl {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
     }
   }
 
