@@ -21,7 +21,7 @@ const HeroSection = () => {
                 <div className="w-full max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
                     <div className="flex flex-col items-center justify-center text-center relative">
                         {/* Main Content - Compact */}
-                        <div className="space-y-6 max-w-xl mx-auto relative z-30">
+                        <div className="space-y-4 max-w-xl mx-auto relative z-30">
                             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#1DB954]/10 border border-[#1DB954]/20 rounded-full backdrop-blur-sm mx-auto">
                                 <Sparkles className="w-4 h-4 text-[#1DB954]" />
                                 <span className="text-xs text-[#1DB954] font-medium">AI-Powered Reading App</span>
@@ -31,10 +31,10 @@ const HeroSection = () => {
                                 <span className="block mt-2 bg-gradient-to-r from-purple-400 via-[#1DB954] to-purple-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">Visualize.</span>
                                 <span className="block mt-2 text-white">Understand.</span>
                             </h1>
-                            <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto font-light pt-2">
+                            <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto font-light pt-1">
                                 Transform your reading experience with <span className="text-[#1DB954] font-semibold">AI-powered Visualizations</span>. Bridging the gap between text and imagination.
                             </p>
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
                                 <a
                                     href="https://play.google.com/store/apps/details?id=com.visualit.app.visualit&hl=en"
                                     target="_blank"
@@ -57,7 +57,7 @@ const HeroSection = () => {
                                     }
                                 />
                             </div>
-                            <div className="flex items-center gap-6 justify-center pt-4 text-sm text-gray-400">
+                            <div className="flex items-center gap-6 justify-center pt-2 text-sm text-gray-400">
                                 <div className="flex items-center gap-2">
                                     <div className="flex -space-x-2">
                                         <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#1DB954] to-green-600 border-2 border-black"></div>

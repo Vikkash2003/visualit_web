@@ -2744,6 +2744,10 @@
     padding-block: calc(var(--spacing) * 24);
   }
 
+  .pt-1 {
+    padding-top: calc(var(--spacing) * 1);
+  }
+
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }

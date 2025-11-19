@@ -61,3 +61,4 @@ Check the render method of `Home`.
 [03:20:28.880] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [03:22:25.914] Server  LOG      ✓ Compiled in 230ms
 [03:24:02.457] Server  LOG      ✓ Compiled in 253ms
+[03:33:04.093] Server  LOG      ✓ Compiled in 39s
