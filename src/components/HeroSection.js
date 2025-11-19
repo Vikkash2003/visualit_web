@@ -90,7 +90,7 @@ const HeroSection = () => {
                     </div>
                 </div>
                 {/* Phone Bridge - Positioned to straddle the sections */}
-                <div className="absolute bottom-[-480px] left-1/2 -translate-x-1/2 w-full max-w-[350px] z-40 perspective-[1000px]">
+                <div className="absolute bottom-[-480px] left-1/2 -translate-x-1/2 w-full max-w-[350px] z-40 perspective-[1000px] [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)]">
                     {/* Glow behind phone */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[150%] h-[150%] bg-[#1DB954]/30 blur-[100px] rounded-full opacity-60"></div>
                     {/* Phone Body */}
@@ -114,7 +114,7 @@ const HeroSection = () => {
                 </div>
             </div>
             {/* Part 2: About Content (Reading Reimagined) - Integrated */}
-            <div className="relative z-30 w-full bg-[#050505] pt-[520px] pb-20 px-6">
+            <div className="relative z-30 w-full bg-[#050505] pt-[260px] pb-20 px-6">
                 <div className="max-w-7xl mx-auto relative z-10 w-full">
                     {/* Title */}
                     <div className="text-center mb-16">

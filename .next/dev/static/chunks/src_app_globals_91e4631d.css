@@ -2677,6 +2677,11 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+  .\[mask-image\:linear-gradient\(to_bottom\,black_70\%\,transparent_100\%\)\] {
+    -webkit-mask-image: linear-gradient(#000 70%, #0000 100%);
+    mask-image: linear-gradient(#000 70%, #0000 100%);
+  }
+
   .bg-\[length\:200\%_auto\] {
     background-size: 200%;
   }
@@ -2824,6 +2829,10 @@
 
   .pt-\[250px\] {
     padding-top: 250px;
+  }
+
+  .pt-\[260px\] {
+    padding-top: 260px;
   }
 
   .pt-\[320px\] {
