@@ -1,50 +1,35 @@
-[00:00:00.783] Server  LOG      ✓ Ready in 550ms
-[00:00:11.826] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:49.341] Server  LOG      ✓ Compiled in 240ms
-[00:04:00.693] Server  LOG      ✓ Compiled in 103ms
-[00:04:00.777] Browser ERROR   uncaughtError: ReferenceError: useEffect is not defined
-[00:04:35.426] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:04:35.501] Server  LOG      ✓ Compiled in 36ms
-[00:04:36.181] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:13.758] Server  LOG      ✓ Compiled in 79ms
-[00:08:13.845] Browser ERROR   uncaughtError: ReferenceError: isOpen is not defined
-[00:08:15.814] Server  LOG      ✓ Compiled in 104ms
-[00:08:15.919] Browser ERROR   ./src/components/Navigation.js:132:9
+[00:00:00.989] Server  LOG      ✓ Ready in 716ms
+[00:00:02.426] Server  WARN     ⚠ Lockfile was successfully patched, please run "npm install" to ensure @next/swc dependencies are downloaded
+[00:00:13.808] Server  WARN     ⚠ Cross origin request detected from 192.168.1.24 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:13.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:30.707] Server  LOG      ✓ Compiled in 382ms
+[01:22:34.295] Server  LOG      ✓ Compiled in 291ms
+[01:28:20.280] Server  LOG      ✓ Compiled in 591ms
+[01:29:31.631] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:03:58.430] Server  LOG      ✓ Compiled in 149ms
+[02:11:39.834] Server  LOG      ✓ Compiled in 127ms
+[02:17:50.872] Server  LOG      ✓ Compiled in 134ms
+[02:19:12.786] Server  LOG      ✓ Compiled in 65ms
+[02:21:12.186] Server  LOG      ✓ Compiled in 104ms
+[02:25:49.154] Server  LOG      ✓ Compiled in 129ms
+[02:25:49.257] Browser ERROR   ./src/components/HeroSection.js:154:1
 Parsing ecmascript source code failed
-  130 |             </div>
-  131 |             </div>
-> 132 |         </nav>
-      |         ^
-  133 |     )
-  134 | }
-  135 |
+  152 |                 </section>
+  153 |                 )
+> 154 | }
+      | ^
+  155 |
+  156 |                 export default HeroSection
 
-Expression expected
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
 
 Import trace:
   Server Component:
-    ./src/components/Navigation.js
+    ./src/components/HeroSection.js
     ./src/app/page.js
-[00:08:15.919] Browser ERROR   ./src/components/Navigation.js:132:10
-Parsing ecmascript source code failed
-  130 |             </div>
-  131 |             </div>
-> 132 |         </nav>
-      |          ^^^^^
-  133 |     )
-  134 | }
-  135 |
-
-Unterminated regexp literal
-
-Import trace:
-  Server Component:
-    ./src/components/Navigation.js
-    ./src/app/page.js
-[00:08:28.586] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:08:29.312] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:48.339] Server  LOG      ✓ Compiled in 117ms
-[00:12:25.097] Server  LOG      ✓ Compiled in 55ms
-[00:12:27.081] Server  LOG      ✓ Compiled in 82ms
-[00:13:49.680] Server  LOG      ✓ Compiled in 85ms
-[02:02:58.032] Server  LOG      ✓ Compiled in 182ms
+[02:27:04.966] Server  LOG      ✓ Compiled in 72ms
+[02:30:14.116] Server  LOG      ✓ Compiled in 247ms
+[02:31:34.966] Server  LOG      ✓ Compiled in 114ms
+[02:32:56.163] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:34:38.837] Server  LOG      ✓ Compiled in 122ms
