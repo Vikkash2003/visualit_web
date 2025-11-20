@@ -19,7 +19,7 @@ export default function PricingSection() {
         <div id="pricing" className="min-h-screen relative flex flex-col items-center justify-center max-w-5xl py-20 mx-auto px-4 snap-start scroll-mt-24">
             <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
                 <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-6 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-6 bg-gradient-to-r from-white via-green-200 to-green-200 bg-clip-text text-transparent">
                         {contentData.pricing.title}
                     </h2>
                     <p className="text-base md:text-lg text-center text-gray-400 mt-6">

@@ -29,7 +29,7 @@ const HeroSection = () => {
                 <div className="w-full max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
                     <div className="flex flex-col items-center justify-center text-center relative">
                         {/* Main Content - Compact */}
-                        <div className="space-y-4 max-w-2xl mx-auto relative z-30">
+                        <div className="space-y-4 max-w-xl mx-auto relative z-30">
                             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#1DB954]/10 border border-[#1DB954]/20 rounded-full backdrop-blur-sm mx-auto">
                                 <Sparkles className="w-4 h-4 text-[#1DB954]" />
                                 <span className="text-xs text-[#1DB954] font-medium">AI-Powered Reading App</span>
@@ -148,7 +148,7 @@ const HeroSection = () => {
                     {/* Title */}
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                            Reading <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Reimagined</span>
+                            Reading <span className="bg-gradient-to-r from-green-500 via-green-600 to-green-800 bg-clip-text text-transparent">Reimagined</span>
                         </h2>
                         <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                             {contentData.about.subtitle}

@@ -118,7 +118,7 @@ function Footer() {
                                 type="submit"
                                 size="icon"
                                 disabled={isSubmitting}
-                                className="absolute right-1 top-1 h-8 w-8 lg:h-9 lg:w-9 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                                className="absolute right-1 top-1 h-8 w-8 lg:h-9 lg:w-9 rounded-full bg-gradient-to-r from-green-600 to-green-600 hover:from-green-700 hover:to-green-700 text-white transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                             >
                                 <Send className={`h-4 w-4 ${isSubmitting ? 'animate-pulse' : ''}`} />
                                 <span className="sr-only">{contentData.footer.newsletter.buttonLabel}</span>
@@ -132,11 +132,10 @@ function Footer() {
                                         animate={{ opacity: 1, y: 0, scale: 1 }}
                                         exit={{ opacity: 0, y: -10, scale: 0.8 }}
                                         transition={{ duration: 0.2 }}
-                                        className={`absolute -bottom-12 left-0 right-0 px-3 py-2 rounded-lg text-xs font-medium shadow-lg flex items-center gap-1.5 z-50 ${
-                                            newsletterStatus.type === 'success' 
-                                                ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white'
-                                                : 'bg-gradient-to-r from-red-600 to-orange-600 text-white'
-                                        }`}
+                                        className={`absolute -bottom-12 left-0 right-0 px-3 py-2 rounded-lg text-xs font-medium shadow-lg flex items-center gap-1.5 z-50 ${newsletterStatus.type === 'success'
+                                            ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white'
+                                            : 'bg-gradient-to-r from-red-600 to-orange-600 text-white'
+                                            }`}
                                     >
                                         {newsletterStatus.type === 'success' ? (
                                             <Check className="w-3 h-3 flex-shrink-0" />
@@ -186,7 +185,7 @@ function Footer() {
                                     Phone:{" "}
                                     <button
                                         onClick={handleCopyPhone}
-                                        className="text-purple-400 hover:text-purple-300 transition-colors cursor-pointer underline decoration-dotted underline-offset-2 inline-flex items-center gap-1 group"
+                                        className="text-green-400 hover:text-green-300 transition-colors cursor-pointer underline decoration-dotted underline-offset-2 inline-flex items-center gap-1 group"
                                     >
                                         {contentData.footer.contact.phone}
                                         <Copy className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -199,7 +198,7 @@ function Footer() {
                                             animate={{ opacity: 1, y: 0, scale: 1 }}
                                             exit={{ opacity: 0, y: -10, scale: 0.8 }}
                                             transition={{ duration: 0.2 }}
-                                            className="absolute -top-10 left-0 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-3 py-1.5 rounded-lg text-xs font-medium shadow-lg flex items-center gap-1.5 whitespace-nowrap z-50"
+                                            className="absolute -top-10 left-0 bg-gradient-to-r from-green-600 to-pink-600 text-white px-3 py-1.5 rounded-lg text-xs font-medium shadow-lg flex items-center gap-1.5 whitespace-nowrap z-50"
                                         >
                                             <Check className="w-3 h-3" />
                                             Copied!
@@ -211,7 +210,7 @@ function Footer() {
                                 Email:{" "}
                                 <a
                                     href={`mailto:${contentData.footer.contact.email}`}
-                                    className="text-purple-400 hover:text-purple-300 transition-colors underline decoration-dotted underline-offset-2"
+                                    className="text-green-400 hover:text-green-300 transition-colors underline decoration-dotted underline-offset-2"
                                 >
                                     {contentData.footer.contact.email}
                                 </a>
@@ -253,7 +252,7 @@ function Footer() {
                 <div className="mt-8 lg:mt-12 flex flex-col items-center justify-center border-t border-white/10 pt-6 lg:pt-8 text-center">
                     <p className="text-xs lg:text-sm text-gray-400">
                         {contentData.footer.copyright}{" "}
-                        <Link href="/privacy-policy" className="text-purple-400 hover:text-purple-300 transition-colors underline decoration-dotted underline-offset-2">
+                        <Link href="/privacy-policy" className="text-green-400 hover:text-green-300 transition-colors underline decoration-dotted underline-offset-2">
                             Privacy Policy
                         </Link>
                     </p>

@@ -92,7 +92,7 @@ export const contentData = {
       paragraphs: [
         "Our journey started in a university classroom, where we came together as friends to complete a module for our degree. The project was, at first, an academic requirement.",
         "But as we delved into the research, we were struck by a clear problem: for many, reading is a barrier, not a gateway. Traditional books often lack the engagement needed for young minds and the accessibility required by neurodiverse individuals. Our \"project\" suddenly found its \"purpose.\"",
-          "What began as an assignment became a mission. We saw the power of combining AI-driven visuals and immersive audio to create a truly multi-sensory reading experience. When the semester ended, our team made a unanimous decision: this was too important to leave behind. We are now committed to taking VisuaLit from a concept to a platform that reimagines reading for everyone."
+        "What began as an assignment became a mission. We saw the power of combining AI-driven visuals and immersive audio to create a truly multi-sensory reading experience. When the semester ended, our team made a unanimous decision: this was too important to leave behind. We are now committed to taking VisuaLit from a concept to a platform that reimagines reading for everyone."
       ]
     }
   },
@@ -194,63 +194,59 @@ export const contentData = {
     ]
   },
 
-// Pricing Section
-    pricing: {
-        title: "Simple, Transparent Pricing",
-        subtitle: "Choose the plan that best fits your reading journey.",
-        billingToggle: {
-            monthly: "Monthly",
-            annually: "Annually (Save 16%)"
-        },
-        plans: [
-            {
-                id: "free",
-                title: "Free",
-                description: "Access the core reading experience and discover a new way to read.",
-                monthlyPrice: 0,
-                annuallyPrice: 0,
-                buttonText: "Start for Free",
-                billingNote: {
-                    monthly: "Always free",
-                    annually: "Always free"
-                },
-                features: [
-                    "Standard Ebook Reader",
-                    "Integrated Dictionary",
-                    "Community & Reading Streak Access",
-                    "Browse Book Marketplace",
-                    "Limited AI Visualizations",
-                    "Standard Text-to-Speech Audio"
-                ],
-                link: "#"
-            },
-            {
-                id: "premium",
-                title: "Premium",
-                description: "Unlock the full multi-sensory experience with unlimited AI generation.",
-                monthlyPrice: 6.99,
-                annuallyPrice: 69.90,
-                badge: "Best Value",
-                buttonText: "Go Premium",
-                billingNote: {
-                    monthly: "Billed monthly",
-                    annually: "Billed in one annual payment"
-                },
-                features: [
-                    "Everything in Free, plus:",
-                    "Unlimited AI Character & Scene Visualizations",
-                    "Immersive, Multi-Speaker Audiobooks",
-                    "Access to 'Brainrot' (short-form) audio content",
-                    "Customizable Visualization Styles",
-                    "Priority Feature Requests",
-                    "Offline Download for AI Content",
-                    "Priority Support",
-                    "Access to all premium features"
-                ],
-                link: "#"
-            }
-        ]
+  // Pricing Section
+  pricing: {
+    title: "Simple, Transparent Pricing",
+    subtitle: "Choose the plan that best fits your reading journey.",
+    billingToggle: {
+      monthly: "Monthly",
+      annually: "Annually (Save 16%)"
     },
+    plans: [
+      {
+        id: "free",
+        title: "Free",
+        description: "Access the core reading experience and discover a new way to read.",
+        monthlyPrice: 0,
+        annuallyPrice: 0,
+        buttonText: "Start for Free",
+        billingNote: {
+          monthly: "Always free",
+          annually: "Always free"
+        },
+        features: [
+          "Standard Ebook Reader",
+          "Integrated Dictionary",
+          "Community & Reading Streak Access",
+          "Browse Book Marketplace",
+          "Limited AI Visualizations",
+          "Standard Text-to-Speech Audio"
+        ],
+        link: "#"
+      },
+      {
+        id: "premium",
+        title: "Premium",
+        description: "Unlock the full multi-sensory experience with unlimited AI generation.",
+        monthlyPrice: 6.99,
+        annuallyPrice: 69.90,
+        badge: "Best Value",
+        buttonText: "Go Premium",
+        billingNote: {
+          monthly: "Billed monthly",
+          annually: "Billed in one annual payment"
+        },
+        features: [
+          "Everything in Free, plus:",
+          "More AI Character & Scene Visualizations",
+          "Immersive, Multi-Speaker Audiobooks",
+          "Extensive Support",
+          "Customizable Visualization Styles",
+        ],
+        link: "#"
+      }
+    ]
+  },
 
   // Demo Dialog
   demo: {

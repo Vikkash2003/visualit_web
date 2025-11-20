@@ -272,14 +272,10 @@ const contentData = {
                 },
                 features: [
                     "Everything in Free, plus:",
-                    "Unlimited AI Character & Scene Visualizations",
+                    "More AI Character & Scene Visualizations",
                     "Immersive, Multi-Speaker Audiobooks",
-                    "Access to 'Brainrot' (short-form) audio content",
-                    "Customizable Visualization Styles",
-                    "Priority Feature Requests",
-                    "Offline Download for AI Content",
-                    "Priority Support",
-                    "Access to all premium features"
+                    "Extensive Support",
+                    "Customizable Visualization Styles"
                 ],
                 link: "#"
             }
@@ -1216,7 +1212,7 @@ const HeroSection = ()=>{
                             className: "flex flex-col items-center justify-center text-center relative",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "space-y-4 max-w-2xl mx-auto relative z-30",
+                                    className: "space-y-4 max-w-xl mx-auto relative z-30",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "inline-flex items-center gap-2 px-3 py-1.5 bg-[#1DB954]/10 border border-[#1DB954]/20 rounded-full backdrop-blur-sm mx-auto",
@@ -1680,7 +1676,7 @@ const HeroSection = ()=>{
                                     children: [
                                         "Reading ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent",
+                                            className: "bg-gradient-to-r from-green-500 via-green-600 to-green-800 bg-clip-text text-transparent",
                                             children: "Reimagined"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HeroSection.js",
@@ -2183,17 +2179,17 @@ function FeatureSection() {
                     className: "text-center mb-20",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "inline-flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full backdrop-blur-sm mb-6",
+                            className: "inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full backdrop-blur-sm mb-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconSparkles$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconSparkles$3e$__["IconSparkles"], {
-                                    className: "w-4 h-4 text-purple-400"
+                                    className: "w-4 h-4 text-green-400"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/FeatureSection.js",
                                     lineNumber: 53,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-sm text-purple-300 font-medium",
+                                    className: "text-sm text-green-600 font-medium",
                                     children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contentData"].features.badge.text
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/FeatureSection.js",
@@ -2212,7 +2208,7 @@ function FeatureSection() {
                                 "A New Way to",
                                 " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent",
+                                    className: "bg-gradient-to-r from-green-700 via-green-400 to-green-600 bg-clip-text text-transparent",
                                     children: "Experience Stories"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/FeatureSection.js",
@@ -2495,7 +2491,7 @@ function PricingSection() {
                         className: "flex flex-col items-center text-center max-w-2xl mx-auto",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-4xl md:text-5xl lg:text-6xl font-bold mt-6 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent",
+                                className: "text-4xl md:text-5xl lg:text-6xl font-bold mt-6 bg-gradient-to-r from-white via-green-200 to-green-200 bg-clip-text text-transparent",
                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contentData"].pricing.title
                             }, void 0, false, {
                                 fileName: "[project]/src/components/PricingSection.js",
@@ -3869,7 +3865,7 @@ function Footer() {
                                                 type: "submit",
                                                 size: "icon",
                                                 disabled: isSubmitting,
-                                                className: "absolute right-1 top-1 h-8 w-8 lg:h-9 lg:w-9 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed",
+                                                className: "absolute right-1 top-1 h-8 w-8 lg:h-9 lg:w-9 rounded-full bg-gradient-to-r from-green-600 to-green-600 hover:from-green-700 hover:to-green-700 text-white transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
                                                         className: `h-4 w-4 ${isSubmitting ? 'animate-pulse' : ''}`
@@ -3918,14 +3914,14 @@ function Footer() {
                                                             className: "w-3 h-3 flex-shrink-0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Footer.js",
-                                                            lineNumber: 142,
+                                                            lineNumber: 141,
                                                             columnNumber: 45
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "w-3 h-3 flex-shrink-0",
                                                             children: "⚠"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Footer.js",
-                                                            lineNumber: 144,
+                                                            lineNumber: 143,
                                                             columnNumber: 45
                                                         }, this),
                                                         newsletterStatus.message
@@ -3950,7 +3946,7 @@ function Footer() {
                                         className: "absolute -right-4 top-0 h-24 w-24 rounded-full bg-purple-600/20 blur-2xl"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 151,
+                                        lineNumber: 150,
                                         columnNumber: 25
                                     }, this)
                                 ]
@@ -3966,7 +3962,7 @@ function Footer() {
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contentData"].footer.quickLinks.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 156,
+                                        lineNumber: 155,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -3980,7 +3976,7 @@ function Footer() {
                                                     children: link.text
                                                 }, index, false, {
                                                     fileName: "[project]/src/components/Footer.js",
-                                                    lineNumber: 162,
+                                                    lineNumber: 161,
                                                     columnNumber: 41
                                                 }, this);
                                             }
@@ -3991,19 +3987,19 @@ function Footer() {
                                                 children: link.text
                                             }, index, false, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 169,
+                                                lineNumber: 168,
                                                 columnNumber: 37
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 157,
+                                        lineNumber: 156,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 155,
+                                lineNumber: 154,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4013,7 +4009,7 @@ function Footer() {
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contentData"].footer.contact.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 179,
+                                        lineNumber: 178,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("address", {
@@ -4023,7 +4019,7 @@ function Footer() {
                                                     children: line
                                                 }, index, false, {
                                                     fileName: "[project]/src/components/Footer.js",
-                                                    lineNumber: 182,
+                                                    lineNumber: 181,
                                                     columnNumber: 33
                                                 }, this)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4036,26 +4032,26 @@ function Footer() {
                                                             " ",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                 onClick: handleCopyPhone,
-                                                                className: "text-purple-400 hover:text-purple-300 transition-colors cursor-pointer underline decoration-dotted underline-offset-2 inline-flex items-center gap-1 group",
+                                                                className: "text-green-400 hover:text-green-300 transition-colors cursor-pointer underline decoration-dotted underline-offset-2 inline-flex items-center gap-1 group",
                                                                 children: [
                                                                     __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contentData"].footer.contact.phone,
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$copy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Copy$3e$__["Copy"], {
                                                                         className: "w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Footer.js",
-                                                                        lineNumber: 192,
+                                                                        lineNumber: 191,
                                                                         columnNumber: 41
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Footer.js",
-                                                                lineNumber: 187,
+                                                                lineNumber: 186,
                                                                 columnNumber: 37
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Footer.js",
-                                                        lineNumber: 185,
+                                                        lineNumber: 184,
                                                         columnNumber: 33
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -4078,31 +4074,31 @@ function Footer() {
                                                             transition: {
                                                                 duration: 0.2
                                                             },
-                                                            className: "absolute -top-10 left-0 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-3 py-1.5 rounded-lg text-xs font-medium shadow-lg flex items-center gap-1.5 whitespace-nowrap z-50",
+                                                            className: "absolute -top-10 left-0 bg-gradient-to-r from-green-600 to-pink-600 text-white px-3 py-1.5 rounded-lg text-xs font-medium shadow-lg flex items-center gap-1.5 whitespace-nowrap z-50",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
                                                                     className: "w-3 h-3"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Footer.js",
-                                                                    lineNumber: 204,
+                                                                    lineNumber: 203,
                                                                     columnNumber: 45
                                                                 }, this),
                                                                 "Copied!"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Footer.js",
-                                                            lineNumber: 197,
+                                                            lineNumber: 196,
                                                             columnNumber: 41
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer.js",
-                                                        lineNumber: 195,
+                                                        lineNumber: 194,
                                                         columnNumber: 33
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 184,
+                                                lineNumber: 183,
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4111,29 +4107,29 @@ function Footer() {
                                                     " ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                         href: `mailto:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contentData"].footer.contact.email}`,
-                                                        className: "text-purple-400 hover:text-purple-300 transition-colors underline decoration-dotted underline-offset-2",
+                                                        className: "text-green-400 hover:text-green-300 transition-colors underline decoration-dotted underline-offset-2",
                                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contentData"].footer.contact.email
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer.js",
-                                                        lineNumber: 212,
+                                                        lineNumber: 211,
                                                         columnNumber: 33
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 210,
+                                                lineNumber: 209,
                                                 columnNumber: 29
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 180,
+                                        lineNumber: 179,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 178,
+                                lineNumber: 177,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4143,7 +4139,7 @@ function Footer() {
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contentData"].footer.social.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 224,
+                                        lineNumber: 223,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4164,17 +4160,17 @@ function Footer() {
                                                                     className: "h-4 w-4 lg:h-5 lg:w-5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Footer.js",
-                                                                    lineNumber: 238,
+                                                                    lineNumber: 237,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Footer.js",
-                                                                lineNumber: 232,
+                                                                lineNumber: 231,
                                                                 columnNumber: 49
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Footer.js",
-                                                            lineNumber: 231,
+                                                            lineNumber: 230,
                                                             columnNumber: 45
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
@@ -4182,35 +4178,35 @@ function Footer() {
                                                                 children: platform.tooltip
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Footer.js",
-                                                                lineNumber: 242,
+                                                                lineNumber: 241,
                                                                 columnNumber: 49
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Footer.js",
-                                                            lineNumber: 241,
+                                                            lineNumber: 240,
                                                             columnNumber: 45
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Footer.js",
-                                                    lineNumber: 230,
+                                                    lineNumber: 229,
                                                     columnNumber: 41
                                                 }, this)
                                             }, index, false, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 229,
+                                                lineNumber: 228,
                                                 columnNumber: 37
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 225,
+                                        lineNumber: 224,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 223,
+                                lineNumber: 222,
                                 columnNumber: 21
                             }, this)
                         ]
@@ -4228,22 +4224,22 @@ function Footer() {
                                 " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     href: "/privacy-policy",
-                                    className: "text-purple-400 hover:text-purple-300 transition-colors underline decoration-dotted underline-offset-2",
+                                    className: "text-green-400 hover:text-green-300 transition-colors underline decoration-dotted underline-offset-2",
                                     children: "Privacy Policy"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Footer.js",
-                                    lineNumber: 256,
+                                    lineNumber: 255,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Footer.js",
-                            lineNumber: 254,
+                            lineNumber: 253,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Footer.js",
-                        lineNumber: 253,
+                        lineNumber: 252,
                         columnNumber: 17
                     }, this)
                 ]

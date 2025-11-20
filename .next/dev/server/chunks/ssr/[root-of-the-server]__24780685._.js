@@ -202,21 +202,21 @@ function PrivacyPolicyPage() {
                 className: "fixed inset-0 overflow-hidden pointer-events-none",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-20 left-10 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl animate-pulse"
+                        className: "absolute top-20 left-10 w-72 h-72 bg-emerald-600/20 rounded-full blur-3xl animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/src/app/privacy-policy/page.js",
                         lineNumber: 14,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute bottom-20 right-10 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl animate-pulse delay-700"
+                        className: "absolute bottom-20 right-10 w-96 h-96 bg-green-600/20 rounded-full blur-3xl animate-pulse delay-700"
                     }, void 0, false, {
                         fileName: "[project]/src/app/privacy-policy/page.js",
                         lineNumber: 15,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#1DB954]/10 rounded-full blur-3xl animate-pulse delay-1000"
+                        className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-3xl animate-pulse delay-1000"
                     }, void 0, false, {
                         fileName: "[project]/src/app/privacy-policy/page.js",
                         lineNumber: 16,
@@ -296,7 +296,7 @@ function PrivacyPolicyPage() {
                                     type: "spring",
                                     stiffness: 200
                                 },
-                                className: "inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 mb-6 shadow-lg shadow-purple-500/50",
+                                className: "inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-emerald-600 to-green-600 mb-6 shadow-lg shadow-emerald-500/50",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"], {
                                     className: "w-10 h-10 text-white"
                                 }, void 0, false, {
@@ -312,7 +312,7 @@ function PrivacyPolicyPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "text-5xl md:text-6xl lg:text-7xl font-bold mb-6",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent",
+                                    className: "bg-gradient-to-r from-emerald-400 via-green-400 to-emerald-400 bg-clip-text text-transparent",
                                     children: "Privacy Policy"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/privacy-policy/page.js",
@@ -337,7 +337,7 @@ function PrivacyPolicyPage() {
                                 className: "inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-sm",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                        className: "w-4 h-4 text-purple-400"
+                                        className: "w-4 h-4 text-emerald-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/privacy-policy/page.js",
                                         lineNumber: 64,
@@ -386,7 +386,7 @@ function PrivacyPolicyPage() {
                             delay: 0.5,
                             duration: 0.6
                         },
-                        className: "mb-12 p-8 bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-3xl backdrop-blur-sm",
+                        className: "mb-12 p-8 bg-gradient-to-br from-emerald-500/10 to-green-500/10 border border-emerald-500/20 rounded-3xl backdrop-blur-sm",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-gray-300 text-lg leading-relaxed",
                             children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$privacy$2d$policy$2f$content$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["privacyPolicy"].intro
@@ -430,10 +430,10 @@ function PrivacyPolicyPage() {
                         transition: {
                             duration: 0.6
                         },
-                        className: "mt-16 p-8 bg-gradient-to-br from-gray-900/80 to-black/80 border border-[#1DB954]/30 rounded-3xl backdrop-blur-sm relative overflow-hidden",
+                        className: "mt-16 p-8 bg-gradient-to-br from-gray-900/80 to-black/80 border border-emerald-500/30 rounded-3xl backdrop-blur-sm relative overflow-hidden",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute -top-10 -right-10 w-40 h-40 bg-[#1DB954]/20 rounded-full blur-3xl"
+                                className: "absolute -top-10 -right-10 w-40 h-40 bg-emerald-500/20 rounded-full blur-3xl"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/privacy-policy/page.js",
                                 lineNumber: 98,
@@ -446,7 +446,7 @@ function PrivacyPolicyPage() {
                                         className: "text-2xl font-bold mb-4 flex items-center gap-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
-                                                className: "w-6 h-6 text-[#1DB954]"
+                                                className: "w-6 h-6 text-emerald-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/privacy-policy/page.js",
                                                 lineNumber: 101,
@@ -469,7 +469,7 @@ function PrivacyPolicyPage() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: `mailto:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$privacy$2d$policy$2f$content$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["privacyPolicy"].contactEmail}`,
-                                        className: "inline-flex items-center gap-2 text-xl font-semibold text-purple-400 hover:text-purple-300 transition-colors group",
+                                        className: "inline-flex items-center gap-2 text-xl font-semibold text-emerald-400 hover:text-emerald-300 transition-colors group",
                                         children: [
                                             __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$privacy$2d$policy$2f$content$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["privacyPolicy"].contactEmail,
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
@@ -530,10 +530,10 @@ function PrivacySection({ section, index }) {
         },
         className: "group",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "p-8 bg-gradient-to-br from-gray-900/80 to-black/80 border border-white/10 rounded-3xl backdrop-blur-sm hover:border-purple-500/30 transition-all duration-500 relative overflow-hidden",
+            className: "p-8 bg-gradient-to-br from-gray-900/80 to-black/80 border border-white/10 rounded-3xl backdrop-blur-sm hover:border-emerald-500/30 transition-all duration-500 relative overflow-hidden",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "absolute inset-0 bg-gradient-to-br from-purple-600/5 to-pink-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                    className: "absolute inset-0 bg-gradient-to-br from-emerald-600/5 to-green-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 }, void 0, false, {
                     fileName: "[project]/src/app/privacy-policy/page.js",
                     lineNumber: 132,
@@ -543,7 +543,7 @@ function PrivacySection({ section, index }) {
                     className: "relative z-10",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-3xl font-bold mb-6 text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-500",
+                            className: "text-3xl font-bold mb-6 text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-emerald-400 group-hover:to-green-400 group-hover:bg-clip-text transition-all duration-500",
                             children: section.heading
                         }, void 0, false, {
                             fileName: "[project]/src/app/privacy-policy/page.js",
@@ -600,7 +600,7 @@ function ContentItem({ item }) {
             className: "text-xl font-semibold text-white mt-6 mb-3 flex items-center gap-2",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                    className: "w-5 h-5 text-[#1DB954]"
+                    className: "w-5 h-5 text-emerald-500"
                 }, void 0, false, {
                     fileName: "[project]/src/app/privacy-policy/page.js",
                     lineNumber: 165,
@@ -621,7 +621,7 @@ function ContentItem({ item }) {
                     className: "flex items-start gap-3 text-gray-300 leading-relaxed",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mt-2 w-2 h-2 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 flex-shrink-0"
+                            className: "mt-2 w-2 h-2 rounded-full bg-gradient-to-r from-emerald-400 to-green-400 flex-shrink-0"
                         }, void 0, false, {
                             fileName: "[project]/src/app/privacy-policy/page.js",
                             lineNumber: 176,

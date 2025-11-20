@@ -49,13 +49,13 @@ export function FeatureSection() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-20"
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full backdrop-blur-sm mb-6">
-                        <IconSparkles className="w-4 h-4 text-purple-400" />
-                        <span className="text-sm text-purple-300 font-medium">{contentData.features.badge.text}</span>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full backdrop-blur-sm mb-6">
+                        <IconSparkles className="w-4 h-4 text-green-400" />
+                        <span className="text-sm text-green-600 font-medium">{contentData.features.badge.text}</span>
                     </div>
                     <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
                         A New Way to{" "}
-                        <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-green-700 via-green-400 to-green-600 bg-clip-text text-transparent">
                             Experience Stories
                         </span>
                     </h2>
@@ -124,7 +124,7 @@ function FeatureCard({ feature, index, iconMap }) {
                         {/* Title */}
                         <h3 className={cn(
                             "text-2xl font-bold mb-4 transition-all duration-500",
-                            isHovered 
+                            isHovered
                                 ? `text-transparent bg-gradient-to-r bg-clip-text ${gradient}`
                                 : "text-white"
                         )}>
