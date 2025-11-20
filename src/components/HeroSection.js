@@ -4,6 +4,7 @@ import { Download, Play, Sparkles, BookOpen, Users, Target, Zap, Award } from 'l
 import Button from '@/components/ui/button'
 import { DemoVideo } from '@/components/DemoVideo'
 import { contentData } from '@/lib/contentData'
+import { SparklesText } from '@/components/ui/sparkles-text'
 const HeroSection = () => {
     const iconMap = {
         'Target': Target,
@@ -28,17 +29,21 @@ const HeroSection = () => {
                 <div className="w-full max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
                     <div className="flex flex-col items-center justify-center text-center relative">
                         {/* Main Content - Compact */}
-                        <div className="space-y-4 max-w-xl mx-auto relative z-30">
+                        <div className="space-y-4 max-w-2xl mx-auto relative z-30">
                             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#1DB954]/10 border border-[#1DB954]/20 rounded-full backdrop-blur-sm mx-auto">
                                 <Sparkles className="w-4 h-4 text-[#1DB954]" />
                                 <span className="text-xs text-[#1DB954] font-medium">AI-Powered Reading App</span>
                             </div>
                             <h1 className="font-display text-7xl sm:text-7xl md:text-7xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
                                 <span className="block text-white">Read.</span>
-                                <span className="block mt-2 bg-gradient-to-r from-purple-400 via-[#1DB954] to-purple-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">Visualize.</span>
+                                <SparklesText
+                                    text="Visualize."
+                                    className="block mt-2 bg-gradient-to-r from-green-300 via-[#19cb57] to-green-200 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto] text-7xl sm:text-7xl md:text-7xl lg:text-7xl font-bold leading-[1.1] tracking-tight"
+                                    colors={{ first: '#1DB954', second: '#4ade80' }}
+                                />
                                 <span className="block mt-2 text-white">Understand.</span>
                             </h1>
-                            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto font-light pt-1">Transform your reading experience with <span className="text-[#1DB954] font-semibold">AI-powered Visualizations</span>. Bridging the gap between text and imagination.</p>
+                            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto font-light pt-1">Transform your reading experience with <span className="text-[#1DB954] font-semibold">AI-powered Visualizations</span><br />Bridging the gap between text and imagination.</p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
                                 <a
                                     href="https://play.google.com/store/apps/details?id=com.visualit.app.visualit&hl=en"

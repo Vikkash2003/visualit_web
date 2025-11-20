@@ -1,86 +1,131 @@
-
 'use client'
-import { useState, useEffect } from 'react';
-import { contentData } from '@/lib/contentData';
+import { Award, Star, Users, Globe } from 'lucide-react'
+import { contentData } from '@/lib/contentData'
+import { TestimonialsSection } from '@/components/ui/TestimonialsSection'
 
 const AchievementSection = () => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        setIsVisible(true);
-    }, []);
+    const stats = [
+        {
+            id: 1,
+            value: "50K+",
+            label: "Active Readers",
+            icon: Users,
+            description: "Growing community of visual learners"
+        },
+        {
+            id: 2,
+            value: "4.8/5",
+            label: "App Store Rating",
+            icon: Star,
+            description: "Loved by students and professionals"
+        },
+        {
+            id: 3,
+            value: "1M+",
+            label: "Pages Visualized",
+            icon: Globe,
+            description: "Transforming content across the globe"
+        },
+        {
+            id: 4,
+            value: "#1",
+            label: "Education App",
+            icon: Award,
+            description: "Top trending in Education category"
+        }
+    ]
 
     return (
-        <section id="achievement" className="min-h-screen py-20 px-6 w-full relative overflow-hidden snap-start scroll-mt-24 flex items-center">
-            <div className="max-w-7xl mx-auto relative z-10 w-full">
-                {/* Title */}
-                <h2
-                    className={`text-4xl font-bold text-white text-center mb-16 transition-all duration-1000 ${
-                        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                    }`}
-                >
-                    {contentData.achievements.title}
-                </h2>
+        <section id="achievements" className="relative py-24 bg-black overflow-hidden">
+            {/* Background Elements */}
+            <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#1DB954]/20 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#1DB954]/20 to-transparent"></div>
 
-                {/* Awards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {contentData.achievements.awards.map((award, index) => (
+            {/* Ambient Glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#1DB954]/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
+                {/* Section Header */}
+                <div className="text-center mb-16 space-y-4">
+                    <h2 className="text-3xl md:text-5xl font-bold text-white">
+                        Making an <span className="text-[#1DB954]">Impact</span>
+                    </h2>
+                    <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                        Join thousands of users who are transforming their reading experience with VisuaLit.
+                    </p>
+                </div>
+
+                {/* Stats Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {stats.map((stat, index) => (
                         <div
-                            key={award.id}
-                            className={`relative bg-gradient-to-br from-[#1DB954]/10 to-black/50 backdrop-blur-md border border-[#1DB954]/30 rounded-2xl p-6 shadow-lg shadow-[#1DB954]/10 hover:scale-105 hover:shadow-[#1DB954]/30 hover:border-[#1DB954]/50 transition-all duration-300 cursor-pointer group ${
-                                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                            }`}
-                            style={{
-                                transitionDelay: isVisible ? `${index * 200}ms` : '0ms'
-                            }}
+                            key={stat.id}
+                            className="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-[#1DB954]/30 transition-all duration-300 hover:-translate-y-1"
                         >
-                            {/* Award Image */}
-                            <div className="w-full h-48 mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-[#1DB954]/20 to-black border border-[#1DB954]/20 flex items-center justify-center">
-                                <img
-                                    src={award.image}
-                                    alt={award.title}
-                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                    onError={(e) => {
-                                        e.target.style.display = 'none';
-                                        e.target.parentElement.innerHTML = '<div class="text-6xl">🏆</div>';
-                                    }}
-                                />
-                            </div>
+                            {/* Hover Glow */}
+                            <div className="absolute inset-0 bg-[#1DB954]/0 group-hover:bg-[#1DB954]/5 rounded-2xl transition-all duration-300"></div>
 
-                            {/* Award Title */}
-                            <h3 className="text-xl font-bold text-[#1DB954] mb-3 group-hover:text-white transition-colors duration-300">
-                                {award.title}
-                            </h3>
+                            <div className="relative z-10 flex flex-col items-center text-center space-y-4">
+                                <div className="p-3 rounded-full bg-[#1DB954]/10 text-[#1DB954] group-hover:scale-110 transition-transform duration-300">
+                                    <stat.icon className="w-6 h-6" />
+                                </div>
 
-                            {/* Award Description */}
-                            <p className="text-gray-300 leading-relaxed text-sm">
-                                {award.description}
-                            </p>
+                                <div className="space-y-1">
+                                    <h3 className="text-4xl font-bold text-white tracking-tight">
+                                        {stat.value}
+                                    </h3>
+                                    <p className="text-[#1DB954] font-medium text-sm uppercase tracking-wider">
+                                        {stat.label}
+                                    </p>
+                                </div>
 
-                            {/* Decorative shine effect on hover */}
-                            <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#1DB954]/10 to-transparent transform -skew-x-12 translate-x-full group-hover:translate-x-[-200%] transition-transform duration-1000"></div>
+                                <p className="text-gray-400 text-sm leading-relaxed">
+                                    {stat.description}
+                                </p>
                             </div>
                         </div>
                     ))}
                 </div>
 
-                {/* Stats Section */}
-                <div className={`mt-16 text-center transition-all duration-1000 delay-500 ${
-                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`}>
-                    <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-                        {contentData.achievements.stats.map((stat, index) => (
-                            <div key={index} className="text-center group">
-                                <div className="text-4xl font-bold bg-gradient-to-r from-[#1DB954] to-green-400 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">{stat.value}</div>
-                                <div className="text-gray-400 text-sm uppercase tracking-wider group-hover:text-gray-300 transition-colors">{stat.label}</div>
+                {/* Awards Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                    {contentData.achievements.awards.map((award) => (
+                        <div
+                            key={award.id}
+                            className="group relative rounded-2xl bg-white/5 border border-white/10 hover:border-[#1DB954]/30 transition-all duration-300 hover:-translate-y-1 overflow-hidden flex flex-col"
+                        >
+                            {/* Hover Glow */}
+                            <div className="absolute inset-0 bg-[#1DB954]/0 group-hover:bg-[#1DB954]/5 transition-all duration-300"></div>
+
+                            {/* Image Container */}
+                            <div className="relative h-36 w-full overflow-hidden">
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
+                                <img
+                                    src={award.image}
+                                    alt={award.title}
+                                    className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ${award.id === 2 ? 'object-[center_10%]' : ''
+                                        }`}
+                                />
+                                <div className="absolute bottom-4 left-4 right-4 z-20">
+                                    <h3 className="text-xl font-bold text-white leading-tight">
+                                        {award.title}
+                                    </h3>
+                                </div>
                             </div>
-                        ))}
-                    </div>
+
+                            {/* Content */}
+                            <div className="relative z-10 p-6 flex-1 flex flex-col">
+                                <p className="text-gray-400 text-sm leading-relaxed flex-1">
+                                    {award.description}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
+            <TestimonialsSection />
         </section>
-    );
-};
+    )
+}
 
-export default AchievementSection;
+export default AchievementSection

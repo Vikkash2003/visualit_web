@@ -1,0 +1,9 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"ViewportBoundary"]
+4:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+7:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"IconMark"]
+:HL["/_next/static/chunks/07f36d606a94e383.css","style"]
+0:{"buildId":"vFWikEVtIeKvAfDyFdrod","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"privacy-policy","paramType":null,"paramKey":"privacy-policy","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"head":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],null]}],"isHeadPartial":false,"staleTime":300}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+6:[["$","title","0",{"children":"VisuaLit - Visualize Content While Reading"}],["$","meta","1",{"name":"description","content":"Visualize the content when reading without imagine. Transform your reading experience with AI-powered visualization."}],["$","link","2",{"rel":"shortcut icon","href":"/VisuaLit-Logo.png"}],["$","link","3",{"rel":"icon","href":"/VisuaLit-Logo.png","sizes":"32x32","type":"image/png"}],["$","link","4",{"rel":"icon","href":"/VisuaLit-Logo.png","sizes":"64x64","type":"image/png"}],["$","link","5",{"rel":"apple-touch-icon","href":"/VisuaLit-Logo.png"}],["$","$L7","6",{}]]

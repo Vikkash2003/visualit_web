@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/walapalam/Development/VisuaLitWebsite/visualit_web/src/app/page.js"],"sourcesContent":["import Navigation from '@/components/Navigation'\nimport HeroSection from '@/components/HeroSection'\nimport AboutVisuaLitSection from \"@/components/AboutVisuaLitSection\"\nimport FeatureSection from \"@/components/FeatureSection\"\nimport PricingSection from \"@/components/PricingSection\"\nimport OurStorySection from \"@/components/OurStorySection\"\nimport AchievementSection from \"@/components/AchievementSection\"\nimport { Footer } from \"@/components/Footer\"\n\nexport default function Home() {\n    return (\n        <main className=\"min-h-screen snap-y snap-mandatory overflow-y-auto\">\n            <Navigation />\n            <HeroSection />\n            <FeatureSection />\n            <PricingSection />\n            <OurStorySection />\n            <AchievementSection />\n            <Footer />\n        </main>\n    )\n}"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AASe,SAAS;IACpB,qBACI,8OAAC;QAAK,WAAU;;0BACZ,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;;;;;;;AAGb","debugId":null}}]
+}
