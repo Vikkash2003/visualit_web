@@ -464,7 +464,7 @@ const Navigation = ()=>{
         }
     }["Navigation.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-        className: "fixed top-0 left-0 right-0 z-50",
+        className: "fixed top-0 left-0 right-0 z-100",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-black via-black/50 to-transparent pointer-events-none"
@@ -498,12 +498,12 @@ const Navigation = ()=>{
                                                 className: isMobile ? "w-4 h-4" : "w-5 h-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Navigation.js",
-                                                lineNumber: 54,
+                                                lineNumber: 53,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, item.title, false, {
                                             fileName: "[project]/src/components/Navigation.js",
-                                            lineNumber: 48,
+                                            lineNumber: 47,
                                             columnNumber: 41
                                         }, ("TURBOPACK compile-time value", void 0));
                                     }
@@ -513,20 +513,20 @@ const Navigation = ()=>{
                                         children: item.title
                                     }, item.title, false, {
                                         fileName: "[project]/src/components/Navigation.js",
-                                        lineNumber: 60,
+                                        lineNumber: 59,
                                         columnNumber: 37
                                     }, ("TURBOPACK compile-time value", void 0));
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Navigation.js",
-                                lineNumber: 40,
+                                lineNumber: 39,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center justify-center flex-shrink-0"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Navigation.js",
-                                lineNumber: 72,
+                                lineNumber: 71,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -543,12 +543,12 @@ const Navigation = ()=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navigation.js",
-                                    lineNumber: 82,
+                                    lineNumber: 80,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Navigation.js",
-                                lineNumber: 77,
+                                lineNumber: 76,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -566,12 +566,12 @@ const Navigation = ()=>{
                                                 className: isMobile ? "w-4 h-4" : "w-5 h-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Navigation.js",
-                                                lineNumber: 112,
+                                                lineNumber: 109,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, item.title, false, {
                                             fileName: "[project]/src/components/Navigation.js",
-                                            lineNumber: 106,
+                                            lineNumber: 103,
                                             columnNumber: 41
                                         }, ("TURBOPACK compile-time value", void 0));
                                     }
@@ -581,13 +581,13 @@ const Navigation = ()=>{
                                         children: item.title
                                     }, item.title, false, {
                                         fileName: "[project]/src/components/Navigation.js",
-                                        lineNumber: 118,
+                                        lineNumber: 115,
                                         columnNumber: 37
                                     }, ("TURBOPACK compile-time value", void 0));
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Navigation.js",
-                                lineNumber: 98,
+                                lineNumber: 95,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
@@ -977,6 +977,7 @@ __turbopack_context__.s([
     ()=>__TURBOPACK__default__export__
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/download.js [app-client] (ecmascript) <export default as Download>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/play.js [app-client] (ecmascript) <export default as Play>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
@@ -988,6 +989,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$DemoVideo$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/DemoVideo.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/contentData.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
@@ -995,12 +998,25 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e
 ;
 ;
 const HeroSection = ()=>{
+    _s();
     const iconMap = {
         'Target': __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"],
         'Users': __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"],
         'Zap': __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"],
         'Award': __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__["Award"]
     };
+    const [scrollY, setScrollY] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "HeroSection.useEffect": ()=>{
+            const handleScroll = {
+                "HeroSection.useEffect.handleScroll": ()=>setScrollY(window.scrollY)
+            }["HeroSection.useEffect.handleScroll"];
+            window.addEventListener('scroll', handleScroll);
+            return ({
+                "HeroSection.useEffect": ()=>window.removeEventListener('scroll', handleScroll)
+            })["HeroSection.useEffect"];
+        }
+    }["HeroSection.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "home",
         className: "relative w-full bg-[#050505] overflow-hidden",
@@ -1014,12 +1030,12 @@ const HeroSection = ()=>{
                             className: "absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-500/10 rounded-full blur-[120px] animate-pulse"
                         }, void 0, false, {
                             fileName: "[project]/src/components/HeroSection.js",
-                            lineNumber: 19,
+                            lineNumber: 26,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/HeroSection.js",
-                        lineNumber: 18,
+                        lineNumber: 25,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1037,7 +1053,7 @@ const HeroSection = ()=>{
                                                     className: "w-4 h-4 text-[#1DB954]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 26,
+                                                    lineNumber: 33,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1045,13 +1061,13 @@ const HeroSection = ()=>{
                                                     children: "AI-Powered Reading App"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 27,
+                                                    lineNumber: 34,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 25,
+                                            lineNumber: 32,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -1062,7 +1078,7 @@ const HeroSection = ()=>{
                                                     children: "Read."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 30,
+                                                    lineNumber: 37,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1070,7 +1086,7 @@ const HeroSection = ()=>{
                                                     children: "Visualize."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 31,
+                                                    lineNumber: 38,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1078,13 +1094,13 @@ const HeroSection = ()=>{
                                                     children: "Understand."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 32,
+                                                    lineNumber: 39,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 29,
+                                            lineNumber: 36,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1096,14 +1112,14 @@ const HeroSection = ()=>{
                                                     children: "AI-powered Visualizations"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 34,
+                                                    lineNumber: 41,
                                                     columnNumber: 179
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 ". Bridging the gap between text and imagination."
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 34,
+                                            lineNumber: 41,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1120,19 +1136,19 @@ const HeroSection = ()=>{
                                                                 className: "mr-2 h-5 w-5 group-hover:animate-bounce"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/HeroSection.js",
-                                                                lineNumber: 42,
+                                                                lineNumber: 49,
                                                                 columnNumber: 41
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             "Download Now"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/HeroSection.js",
-                                                        lineNumber: 41,
+                                                        lineNumber: 48,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 36,
+                                                    lineNumber: 43,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1146,30 +1162,30 @@ const HeroSection = ()=>{
                                                                     className: "mr-2 h-5 w-5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                                    lineNumber: 53,
+                                                                    lineNumber: 60,
                                                                     columnNumber: 49
                                                                 }, void 0),
                                                                 "Watch Demo"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/HeroSection.js",
-                                                            lineNumber: 49,
+                                                            lineNumber: 56,
                                                             columnNumber: 45
                                                         }, void 0)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.js",
-                                                        lineNumber: 47,
+                                                        lineNumber: 54,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 46,
+                                                    lineNumber: 53,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 35,
+                                            lineNumber: 42,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1185,40 +1201,40 @@ const HeroSection = ()=>{
                                                                     className: "w-8 h-8 rounded-full bg-gradient-to-br from-[#1DB954] to-green-600 border-2 border-black"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                                    lineNumber: 63,
+                                                                    lineNumber: 70,
                                                                     columnNumber: 41
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 border-2 border-black"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                                    lineNumber: 64,
+                                                                    lineNumber: 71,
                                                                     columnNumber: 41
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 border-2 border-black"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                                    lineNumber: 65,
+                                                                    lineNumber: 72,
                                                                     columnNumber: 41
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/HeroSection.js",
-                                                            lineNumber: 62,
+                                                            lineNumber: 69,
                                                             columnNumber: 37
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "150+ users"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/HeroSection.js",
-                                                            lineNumber: 67,
+                                                            lineNumber: 74,
                                                             columnNumber: 37
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 61,
+                                                    lineNumber: 68,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1229,32 +1245,32 @@ const HeroSection = ()=>{
                                                             children: "★★★★★"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/HeroSection.js",
-                                                            lineNumber: 70,
+                                                            lineNumber: 77,
                                                             columnNumber: 37
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "4.9/5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/HeroSection.js",
-                                                            lineNumber: 71,
+                                                            lineNumber: 78,
                                                             columnNumber: 37
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 69,
+                                                    lineNumber: 76,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 60,
+                                            lineNumber: 67,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 24,
+                                    lineNumber: 31,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1266,55 +1282,18 @@ const HeroSection = ()=>{
                                                 className: "absolute inset-0 border-2 border-[#1DB954]/20 rounded-full border-dashed animate-spin-slow"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 78,
+                                                lineNumber: 85,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"], {
                                                 className: "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 text-[#1DB954]/40"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 79,
+                                                lineNumber: 86,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute top-0 right-0 w-3 h-3 bg-[#1DB954] rounded-full shadow-[0_0_15px_#1DB954]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 80,
-                                                columnNumber: 33
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/HeroSection.js",
-                                        lineNumber: 77,
-                                        columnNumber: 29
-                                    }, ("TURBOPACK compile-time value", void 0))
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 76,
-                                    columnNumber: 25
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute top-1/2 -translate-y-1/2 right-0 hidden xl:block opacity-60 pointer-events-none",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative w-48 h-48 animate-float-reverse",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute inset-0 border border-white/10 rounded-3xl rotate-12"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 85,
-                                                columnNumber: 33
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute -inset-4 border border-white/5 rounded-3xl -rotate-6"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 86,
-                                                columnNumber: 33
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                                className: "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 text-purple-500/40"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.js",
                                                 lineNumber: 87,
@@ -1330,16 +1309,53 @@ const HeroSection = ()=>{
                                     fileName: "[project]/src/components/HeroSection.js",
                                     lineNumber: 83,
                                     columnNumber: 25
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute top-1/2 -translate-y-1/2 right-0 hidden xl:block opacity-60 pointer-events-none",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "relative w-48 h-48 animate-float-reverse",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute inset-0 border border-white/10 rounded-3xl rotate-12"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/HeroSection.js",
+                                                lineNumber: 92,
+                                                columnNumber: 33
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute -inset-4 border border-white/5 rounded-3xl -rotate-6"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/HeroSection.js",
+                                                lineNumber: 93,
+                                                columnNumber: 33
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
+                                                className: "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 text-purple-500/40"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/HeroSection.js",
+                                                lineNumber: 94,
+                                                columnNumber: 33
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/HeroSection.js",
+                                        lineNumber: 91,
+                                        columnNumber: 29
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/HeroSection.js",
+                                    lineNumber: 90,
+                                    columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/HeroSection.js",
-                            lineNumber: 22,
+                            lineNumber: 29,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/HeroSection.js",
-                        lineNumber: 21,
+                        lineNumber: 28,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1348,14 +1364,34 @@ const HeroSection = ()=>{
                             className: "absolute top-0 left-1/2 -translate-x-1/2 w-[150%] h-[150%] bg-[#1DB954]/30 blur-[100px] rounded-full opacity-60"
                         }, void 0, false, {
                             fileName: "[project]/src/components/HeroSection.js",
-                            lineNumber: 94,
+                            lineNumber: 101,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/HeroSection.js",
-                        lineNumber: 93,
+                        lineNumber: 100,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
+                    Array.from({
+                        length: 4
+                    }).map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: `absolute bottom-[-480px] left-1/2 -translate-x-1/2 w-full max-w-[350px] z-${30 - i * 10} perspective-[1000px]`,
+                            style: {
+                                transform: `translateY(${Math.max(0, scrollY - 300 - i * 30)}px)`,
+                                opacity: 0.6 - i * 0.1
+                            },
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative bg-[#0a0a0a] border-8 border-[#1a1a1a] rounded-[3rem] shadow-2xl overflow-hidden"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/HeroSection.js",
+                                lineNumber: 114,
+                                columnNumber: 25
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, i, false, {
+                            fileName: "[project]/src/components/HeroSection.js",
+                            lineNumber: 106,
+                            columnNumber: 21
+                        }, ("TURBOPACK compile-time value", void 0))),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute bottom-[-480px] left-1/2 -translate-x-1/2 w-full max-w-[350px] z-40 perspective-[1000px] [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)]",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1367,7 +1403,7 @@ const HeroSection = ()=>{
                                         className: "absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black/80 to-transparent z-10"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/HeroSection.js",
-                                        lineNumber: 104,
+                                        lineNumber: 125,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1379,75 +1415,75 @@ const HeroSection = ()=>{
                                                     className: "w-8 h-8 text-[#1DB954]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.js",
-                                                    lineNumber: 107,
+                                                    lineNumber: 128,
                                                     columnNumber: 37
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 106,
+                                                lineNumber: 127,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "h-4 w-3/4 bg-white/10 rounded-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 109,
+                                                lineNumber: 130,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "h-4 w-1/2 bg-white/10 rounded-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 110,
+                                                lineNumber: 131,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "h-32 w-full bg-white/5 rounded-xl mt-8 border border-white/5"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 111,
+                                                lineNumber: 132,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "h-4 w-2/3 bg-white/10 rounded-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 112,
+                                                lineNumber: 133,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "h-4 w-1/2 bg-white/10 rounded-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 113,
+                                                lineNumber: 134,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/HeroSection.js",
-                                        lineNumber: 105,
+                                        lineNumber: 126,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/HeroSection.js",
-                                lineNumber: 102,
+                                lineNumber: 123,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/HeroSection.js",
-                            lineNumber: 100,
+                            lineNumber: 121,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/HeroSection.js",
-                        lineNumber: 98,
+                        lineNumber: 119,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/HeroSection.js",
-                lineNumber: 16,
+                lineNumber: 23,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1467,13 +1503,13 @@ const HeroSection = ()=>{
                                             children: "Reimagined"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 125,
+                                            lineNumber: 146,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 124,
+                                    lineNumber: 145,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1481,13 +1517,13 @@ const HeroSection = ()=>{
                                     children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contentData$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contentData"].about.subtitle
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 127,
+                                    lineNumber: 148,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/HeroSection.js",
-                            lineNumber: 123,
+                            lineNumber: 144,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1503,12 +1539,12 @@ const HeroSection = ()=>{
                                                 className: "w-8 h-8"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.js",
-                                                lineNumber: 141,
+                                                lineNumber: 162,
                                                 columnNumber: 41
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 140,
+                                            lineNumber: 161,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1516,7 +1552,7 @@ const HeroSection = ()=>{
                                             children: value.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 143,
+                                            lineNumber: 164,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1524,39 +1560,40 @@ const HeroSection = ()=>{
                                             children: value.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HeroSection.js",
-                                            lineNumber: 146,
+                                            lineNumber: 167,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/src/components/HeroSection.js",
-                                    lineNumber: 136,
+                                    lineNumber: 157,
                                     columnNumber: 33
                                 }, ("TURBOPACK compile-time value", void 0));
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/HeroSection.js",
-                            lineNumber: 132,
+                            lineNumber: 153,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/HeroSection.js",
-                    lineNumber: 121,
+                    lineNumber: 142,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/HeroSection.js",
-                lineNumber: 120,
+                lineNumber: 141,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/HeroSection.js",
-        lineNumber: 14,
+        lineNumber: 21,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
+_s(HeroSection, "eTR5W6wH45bVtWbD0ho0jkNrbDM=");
 _c = HeroSection;
 const __TURBOPACK__default__export__ = HeroSection;
 var _c;

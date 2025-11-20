@@ -1,4 +1,5 @@
 'use client'
+import { useState, useEffect } from 'react'
 import { Download, Play, Sparkles, BookOpen, Users, Target, Zap, Award } from 'lucide-react'
 import Button from '@/components/ui/button'
 import { DemoVideo } from '@/components/DemoVideo'
@@ -10,6 +11,12 @@ const HeroSection = () => {
         'Zap': Zap,
         'Award': Award
     };
+    const [scrollY, setScrollY] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => setScrollY(window.scrollY);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     return (
         <section id="home" className="relative w-full bg-[#050505] overflow-hidden">
             {/* Part 1: Hero Top (Extended Height) */}
@@ -93,6 +100,20 @@ const HeroSection = () => {
                 <div className="absolute bottom-[-480px] left-1/2 -translate-x-1/2 w-full max-w-[350px] z-30 pointer-events-none">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[150%] h-[150%] bg-[#1DB954]/30 blur-[100px] rounded-full opacity-60"></div>
                 </div>
+
+                {/* Stacked phone layers for scroll animation */}
+                {Array.from({ length: 4 }).map((_, i) => (
+                    <div
+                        key={i}
+                        className={`absolute bottom-[-480px] left-1/2 -translate-x-1/2 w-full max-w-[350px] z-${30 - i * 10} perspective-[1000px]`}
+                        style={{
+                            transform: `translateY(${Math.max(0, scrollY - 300 - i * 30)}px)`,
+                            opacity: 0.6 - i * 0.1,
+                        }}
+                    >
+                        <div className="relative bg-[#0a0a0a] border-8 border-[#1a1a1a] rounded-[3rem] shadow-2xl overflow-hidden"></div>
+                    </div>
+                ))}
 
                 {/* Phone Bridge - Positioned to straddle the sections */}
                 <div className="absolute bottom-[-480px] left-1/2 -translate-x-1/2 w-full max-w-[350px] z-40 perspective-[1000px] [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)]">
