@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { Download, Play, Sparkles, BookOpen, Users, Target, Zap, Award } from 'lucide-react'
+import { motion } from 'framer-motion'
 import Button from '@/components/ui/button'
 import { DemoVideo } from '@/components/DemoVideo'
 import { contentData } from '@/lib/contentData'
@@ -29,7 +30,7 @@ const HeroSection = () => {
                 <div className="w-full max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
                     <div className="flex flex-col items-center justify-center text-center relative">
                         {/* Main Content - Compact */}
-                        <div className="space-y-4 max-w-xl mx-auto relative z-30">
+                        <div className="space-y-4 max-w-2xl mx-auto relative z-30">
                             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#1DB954]/10 border border-[#1DB954]/20 rounded-full backdrop-blur-sm mx-auto">
                                 <Sparkles className="w-4 h-4 text-[#1DB954]" />
                                 <span className="text-xs text-[#1DB954] font-medium">AI-Powered Reading App</span>
@@ -159,20 +160,29 @@ const HeroSection = () => {
                         {contentData.about.values.map((value, index) => {
                             const IconComponent = iconMap[value.icon];
                             return (
-                                <div
+                                <motion.div
                                     key={index}
-                                    className="group bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#1DB954]/30 rounded-2xl p-6 hover:border-[#1DB954] hover:shadow-lg hover:shadow-[#1DB954]/20 transition-all duration-300 hover:-translate-y-2"
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                                    whileHover={{ scale: 1.02, backgroundColor: "rgba(255, 255, 255, 0.08)" }}
+                                    className="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 shadow-2xl transition-colors duration-300"
                                 >
-                                    <div className="text-[#1DB954] mb-4 group-hover:scale-110 transition-transform duration-300">
-                                        <IconComponent className="w-8 h-8" />
+                                    <div className="absolute inset-0 bg-gradient-to-br from-[#1DB954]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[2rem]" />
+
+                                    <div className="relative z-10">
+                                        <div className="w-12 h-12 rounded-2xl bg-[#1DB954]/10 flex items-center justify-center text-[#1DB954] mb-6 group-hover:scale-110 group-hover:bg-[#1DB954] group-hover:text-black transition-all duration-300">
+                                            <IconComponent className="w-6 h-6" />
+                                        </div>
+                                        <h3 className="text-xl font-bold text-white mb-3">
+                                            {value.title}
+                                        </h3>
+                                        <p className="text-gray-400 text-sm leading-relaxed">
+                                            {value.description}
+                                        </p>
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#1DB954] transition-colors">
-                                        {value.title}
-                                    </h3>
-                                    <p className="text-gray-400 text-sm leading-relaxed">
-                                        {value.description}
-                                    </p>
-                                </div>
+                                </motion.div>
                             );
                         })}
                     </div>

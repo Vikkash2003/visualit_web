@@ -18,7 +18,6 @@ import {
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { contentData } from "@/lib/contentData";
-import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 export function FeatureSection() {
     // Icon mapping
@@ -89,78 +88,41 @@ function FeatureCard({ feature, index, iconMap }) {
             transition={{ duration: 0.5, delay: delay }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="group relative h-full"
+            className="group relative h-full p-6 rounded-3xl transition-all duration-300 hover:bg-white/5"
         >
-            <div className="relative h-full rounded-3xl border-2 border-[#1DB954]/30 p-1 hover:-translate-y-2 transition-all duration-500 cursor-pointer">
-                <GlowingEffect
-                    spread={40}
-                    glow={true}
-                    disabled={false}
-                    proximity={80}
-                    inactiveZone={0.01}
-                    borderWidth={2}
-                    variant="green"
-                />
-                <div className="relative h-full bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl rounded-3xl p-8 overflow-hidden flex flex-col">
-                    {/* Gradient Overlay on Hover */}
+            <div className="relative z-10 flex flex-col h-full">
+                {/* Icon */}
+                <div className={cn(
+                    "mb-6 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/5 transition-all duration-500 group-hover:scale-110",
+                    isHovered ? gradient : "text-gray-400"
+                )}>
                     <div className={cn(
-                        "absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-500",
-                        gradient
-                    )}></div>
-
-                    {/* Content */}
-                    <div className="relative z-10 flex flex-col h-full">
-                        {/* Icon */}
-                        <div className={cn(
-                            "mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br transition-all duration-500",
-                            gradient,
-                            "group-hover:scale-110 group-hover:rotate-6"
-                        )}>
-                            <div className="text-white text-3xl transform group-hover:scale-110 transition-transform duration-500">
-                                <IconComponent />
-                            </div>
-                        </div>
-
-                        {/* Title */}
-                        <h3 className={cn(
-                            "text-2xl font-bold mb-4 transition-all duration-500",
-                            isHovered
-                                ? `text-transparent bg-gradient-to-r bg-clip-text ${gradient}`
-                                : "text-white"
-                        )}>
-                            {title}
-                        </h3>
-
-                        {/* Description */}
-                        <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-500 flex-grow">
-                            {description}
-                        </p>
-
-                        {/* Hover Arrow */}
-                        <div
-                            className={cn(
-                                "mt-6 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-0 group-hover:translate-x-2",
-                                "text-transparent bg-gradient-to-r bg-clip-text",
-                                gradient
-                            )}
-                        >
-                            <span className="font-semibold text-sm">Learn more</span>
-                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                        </div>
+                        "text-2xl transition-colors duration-300",
+                        isHovered ? "text-white" : "text-gray-400"
+                    )}>
+                        <IconComponent />
                     </div>
-
-                    {/* Floating Particles */}
-                    <motion.div
-                        animate={isHovered ? {
-                            scale: [1, 1.2, 1],
-                            opacity: [0.3, 0.6, 0.3],
-                        } : {}}
-                        transition={{ duration: 2, repeat: Infinity }}
-                        className="absolute -top-10 -right-10 w-40 h-40 rounded-full blur-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 bg-[#1DB954]/30"
-                    ></motion.div>
                 </div>
+
+                {/* Title */}
+                <h3 className={cn(
+                    "text-xl font-bold mb-3 transition-all duration-300",
+                    isHovered ? "text-white" : "text-gray-200"
+                )}>
+                    {title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-500 text-sm leading-relaxed group-hover:text-gray-400 transition-colors duration-300 flex-grow">
+                    {description}
+                </p>
+
+                {/* Hover Line */}
+                <div className={cn(
+                    "h-0.5 w-0 mt-6 transition-all duration-500 rounded-full bg-gradient-to-r",
+                    gradient,
+                    isHovered ? "w-full opacity-100" : "w-0 opacity-0"
+                )} />
             </div>
         </motion.div>
     );

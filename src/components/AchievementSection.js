@@ -1,5 +1,6 @@
 'use client'
 import { Award, Star, Users, Globe } from 'lucide-react'
+import { motion } from 'framer-motion'
 import { contentData } from '@/lib/contentData'
 import { TestimonialsSection } from '@/components/ui/TestimonialsSection'
 
@@ -58,20 +59,25 @@ const AchievementSection = () => {
                 {/* Stats Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {stats.map((stat, index) => (
-                        <div
+                        <motion.div
                             key={stat.id}
-                            className="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-[#1DB954]/30 transition-all duration-300 hover:-translate-y-1"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            whileHover={{ scale: 1.02, backgroundColor: "rgba(255, 255, 255, 0.08)" }}
+                            className="group relative p-8 rounded-[2.5rem] bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl transition-colors duration-300"
                         >
                             {/* Hover Glow */}
-                            <div className="absolute inset-0 bg-[#1DB954]/0 group-hover:bg-[#1DB954]/5 rounded-2xl transition-all duration-300"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#1DB954]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[2.5rem]"></div>
 
                             <div className="relative z-10 flex flex-col items-center text-center space-y-4">
-                                <div className="p-3 rounded-full bg-[#1DB954]/10 text-[#1DB954] group-hover:scale-110 transition-transform duration-300">
-                                    <stat.icon className="w-6 h-6" />
+                                <div className="p-4 rounded-2xl bg-[#1DB954]/10 text-[#1DB954] group-hover:scale-110 group-hover:bg-[#1DB954] group-hover:text-black transition-all duration-300">
+                                    <stat.icon className="w-8 h-8" />
                                 </div>
 
                                 <div className="space-y-1">
-                                    <h3 className="text-4xl font-bold text-white tracking-tight">
+                                    <h3 className="text-5xl font-bold text-white tracking-tight">
                                         {stat.value}
                                     </h3>
                                     <p className="text-[#1DB954] font-medium text-sm uppercase tracking-wider">
@@ -83,43 +89,48 @@ const AchievementSection = () => {
                                     {stat.description}
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 
                 {/* Awards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-                    {contentData.achievements.awards.map((award) => (
-                        <div
+                    {contentData.achievements.awards.map((award, index) => (
+                        <motion.div
                             key={award.id}
-                            className="group relative rounded-2xl bg-white/5 border border-white/10 hover:border-[#1DB954]/30 transition-all duration-300 hover:-translate-y-1 overflow-hidden flex flex-col"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
+                            whileHover={{ scale: 1.02 }}
+                            className="group relative rounded-[2.5rem] bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl overflow-hidden flex flex-col"
                         >
                             {/* Hover Glow */}
-                            <div className="absolute inset-0 bg-[#1DB954]/0 group-hover:bg-[#1DB954]/5 transition-all duration-300"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#1DB954]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                             {/* Image Container */}
-                            <div className="relative h-36 w-full overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
+                            <div className="relative h-48 w-full overflow-hidden">
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10"></div>
                                 <img
                                     src={award.image}
                                     alt={award.title}
-                                    className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ${award.id === 2 ? 'object-[center_10%]' : ''
+                                    className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ${award.id === 2 ? 'object-[center_10%]' : ''
                                         }`}
                                 />
-                                <div className="absolute bottom-4 left-4 right-4 z-20">
-                                    <h3 className="text-xl font-bold text-white leading-tight">
+                                <div className="absolute bottom-6 left-6 right-6 z-20">
+                                    <h3 className="text-2xl font-bold text-white leading-tight">
                                         {award.title}
                                     </h3>
                                 </div>
                             </div>
 
                             {/* Content */}
-                            <div className="relative z-10 p-6 flex-1 flex flex-col">
-                                <p className="text-gray-400 text-sm leading-relaxed flex-1">
+                            <div className="relative z-10 p-8 flex-1 flex flex-col bg-white/5 backdrop-blur-md">
+                                <p className="text-gray-300 text-base leading-relaxed flex-1">
                                     {award.description}
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

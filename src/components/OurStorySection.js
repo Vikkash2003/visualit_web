@@ -18,14 +18,13 @@ const OurStorySection = () => {
             <div className="max-w-7xl mx-auto relative z-10 w-full">
                 {/* Story Section */}
                 <div
-                    className={`relative bg-gradient-to-br from-[#1DB954]/5 via-transparent to-purple-900/10 backdrop-blur-sm border border-[#1DB954]/20 rounded-3xl p-8 md:p-12 transition-all duration-1000 overflow-hidden mb-16 ${
-                        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                    }`}
+                    className={`relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 md:p-12 transition-all duration-1000 overflow-hidden mb-16 shadow-2xl ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                        }`}
                 >
                     {/* Green gradient glow effect */}
                     <div className="absolute -top-20 -right-20 w-64 h-64 bg-gradient-to-br from-[#1DB954]/20 to-transparent rounded-full blur-3xl opacity-50"></div>
                     <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-gradient-to-tr from-purple-600/20 to-transparent rounded-full blur-3xl opacity-50"></div>
-                    
+
                     <div className="max-w-4xl mx-auto text-center relative z-10">
                         <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-[#1DB954] to-white bg-clip-text text-transparent mb-8">
                             {contentData.about.story.title}
@@ -73,27 +72,33 @@ const OurStorySection = () => {
                                         initial={{ opacity: 0, y: 30 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.1 + index * 0.1, duration: 0.5 }}
-                                        className="group bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-[#1DB954]/50 hover:shadow-lg hover:shadow-[#1DB954]/20 transition-all duration-300 hover:-translate-y-2"
+                                        whileHover={{ scale: 1.02 }}
+                                        className="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 shadow-2xl hover:border-[#1DB954]/50 hover:shadow-[#1DB954]/20 transition-all duration-300"
                                     >
-                                        {/* Avatar */}
-                                        <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#1DB954] to-green-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#1DB954]/30">
-                                            <User className="w-10 h-10 text-white" />
+                                        {/* Hover Glow */}
+                                        <div className="absolute inset-0 bg-gradient-to-br from-[#1DB954]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[2rem]"></div>
+
+                                        <div className="relative z-10">
+                                            {/* Avatar */}
+                                            <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#1DB954] to-green-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#1DB954]/30 rotate-3 group-hover:rotate-6">
+                                                <User className="w-12 h-12 text-white" />
+                                            </div>
+
+                                            {/* Name */}
+                                            <h3 className="text-xl font-bold text-white mb-2 text-center group-hover:text-[#1DB954] transition-colors">
+                                                {member.name}
+                                            </h3>
+
+                                            {/* Role */}
+                                            <p className="text-[#1DB954] text-sm font-semibold mb-4 text-center uppercase tracking-wider">
+                                                {member.role}
+                                            </p>
+
+                                            {/* Bio */}
+                                            <p className="text-gray-400 text-sm leading-relaxed text-center">
+                                                {member.bio}
+                                            </p>
                                         </div>
-
-                                        {/* Name */}
-                                        <h3 className="text-xl font-bold text-white mb-2 text-center group-hover:text-[#1DB954] transition-colors">
-                                            {member.name}
-                                        </h3>
-
-                                        {/* Role */}
-                                        <p className="text-[#1DB954] text-sm font-semibold mb-3 text-center">
-                                            {member.role}
-                                        </p>
-
-                                        {/* Bio */}
-                                        <p className="text-gray-400 text-sm leading-relaxed text-center">
-                                            {member.bio}
-                                        </p>
                                     </motion.div>
                                 ))}
                             </div>

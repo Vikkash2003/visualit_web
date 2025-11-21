@@ -70,8 +70,10 @@ const SparklesText: React.FC<SparklesTextProps> = ({
     const [sparkles, setSparkles] = useState<Sparkle[]>([]);
 
     useEffect(() => {
-        const generateStar = (): Sparkle => {
-            const starX = `${Math.random() * 100}%`;
+        const generateStar = (i?: number): Sparkle => {
+            const starX = i !== undefined
+                ? `${(i / sparklesCount) * 100 + (Math.random() * (100 / sparklesCount))}%`
+                : `${Math.random() * 100}%`;
             const starY = `${Math.random() * 100}%`;
             const color = Math.random() > 0.5 ? colors.first : colors.second;
             const delay = Math.random() * 2;
@@ -82,15 +84,15 @@ const SparklesText: React.FC<SparklesTextProps> = ({
         };
 
         const initializeStars = () => {
-            const newSparkles = Array.from({ length: sparklesCount }, generateStar);
+            const newSparkles = Array.from({ length: sparklesCount }, (_, i) => generateStar(i));
             setSparkles(newSparkles);
         };
 
         const updateStars = () => {
             setSparkles((currentSparkles) =>
-                currentSparkles.map((star) => {
+                currentSparkles.map((star, i) => {
                     if (star.lifespan <= 0) {
-                        return generateStar();
+                        return generateStar(i);
                     } else {
                         return { ...star, lifespan: star.lifespan - 0.1 };
                     }
