@@ -148,12 +148,7 @@ export const contentData = {
         description: "Our 'agentic NLP pipeline' (using spaCy & BookNLP) accurately identifies characters and scenes to power the AI.",
         gradient: "from-indigo-500 to-purple-500"
       },
-      {
-        icon: "Sparkles",
-        title: "Creative 'Brainrot' Audio Format",
-        description: "A unique, creative audiobook format designed specifically to engage and capture the attention of younger generations.",
-        gradient: "from-purple-500 to-pink-500"
-      }
+
     ]
   },
 
