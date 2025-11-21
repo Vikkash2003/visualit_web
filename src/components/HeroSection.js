@@ -79,7 +79,7 @@ const HeroSection = () => {
                         Read. <br className="md:hidden" />
                         <span className="relative inline-block">
                             <span className="absolute -inset-2 bg-gradient-to-r from-[#1DB954]/20 to-purple-500/20 blur-2xl opacity-50"></span>
-                            <SparklesText text="Visualize." className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#1DB954] via-emerald-400 to-[#1DB954] animate-gradient" />
+                            <SparklesText text="Visualize." className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#1DB954] via-emerald-400 to-[#1DB954] animate-gradient text-10xl md:text-9xl leading-none" />
                         </span>
                         <br />
                         Understand.
